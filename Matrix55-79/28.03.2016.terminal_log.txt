@@ -1,0 +1,1236 @@
+animakozak@animakozak-PC:~$ onedrive-t start
+onedrive-t: command not found
+animakozak@animakozak-PC:~$ onedrived start
+onedrived: command not found
+animakozak@animakozak-PC:~$ onedriv-ed start
+onedriv-ed: command not found
+animakozak@animakozak-PC:~$ onedrive-d start
+Loading configuration ... OK
+[2016-03-28 20:36:18,697] DEBUG: MainThread: running in daemon node.
+Starting onedrive-d ... OK
+animakozak@animakozak-PC:~$ apm install linter
+Installing linter to /home/animakozak/.atom/packages ✓
+animakozak@animakozak-PC:~$ onedrive-d start
+Loading configuration ... OK
+[2016-03-28 21:16:30,887] DEBUG: MainThread: running in daemon node.
+WARNING: onedrive-d already running with PID 2977
+animakozak@animakozak-PC:~$ onedrive-d status
+Loading configuration ... OK
+[2016-03-28 21:16:37,644] DEBUG: MainThread: running in daemon node.
+onedrive-d -- pid: 2977, status: sleeping, uptime: 40m, %cpu: 0.0, %mem: 1.7
+animakozak@animakozak-PC:~$ onedrive-d status
+Loading configuration ... OK
+[2016-03-28 21:17:53,080] DEBUG: MainThread: running in daemon node.
+onedrive-d -- pid: 2977, status: sleeping, uptime: 42m, %cpu: 0.0, %mem: 1.7
+animakozak@animakozak-PC:~$ onedrive-d start
+Loading configuration ... OK
+[2016-03-28 21:17:55,691] DEBUG: MainThread: running in daemon node.
+WARNING: onedrive-d already running with PID 2977
+animakozak@animakozak-PC:~$ onedrive-pref
+Loading configuration ... OK
+[2016-03-28 21:18:05,045] DEBUG: thread_mgr: started.
+Setting up onedrive-d...
+(STEP 1/4) Do you want to authorize sign in with your OneDrive account? [Y/n] n
+Skipped.
+
+(STEP 2/4) Do you want to specify path to local OneDrive repository? [Y/n] y
+Please enter the abs path to sync with your OneDrive (default: /home/animakozak/OneDrive): /home/animakozak/OneDrive
+[2016-03-28 21:18:23,735] DEBUG: MainThread: config saved.
+Path successfully set.
+
+(STEP 3/4) Do you want to change the numeric settings? [Y/n] n
+Skipped.
+
+(STEP 4/4) Do you want to edit the ignore list file? [Y/n] n
+Skipped. You can manually edit "/home/animakozak/.onedrive/ignore_v2.ini" at your convenience.
+
+All steps are finished.
+animakozak@animakozak-PC:~$ onedrive-d restart
+Loading configuration ... OK
+[2016-03-28 21:18:44,948] DEBUG: MainThread: running in daemon node.
+Stopping onedrive-d ... OK
+Starting onedrive-d ... OK
+animakozak@animakozak-PC:~$ onedrive-d restart
+Loading configuration ... OK
+[2016-03-28 21:28:49,634] DEBUG: MainThread: running in daemon node.
+Stopping onedrive-d ... FAILED
+ERROR: Timed out while waiting for process (PID 4405) to terminate
+animakozak@animakozak-PC:~$ onedrive-d restart
+Loading configuration ... OK
+[2016-03-28 21:29:13,120] DEBUG: MainThread: running in daemon node.
+WARNING: onedrive-d is not running
+Starting onedrive-d ... OK
+animakozak@animakozak-PC:~$ onedrive-d status
+Loading configuration ... OK
+[2016-03-28 21:29:23,852] DEBUG: MainThread: running in daemon node.
+onedrive-d -- pid: 4522, status: sleeping, uptime: 0m, %cpu: 10.0, %mem: 0.9
+animakozak@animakozak-PC:~$ onedrive-d status
+Loading configuration ... OK
+[2016-03-28 21:56:27,082] DEBUG: MainThread: running in daemon node.
+onedrive-d -- pid: 4522, status: sleeping, uptime: 27m, %cpu: 0.0, %mem: 1.7
+animakozak@animakozak-PC:~$ onedrive-d --help
+Loading configuration ... OK
+[2016-03-28 21:56:36,382] DEBUG: MainThread: running in daemon node.
+Usage: onedrive-d [<options>] <command> [<args>]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  start    Start the daemon.
+  stop     Stop the daemon.
+  restart  Stop then start the daemon.
+  status   Get the status of the daemon.
+animakozak@animakozak-PC:~$ onedrive-d status --help
+Loading configuration ... OK
+[2016-03-28 21:56:46,704] DEBUG: MainThread: running in daemon node.
+Usage: onedrive-d status [<options>]
+
+  Get the status of the daemon.
+
+Options:
+  --help  Show this message and exit.
+animakozak@animakozak-PC:~$ onedrive-d start --hepl
+Loading configuration ... OK
+[2016-03-28 21:56:57,081] DEBUG: MainThread: running in daemon node.
+Usage: onedrive-d start [<options>]
+
+Error: no such option: --hepl
+animakozak@animakozak-PC:~$ onedrive-d start --help
+Loading configuration ... OK
+[2016-03-28 21:57:00,565] DEBUG: MainThread: running in daemon node.
+Usage: onedrive-d start [<options>]
+
+  Start the daemon.
+
+Options:
+  --debug  Do NOT detach and run in the background.
+  --help   Show this message and exit.
+animakozak@animakozak-PC:~$ onedrive-d start
+Loading configuration ... OK
+[2016-03-28 21:57:10,992] DEBUG: MainThread: running in daemon node.
+WARNING: onedrive-d already running with PID 4522
+animakozak@animakozak-PC:~$ cd OneDrive/Documents/Programing/Matrix55-79
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ls
+main.cpp  matrix55.cpp  matrixlib.h  matrixlib.h.gch
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ^C
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp  matrixlib.h matrix55-79
+g++: error: matrix55-79: No such file or directory
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp  matrixlib.h matrix
+g++: error: matrix: No such file or directory
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp  matrixlib.h ././././Documents/homework/Matrix55-79/matrixhw
+g++: error: ././././Documents/homework/Matrix55-79/matrixhw: No such file or directory
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ././././
+bash: ././././: Is a directory
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ cd ././././
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ cd ././././
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ cd ./././
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ cd ./
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ cd
+animakozak@animakozak-PC:~$ cd OneDrive/Documents/Programing/Matrix55-79
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp  matrixlib.h
+/tmp/ccQGmKez.o: In function `main':
+main.cpp:(.text+0x11c): undefined reference to `matrix55()'
+main.cpp:(.text+0x123): undefined reference to `matrix56()'
+main.cpp:(.text+0x12a): undefined reference to `matrix63()'
+main.cpp:(.text+0x131): undefined reference to `matrix62()'
+main.cpp:(.text+0x138): undefined reference to `matrix70()'
+main.cpp:(.text+0x13f): undefined reference to `matrix71()'
+main.cpp:(.text+0x146): undefined reference to `matrix79()'
+collect2: error: ld returned 1 exit status
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp  matrixlib.h
+/tmp/ccm8YhVu.o: In function `main':
+main.cpp:(.text+0x11c): undefined reference to `matrix55()'
+main.cpp:(.text+0x123): undefined reference to `matrix56()'
+main.cpp:(.text+0x12a): undefined reference to `matrix63()'
+main.cpp:(.text+0x131): undefined reference to `matrix62()'
+main.cpp:(.text+0x138): undefined reference to `matrix70()'
+main.cpp:(.text+0x13f): undefined reference to `matrix71()'
+main.cpp:(.text+0x146): undefined reference to `matrix79()'
+collect2: error: ld returned 1 exit status
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp  matrixlib.h
+/tmp/ccvRlOjY.o: In function `main':
+main.cpp:(.text+0x11c): undefined reference to `matrix55()'
+main.cpp:(.text+0x123): undefined reference to `matrix56()'
+main.cpp:(.text+0x12a): undefined reference to `matrix63()'
+main.cpp:(.text+0x131): undefined reference to `matrix62()'
+main.cpp:(.text+0x138): undefined reference to `matrix70()'
+main.cpp:(.text+0x13f): undefined reference to `matrix71()'
+main.cpp:(.text+0x146): undefined reference to `matrix79()'
+collect2: error: ld returned 1 exit status
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp  matrixlib.h
+/tmp/ccYl9IZd.o: In function `main':
+main.cpp:(.text+0x112): undefined reference to `matrix55()'
+collect2: error: ld returned 1 exit status
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp  matrixlib.h
+/tmp/ccxyLeaX.o: In function `main':
+main.cpp:(.text+0x123): undefined reference to `matrix56()'
+main.cpp:(.text+0x12a): undefined reference to `matrix63()'
+main.cpp:(.text+0x131): undefined reference to `matrix62()'
+main.cpp:(.text+0x138): undefined reference to `matrix70()'
+main.cpp:(.text+0x13f): undefined reference to `matrix71()'
+main.cpp:(.text+0x146): undefined reference to `matrix79()'
+collect2: error: ld returned 1 exit status
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp  matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a out
+bash: ./a: No such file or directory
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 1
+Matrix 30:
+Enter M, N:
+3 3
+4
+Enter element 1 2 3
+Enter element Enter element 
+Enter element 4 5 6
+Enter element Enter element 
+Enter element 7 8 9
+Enter element Enter element 
+Enter element 10 11 12
+Segmentation fault (core dumped)
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp  matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 1
+Matrix 30:
+Enter M, N:
+4 3
+Enter element 1 2 3
+Enter element Enter element 
+Enter element 5 6 7
+Enter element Enter element 
+Enter element 8 9 10
+Enter element Enter element 
+Enter element 4 3 2
+Segmentation fault (core dumped)
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp  matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 1
+Matrix 30:
+Enter M, N:
+4 3
+Enter element 1 2 3  
+Enter element Enter element 
+Enter element 4 5 6 
+Enter element Enter element 
+Enter element 7 8 9
+Enter element Enter element 
+Enter element 10 11 12
+Enter element Enter element 
+Segmentation fault (core dumped)
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp  matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 1
+Matrix 30:
+Enter M, N:
+4 3
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp  matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 1
+Matrix 30:
+Enter M, N:
+4 3
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp  matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 1
+Matrix 30:
+Enter M, N:
+4 3
+Enter element 1 2 3
+Enter element Enter element 
+Enter element 4 5 6 
+Enter element Enter element 
+Enter element 7 8 9
+Enter element Enter element 
+Enter element 10 11 12
+Enter element Enter element 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp  matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 1
+Matrix 30:
+Enter M, N:
+4 3
+Enter element 1 2 3 4 5 6 7 8 9 10 11 12
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+Segmentation fault (core dumped)
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp  matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 1
+Matrix 30:
+Enter M, N:
+4 3
+Enter element 1 2 3 4 5 6 7 8 9 10 11 12 
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp  matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 1
+Matrix 30:
+Enter M, N:
+3 4
+4
+Enter element 1 2 3 4
+Enter element Enter element Enter element 
+Enter element 5 6 7 8 9 10 11 12 13 14 15 16
+Enter element Enter element Enter element 
+Enter element Enter element Enter element Enter element 
+Enter element Enter element Enter element Enter element 
+*** Error in `./a.out': double free or corruption (out): 0x0000000001ff1d70 ***
+Aborted (core dumped)
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 1 
+Matrix 30:
+Enter M, N:
+4 3
+Enter element 1 2 3 4 5 6 7 8 9 10 11 12
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+Segmentation fault (core dumped)
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp  matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 1
+Matrix 30:
+Enter M, N:
+4 3
+Enter element 1 2 3 4 5 6 7 8 9 10 11 12
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+Segmentation fault (core dumped)
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp  matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 1
+Matrix 30:
+Enter M, N:
+4 3
+Enter element 1 2 3 4 5 6 7 8 9 10 11 12      
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+7 8 9 
+10 11 12 
+1 2 3 
+4 5 6 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp  matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 2
+Matrix 30:
+Enter M, N:
+4 3
+4
+Enter element 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+Enter element Enter element Enter element 
+Enter element Enter element Enter element Enter element 
+Enter element Enter element Enter element Enter element 
+Enter element Enter element Enter element Enter element 
+3 2 1 4 
+7 6 5 8 
+11 10 9 12 
+15 14 13 16 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp  matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 2
+Matrix 30:
+Enter M, N:
+4 4
+Enter element 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+Enter element Enter element Enter element 
+Enter element Enter element Enter element Enter element 
+Enter element Enter element Enter element Enter element 
+Enter element Enter element Enter element Enter element 
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 14 15 16 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp  matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 2
+Matrix 30:
+Enter M, N:
+3 4   
+Enter element 1 2 3 4 5 6 7 8 9 10 11 12
+Enter element Enter element Enter element 
+Enter element Enter element Enter element Enter element 
+Enter element Enter element Enter element Enter element 
+3 4 1 2 
+7 8 5 6 
+11 12 9 10 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp  matrixlib.h
+/tmp/ccl8slNL.o: In function `main':
+main.cpp:(.text+0x12a): undefined reference to `matrix63()'
+collect2: error: ld returned 1 exit status
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp  matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 3
+Matrix 63:
+Enter M, N:
+3 3
+Enter element 1 2 3 
+Enter element Enter element 
+Enter element 4 0.1 6
+Enter element Enter element 
+Enter element 7 8 9
+Enter element Enter element 
+1 2 3 
+4 0.1 6 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp  matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 3
+Matrix 63:
+Enter M, N:
+3 3
+Enter element 1 2 3
+Enter element Enter element 
+Enter element 4 .01 6
+Enter element Enter element 
+Enter element 7 8 9
+Enter element Enter element 
+1 2 3 
+7 8 9 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 3
+Matrix 63:
+Enter M, N:
+6 3 
+Enter element 1 1 1
+Enter element Enter element 
+Enter element 1
+Enter element 1
+Enter element 1
+
+Enter element 8 8 8
+Enter element Enter element 
+Enter element 10 10 10
+Enter element Enter element 
+Enter element 0 5 6
+Enter element Enter element 
+Enter element 879 884 556
+Enter element Enter element 
+1 1 1 
+1 1 1 
+8 8 8 
+10 10 10 
+879 884 556 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrixlib.h
+/tmp/cc50JC64.o: In function `main':
+main.cpp:(.text+0x13d): undefined reference to `matrix62()'
+collect2: error: ld returned 1 exit status
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 4
+Matrix 64:
+Enter M, N, K:
+3 3 2
+exit
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+Segmentation fault (core dumped)
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 4
+Matrix 64:
+Enter M, N, K:
+3 3 2
+Enter element 1 2 3 4 5 6 7 8 9
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+2.32564e-38 0 3 
+2.3256e-38 0 9 
+2.32559e-38 0 9 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 4
+Matrix 64:
+Enter M, N, K:
+3 3 4
+2
+Enter element 1 2 3
+Enter element Enter element 
+Enter element 4 5 6
+Enter element Enter element 
+Enter element 7 8 9
+Enter element Enter element 
+1 3 3 
+4 6 6 
+7 9 9 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 4    
+Matrix 64:
+Enter M, N, K:
+3 3 2
+Enter element 1 2 3 
+Enter element Enter element 
+Enter element 4 5 6
+Enter element Enter element 
+Enter element 7 8 9
+Enter element Enter element 
+1 2 3 
+4 5 6 
+7 8 9 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 4
+Matrix 64:
+Enter M, N, K:
+3
+5
+2
+Enter element 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+Enter element Enter element Enter element Enter element 
+Enter element Enter element Enter element Enter element Enter element 
+Enter element Enter element Enter element Enter element Enter element 
+1 2 4 5 5 
+6 7 9 10 10 
+11 12 14 15 15 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 4
+Matrix 64:
+Enter M, N, K:
+3 3 1
+Enter element 1 2 3 4 5 6 7 8 9
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+2 3 
+5 6 
+8 9 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 4
+Matrix 64:
+Enter M, N, K:
+2 6
+3
+Enter element 1 2 3 4 5 6 7 8 9 10 11 12
+Enter element Enter element Enter element Enter element Enter element 
+Enter element Enter element Enter element Enter element Enter element Enter element 
+1 2 4 5 6 
+7 8 10 11 12 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrixlib.h mathw.out
+g++: error: mathw.out: No such file or directory
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 6
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 4
+Matrix 64:
+Enter M, N, K:
+3
+3
+3
+1
+Enter element 1 2 3 4 5 6 7 8 9
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+2 3 
+5 6 
+8 9 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrixlib.h
+/tmp/ccmrCOnz.o: In function `main':
+main.cpp:(.text+0x138): undefined reference to `matrix70()'
+collect2: error: ld returned 1 exit status
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrixlib.h
+In file included from /usr/include/c++/5/bits/char_traits.h:39:0,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from matrixlib.h:1:
+/usr/include/c++/5/bits/stl_algobase.h: In instantiation of ‘static _OI std::__copy_move<false, false, std::random_access_iterator_tag>::__copy_m(_II, _II, _OI) [with _II = float*; _OI = std::vector<float>*]’:
+/usr/include/c++/5/bits/stl_algobase.h:400:44:   required from ‘_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = float*; _OI = std::vector<float>*]’
+/usr/include/c++/5/bits/stl_algobase.h:436:45:   required from ‘_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = __gnu_cxx::__normal_iterator<float*, std::vector<float> >; _OI = __gnu_cxx::__normal_iterator<std::vector<float>*, std::vector<std::vector<float> > >]’
+/usr/include/c++/5/bits/stl_algobase.h:469:8:   required from ‘_OI std::copy(_II, _II, _OI) [with _II = __gnu_cxx::__normal_iterator<float*, std::vector<float> >; _OI = __gnu_cxx::__normal_iterator<std::vector<float>*, std::vector<std::vector<float> > >]’
+/usr/include/c++/5/bits/vector.tcc:637:16:   required from ‘void std::vector<_Tp, _Alloc>::_M_range_insert(std::vector<_Tp, _Alloc>::iterator, _ForwardIterator, _ForwardIterator, std::forward_iterator_tag) [with _ForwardIterator = __gnu_cxx::__normal_iterator<float*, std::vector<float> >; _Tp = std::vector<float>; _Alloc = std::allocator<std::vector<float> >; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<std::vector<float>*, std::vector<std::vector<float> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = std::vector<float>*]’
+/usr/include/c++/5/bits/stl_vector.h:1377:19:   required from ‘void std::vector<_Tp, _Alloc>::_M_insert_dispatch(std::vector<_Tp, _Alloc>::iterator, _InputIterator, _InputIterator, std::__false_type) [with _InputIterator = __gnu_cxx::__normal_iterator<float*, std::vector<float> >; _Tp = std::vector<float>; _Alloc = std::allocator<std::vector<float> >; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<std::vector<float>*, std::vector<std::vector<float> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = std::vector<float>*]’
+/usr/include/c++/5/bits/stl_vector.h:1125:22:   required from ‘void std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::iterator, _InputIterator, _InputIterator) [with _InputIterator = __gnu_cxx::__normal_iterator<float*, std::vector<float> >; _Tp = std::vector<float>; _Alloc = std::allocator<std::vector<float> >; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<std::vector<float>*, std::vector<std::vector<float> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = std::vector<float>*]’
+matrix70.cpp:23:89:   required from here
+/usr/include/c++/5/bits/stl_algobase.h:340:18: error: no match for ‘operator=’ (operand types are ‘std::vector<float>’ and ‘float’)
+        *__result = *__first;
+                  ^
+In file included from /usr/include/c++/5/vector:69:0,
+                 from matrixlib.h:2:
+/usr/include/c++/5/bits/vector.tcc:167:5: note: candidate: std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = float; _Alloc = std::allocator<float>]
+     vector<_Tp, _Alloc>::
+     ^
+/usr/include/c++/5/bits/vector.tcc:167:5: note:   no known conversion for argument 1 from ‘float’ to ‘const std::vector<float>&’
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 5
+Matrix 63:
+Enter M, N:
+3 3
+Enter element 1 2 3
+Enter element Enter element 
+Enter element 4 111 5
+Enter element Enter element 
+Enter element 0.1 0.01 0.001
+Enter element Enter element 
+1 2 3 
+1 2 3 
+4 111 5 
+0.1 0.01 0.001 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 1 2 3 4 111 5 6 7 8  
+Matrix 55:
+Enter M, N:
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+6 7 8 
+4 111 5 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 5
+Matrix 63:
+Enter M, N:
+3 3
+Enter element 1 2 3 4 111 6 7 8 9
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+1 2 3 
+1 2 3 
+4 111 6 
+7 8 9 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 5
+Matrix 63:
+Enter M, N:
+3 3
+Enter element 1 2 3 4 111 6 7 8 9
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+1 2 3 
+1 2 3 
+4 111 6 
+7 8 9 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 5
+Matrix 63:
+Enter M, N:
+3 3
+Enter element 1 2 3 4 111 6 7 8 9
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+1 2 3 
+4 111 6 
+4 111 6 
+7 8 9 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 3
+Matrix 63:
+Enter M, N:
+3 3
+Enter element 1 2 3
+Enter element Enter element 
+Enter element 4 5 0.1
+Enter element Enter element 
+Enter element 6 7 8
+Enter element Enter element 
+4 5 0.1 
+6 7 8 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 3
+Matrix 63:
+Enter M, N:
+3 3
+Enter element 1 2 3
+Enter element Enter element 
+Enter element 0.1 5 6
+Enter element Enter element 
+Enter element 7 8 9
+Enter element Enter element 
+0.1 5 6 
+7 8 9 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 3
+Matrix 63:
+Enter M, N:
+3 3
+Enter element 1 2 3
+Enter element Enter element 
+Enter element 4 0.01 6
+Enter element Enter element 
+Enter element 7 8 9
+Enter element Enter element 
+4 0.01 6 
+7 8 9 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 3
+Matrix 63:
+Enter M, N:
+3 3
+Enter element 1 2 3 4 0.1 6 7 8 9
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+1 2 3 
+4 0.1 6 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 3
+Matrix 63:
+Enter M, N:
+3 3
+Enter element 1 2 3 4 0.1 6 7 8 9
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+1 2 3 
+7 8 9 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrix71.cpp  matrixlib.h
+g++: error: matrix71.cpp: No such file or directory
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrix71.cpp matrixlib.h
+g++: error: matrix71.cpp: No such file or directory
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrix71.cpp matrixlib.h
+g++: error: matrix71.cpp: No such file or directory
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrix71.cpp matrixlib.h
+g++: error: matrix71.cpp: No such file or directory
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrix71.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 6
+Matrix 71:
+Enter M, N, K:
+3 3
+Enter element 1 2 3
+Enter element Enter element 
+Enter element 1 0.1 3
+Enter element Enter element 
+Enter element 1 2 3
+Enter element Enter element 
+2 3 
+0.1 3 
+2 3 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrix71.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 6 
+Matrix 71:
+Enter M, N:
+3 3
+Enter element 1 2 3
+Enter element Enter element 
+Enter element 1 0.1 3
+Enter element Enter element 
+Enter element 1 2 3
+Enter element Enter element 
+Segmentation fault (core dumped)
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrix71.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 6
+Matrix 71:
+Enter M, N:
+3 3
+Enter element 1 2 3 1 0.1 3 1 2 3
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+2 3 
+0.1 3 
+2 3 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrix71.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 6
+Matrix 71:
+Enter M, N:
+3 3
+Enter element 1 2 3 4 0 6 7 8 9
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+1 2 
+4 0 
+7 8 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrix71.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 6
+Matrix 71:
+Enter M, N:
+3 3
+Enter element 1 2 3 4 0 6 7 8 9
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+2 3 
+0 6 
+8 9 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrix71.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 6
+Matrix 71:
+Enter M, N:
+3 3
+Enter element 1 2 3 1 0.1 3 1 2 3
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+2 3 
+0.1 3 
+2 3 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrix71.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 6
+Matrix 71:
+Enter M, N:
+3 3
+Enter element 1 2 3 1 0.1 3 1 2 3
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+1 2 
+1 0.1 
+1 2 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrix71.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 6
+Matrix 71:
+Enter M, N:
+3 3 
+Enter element 1 2 3 1 0.1 3 1 2 3
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+min=0.1 min_index=1
+1 2 
+1 0.1 
+1 2 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrix71.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 6
+Matrix 71:
+Enter M, N:
+3 3 1 2 3 1 0.01 3 1 2 3
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+min=0.01 min_index=1
+1 2 
+1 0.01 
+1 2 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrix71.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 6
+Matrix 71:
+Enter M, N:
+3 3 1 2 3 1 0.1 3 1 2 3
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+min=0.1 min_index=1
+2 3 
+0.1 3 
+2 3 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ g++ main.cpp  matrix55.cpp matrix56.cpp matrix63.cpp matrix62.cpp matrix70.cpp matrix71.cpp matrixlib.h
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ ./a.out
+Matrix 55-79
+1 - matrix55.cpp
+2 - matrix56.cpp
+3 - matrix63.cpp
+4 - matrix62.cpp
+5 - matrix70.cpp
+6 - matrix71.cpp
+7 - matrix79.cpp
+Type file number: 6
+Matrix 71:
+Enter M, N:
+3 3 1 2 3 1 0.1 3 1 2 3
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+min=0.1 min_index=1
+1 3 
+1 3 
+1 3 
+animakozak@animakozak-PC:~/OneDrive/Documents/Programing/Matrix55-79$ 
+

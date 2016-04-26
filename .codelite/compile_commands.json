@@ -1,0 +1,9 @@
+[{
+  "directory": "D:\\Denis\\Homework\\Array69-111",
+  "command": "C:/TDM-GCC-32/bin/g++.exe -g -O0 -std=c++11 -Wall -I. -I. -MG -MP -MT./Debug/Array73.cpp.o -MF./Debug/Array73.cpp.o.d -MM Array73.cpp",
+  "file": "D:\\Denis\\Homework\\Array69-111\\Array73.cpp"
+ }, {
+  "directory": "D:\\Denis\\Homework\\Array69-111",
+  "command": "C:/TDM-GCC-32/bin/g++.exe -c D:/Denis/Homework/Array69-111/Array73.cpp -g -O0 -std=c++11 -Wall -o ./Debug/Array73.cpp.o -I. -I.",
+  "file": "D:\\Denis\\Homework\\Array69-111\\Array73.cpp"
+ }]

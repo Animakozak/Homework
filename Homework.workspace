@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="Homework" Database="">
+  <Project Name="SR7" Path="SR7/SR7.project" Active="No"/>
+  <Project Name="SR7_1" Path="SR7_1/SR7_1.project" Active="No"/>
+  <Project Name="SR8" Path="SR8/SR8.project" Active="No"/>
+  <Project Name="Laba1" Path="Laba1/Laba1.project" Active="No"/>
+  <Project Name="SR9" Path="SR9/SR9.project" Active="No"/>
+  <Project Name="SR10" Path="SR10/SR10.project" Active="No"/>
+  <Project Name="SR9_CPP" Path="SR10_CPP/SR10_CPP.project" Active="No"/>
+  <Project Name="Laba2" Path="Laba2/Laba2.project" Active="No"/>
+  <Project Name="Array_Insane_Session" Path="Array_Insane_Session/Array_Insane_Session.project" Active="No"/>
+  <Project Name="MaxMin" Path="MaxMin/MaxMin.project" Active="No"/>
+  <Project Name="Array69-111" Path="Array69-111/Array69-111.project" Active="No"/>
+  <Project Name="Array116-130" Path="Array116-130/Array116-130.project" Active="No"/>
+  <Project Name="Array4-37" Path="4-37/4-37.project"/>
+  <Project Name="Matrix4-38" Path="Matrix4-38/Matrix4-38.project" Active="No"/>
+  <Project Name="Matrix55-79" Path="Matrix55-79/Matrix55-79.project" Active="No"/>
+  <Project Name="Matrix80-99" Path="Matrix80-99/Matrix80-99.project" Active="No"/>
+  <Project Name="String01" Path="String01/String01.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="SR7" ConfigName="Debug"/>
+      <Project Name="SR7_1" ConfigName="Debug"/>
+      <Project Name="SR8" ConfigName="Debug"/>
+      <Project Name="Laba1" ConfigName="Debug"/>
+      <Project Name="SR9" ConfigName="Debug"/>
+      <Project Name="SR10" ConfigName="Debug"/>
+      <Project Name="SR9_CPP" ConfigName="Debug"/>
+      <Project Name="Laba2" ConfigName="Debug"/>
+      <Project Name="Array_Insane_Session" ConfigName="Debug"/>
+      <Project Name="MaxMin" ConfigName="Debug"/>
+      <Project Name="Array69-111" ConfigName="Debug"/>
+      <Project Name="Array116-130" ConfigName="Debug"/>
+      <Project Name="Array4-37" ConfigName="Debug"/>
+      <Project Name="Matrix4-38" ConfigName="Debug"/>
+      <Project Name="Matrix55-79" ConfigName="Debug"/>
+      <Project Name="Matrix80-99" ConfigName="Debug"/>
+      <Project Name="String01" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="SR7" ConfigName="Release"/>
+      <Project Name="SR7_1" ConfigName="Release"/>
+      <Project Name="SR8" ConfigName="Release"/>
+      <Project Name="Laba1" ConfigName="Release"/>
+      <Project Name="SR9" ConfigName="Release"/>
+      <Project Name="SR10" ConfigName="Release"/>
+      <Project Name="SR9_CPP" ConfigName="Release"/>
+      <Project Name="Laba2" ConfigName="Release"/>
+      <Project Name="Array_Insane_Session" ConfigName="Release"/>
+      <Project Name="MaxMin" ConfigName="Release"/>
+      <Project Name="Array69-111" ConfigName="Release"/>
+      <Project Name="Array116-130" ConfigName="Release"/>
+      <Project Name="Array4-37" ConfigName="Release"/>
+      <Project Name="Matrix4-38" ConfigName="Release"/>
+      <Project Name="Matrix55-79" ConfigName="Release"/>
+      <Project Name="Matrix80-99" ConfigName="Release"/>
+      <Project Name="String01" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

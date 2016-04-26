@@ -1,0 +1,961 @@
+animakozak@animakozak-PC:~$ cd Documents/homework/Matrix22-38
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ g++ main.cpp matrix4.cpp matrix9.cpp matrix30.cpp matrix35.cpp -o matrixhw
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ ./matrixhwMatrix 2-38
+1 - matrix4.cpp
+2 - matrix9.cpp
+3 - matrix30.cpp
+4 - matrix35.cpp
+5 - matrix36.cpp
+Type file number: 4
+Matrix 35:
+Enter M, N:
+3 4
+Enter element 1
+Enter element 2
+Enter element 3
+Enter element 5
+
+Enter element 3
+Enter element 2
+Enter element 5
+Enter element 7
+
+Enter element 2
+Enter element 2
+Enter element 5
+Enter element 7
+
+2
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ g++ main.cpp matrix4.cpp matrix9.cpp matrix30.cpp matrix35.cpp -o matrixhw
+/tmp/cck1hEcz.o: In function `main':
+main.cpp:(.text+0x104): undefined reference to `matrix36()'
+collect2: error: ld returned 1 exit status
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ g++ main.cpp matrix4.cpp matrix9.cpp matrix30.cpp matrix35.cpp matrix36.cpp -o matrixhw
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ ./matrixhwMatrix 2-38
+1 - matrix4.cpp
+2 - matrix9.cpp
+3 - matrix30.cpp
+4 - matrix35.cpp
+5 - matrix36.cpp
+Type file number: 4
+Matrix 35:
+Enter M, N:
+3 4
+Enter element 1
+Enter element 1
+Enter element 1
+Enter element 1
+
+Enter element 1
+Enter element 1
+Enter element 1
+Enter element 1
+
+Enter element 1
+Enter element 1
+Enter element 1
+Enter element 1
+
+1
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ g++ main.cpp matrix4.cpp matrix9.cpp matrix30.cpp matrix35.cpp matrix36.cpp -o matrixhw
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ ./matrixhwMatrix 2-38
+1 - matrix4.cpp
+2 - matrix9.cpp
+3 - matrix30.cpp
+4 - matrix35.cpp
+5 - matrix36.cpp
+Type file number: 5
+Matrix 36:Enter M, N:
+3 4
+ Enter the quantity of elements, which is considered to be enough to state row's similarity to 1st row in matrix: 3
+Retry, check if "similarity" is less than 3 and more, than 0
+2
+Enter element 1
+Enter element 2
+Enter element 3
+Enter element 4
+
+Enter element 1
+Enter element 1
+Enter element 1
+Enter element 1
+
+Enter element 1
+Enter element 0
+Enter element 5
+Enter element 9
+
+Segmentation fault (core dumped)
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ g++ main.cpp matrix4.cpp matrix9.cpp matrix30.cpp matrix35.cpp matrix36.cpp -o matrixhw
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ ./matrixhwMatrix 2-38
+1 - matrix4.cpp
+2 - matrix9.cpp
+3 - matrix30.cpp
+4 - matrix35.cpp
+5 - matrix36.cpp
+Type file number: 5
+Matrix 36:Enter M, N:
+4 5
+ Enter the quantity of elements, which is considered to be enough to state row's similarity to 1st row in matrix: 3
+Enter element 1
+Enter element 2
+Enter element 3
+Enter element 4
+Enter element 5
+
+Enter element 1
+Enter element 2
+Enter element 0
+Enter element 0
+Enter element 0
+
+Enter element 1
+Enter element 2
+Enter element 3
+Enter element 0
+Enter element 0
+
+Enter element 1
+Enter element 2
+Enter element 3
+Enter element 4
+Enter element 5
+
+
+Ammount of rows, similar to first is 3
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ g++ main.cpp matrix4.cpp matrix9.cpp matrix30.cpp matrix35.cpp matrix36.cpp -o matrixhw
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ ./matrixhwMatrix 2-38
+1 - matrix4.cpp
+2 - matrix9.cpp
+3 - matrix30.cpp
+4 - matrix35.cpp
+5 - matrix36.cpp
+Type file number: 5
+Matrix 36:Enter M, N:
+4 5
+ Enter the quantity of elements, which is considered to be enough to state row's similarity to 1st row in matrix: 3
+Enter element 1
+Enter element 2
+Enter element 3
+Enter element 4
+Enter element 5
+
+Enter element 1
+Enter element 2
+Enter element 3
+Enter element 0
+Enter element 0
+
+Enter element 0
+Enter element 0
+Enter element 
+0
+Enter element 0
+Enter element 0
+
+Enter element 1
+Enter element 2
+Enter element 3
+Enter element 4
+Enter element 5
+
+
+Ammount of rows, similar to first is 3
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ g++ main.cpp matrix4.cpp matrix9.cpp matrix30.cpp matrix35.cpp matrix36.cpp -o matrixhw
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ ./matrixhwMatrix 2-38
+1 - matrix4.cpp
+2 - matrix9.cpp
+3 - matrix30.cpp
+4 - matrix35.cpp
+5 - matrix36.cpp
+Type file number: 5
+Matrix 36:Enter M, N:
+4 5
+ Enter the quantity of elements, which is considered to be enough to state row's similarity to 1st row in matrix: 3
+Enter element 1
+Enter element 2
+Enter element 3
+Enter element 4
+Enter element 5
+
+Enter element 1
+Enter element 0
+Enter element 2
+Enter element 0
+Enter element 3
+
+Enter element 0
+Enter element 0
+Enter element 0
+Enter element 0
+Enter element 0
+
+Enter element 1
+Enter element 2
+Enter element 3
+Enter element 4
+Enter element 5
+
+
+Ammount of rows, similar to first is 3
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ g++ main.cpp matrix4.cpp matrix9.cpp matrix30.cpp matrix35.cpp matrix36.cpp -o matrixhw
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ ./matrixhwMatrix 2-38
+1 - matrix4.cpp
+2 - matrix9.cpp
+3 - matrix30.cpp
+4 - matrix35.cpp
+5 - matrix36.cpp
+Type file number: 5
+Matrix 36:Enter M, N:
+4 5
+ Enter the quantity of elements, which is considered to be enough to state row's similarity to 1st row in matrix: 3
+Enter element 1
+Enter element 2
+Enter element 3
+Enter element 4
+Enter element 5
+
+Enter element 1
+Enter element 0
+Enter element 2
+Enter element 0
+Enter element 3
+
+Enter element 0
+Enter element 0
+Enter element 0
+Enter element 0
+Enter element 0
+
+Enter element 1
+Enter element 2
+Enter element 3
+Enter element 4
+Enter element 5
+
+
+While out! k=0
+count=1
+
+While out! k=5
+count=2
+
+While out! k=1
+count=3
+
+While out! k=5
+count=4
+
+While out! k=2
+count=5
+row_count=1
+
+While out! k=5
+count=6
+
+While out! k=5
+count=7
+
+While out! k=5
+count=8
+
+While out! k=5
+count=9
+
+While out! k=5
+count=10
+row_count=2
+
+While out! k=0
+count=11
+
+While out! k=1
+count=12
+
+While out! k=2
+count=13
+
+While out! k=3
+count=14
+
+While out! k=4
+count=15
+row_count=3
+
+Ammount of rows, similar to first is 3
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ g++ main.cpp matrix4.cpp matrix9.cpp matrix30.cpp matrix35.cpp matrix36.cpp -o matrixhw
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ ./matrixhwMatrix 2-38
+1 - matrix4.cpp
+2 - matrix9.cpp
+3 - matrix30.cpp
+4 - matrix35.cpp
+5 - matrix36.cpp
+Type file number: 5
+Matrix 36:Enter M, N:
+4 5
+ Enter the quantity of elements, which is considered to be enough to state row's similarity to 1st row in matrix: 3
+Enter element 1
+Enter element 2
+Enter element 3
+Enter element 4
+Enter element 5
+
+Enter element 1
+Enter element 0
+Enter element 2
+Enter element 0
+Enter element 3
+
+Enter element 0
+Enter element 0
+Enter element 0
+Enter element 0
+Enter element 0
+
+Enter element 1
+Enter element 2
+Enter element 3
+Enter element 4
+Enter element 5
+
+
+While out! k=0
+1 is similar to 1
+count=1
+
+While out! k=5
+0 is similar to 0
+count=2
+
+While out! k=1
+2 is similar to 2
+count=3
+
+While out! k=5
+0 is similar to 0
+count=4
+
+While out! k=2
+3 is similar to 3
+count=5
+row_count=1
+
+While out! k=5
+0 is similar to 0
+count=1
+
+While out! k=5
+0 is similar to 0
+count=2
+
+While out! k=5
+0 is similar to 0
+count=3
+
+While out! k=5
+0 is similar to 0
+count=4
+
+While out! k=5
+0 is similar to 0
+count=5
+row_count=2
+
+While out! k=0
+1 is similar to 1
+count=1
+
+While out! k=1
+2 is similar to 2
+count=2
+
+While out! k=2
+3 is similar to 3
+count=3
+
+While out! k=3
+4 is similar to 4
+count=4
+
+While out! k=4
+5 is similar to 5
+count=5
+row_count=3
+
+Ammount of rows, similar to first is 3
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ g++ main.cpp matrix4.cpp matrix9.cpp matrix30.cpp matrix35.cpp matrix36.cpp -o matrixhw
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ ./matrixhwMatrix 2-38
+1 - matrix4.cpp
+2 - matrix9.cpp
+3 - matrix30.cpp
+4 - matrix35.cpp
+5 - matrix36.cpp
+Type file number: 5
+Matrix 36:Enter M, N:
+4 5
+ Enter the quantity of elements, which is considered to be enough to state row's similarity to 1st row in matrix: 3
+Enter element 1
+Enter element 2
+Enter element 3
+Enter element 4
+Enter element 5
+
+Enter element 1
+Enter element 0
+Enter element 2
+Enter element 0
+Enter element 3
+
+Enter element 0
+Enter element 0
+Enter element 0
+Enter element 0
+Enter element 0
+
+Enter element 1
+Enter element 2
+Enter element 3
+Enter element 4
+Enter element 5
+
+
+While out! k=0
+1 is similar to 1
+count=1
+
+While out! k=4
+0 is similar to 5
+count=1
+
+While out! k=1
+2 is similar to 2
+count=2
+
+While out! k=4
+0 is similar to 5
+count=2
+
+While out! k=2
+3 is similar to 3
+count=3
+row_count=1
+
+While out! k=4
+0 is similar to 5
+count=0
+
+While out! k=4
+0 is similar to 5
+count=0
+
+While out! k=4
+0 is similar to 5
+count=0
+
+While out! k=4
+0 is similar to 5
+count=0
+
+While out! k=4
+0 is similar to 5
+count=0
+row_count=1
+
+While out! k=0
+1 is similar to 1
+count=1
+
+While out! k=1
+2 is similar to 2
+count=2
+
+While out! k=2
+3 is similar to 3
+count=3
+
+While out! k=3
+4 is similar to 4
+count=4
+
+While out! k=4
+5 is similar to 5
+count=5
+row_count=2
+
+Ammount of rows, similar to first is 2
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ g++ main.cpp matrix4.cpp matrix9.cpp matrix30.cpp matrix35.cpp matrix36.cpp -o matrixhw
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ ./matrixhwMatrix 2-38
+1 - matrix4.cpp
+2 - matrix9.cpp
+3 - matrix30.cpp
+4 - matrix35.cpp
+5 - matrix36.cpp
+Type file number: 5
+Matrix 36:Enter M, N:
+4 5
+ Enter the quantity of elements, which is considered to be enough to state row's similarity to 1st row in matrix: 2
+Enter element 1
+Enter element 2
+Enter element 3
+Enter element 4
+Enter element 5
+
+Enter element 1
+Enter element 0
+Enter element 0
+Enter element 0
+Enter element 2
+
+Enter element 0
+Enter element 0
+Enter element 0
+Enter element 8
+Enter element 0
+
+Enter element 1
+Enter element 0
+Enter element 4
+Enter element 0
+Enter element 0
+
+Debug info for dev:)
+
+
+While out! k=0
+1 is similar to 1
+count=1
+
+While out! k=4
+0 is similar to 5
+count=1
+
+While out! k=4
+0 is similar to 5
+count=1
+
+While out! k=4
+0 is similar to 5
+count=1
+
+While out! k=1
+2 is similar to 2
+count=2
+row_count=1
+
+While out! k=4
+0 is similar to 5
+count=0
+
+While out! k=4
+0 is similar to 5
+count=0
+
+While out! k=4
+0 is similar to 5
+count=0
+
+While out! k=4
+8 is similar to 5
+count=0
+
+While out! k=4
+0 is similar to 5
+count=0
+row_count=1
+
+While out! k=0
+1 is similar to 1
+count=1
+
+While out! k=4
+0 is similar to 5
+count=1
+
+While out! k=3
+4 is similar to 4
+count=2
+
+While out! k=4
+0 is similar to 5
+count=2
+
+While out! k=4
+0 is similar to 5
+count=2
+row_count=2
+
+Ammount of rows, similar to first is 2
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ g++ main.cpp matrix4.cpp matrix9.cpp matrix30.cpp matrix35.cpp matrix36.cpp -o matrixhw
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ ./matrixhwMatrix 2-38
+1 - matrix4.cpp
+2 - matrix9.cpp
+3 - matrix30.cpp
+4 - matrix35.cpp
+5 - matrix36.cpp
+Type file number: 5
+Matrix 36:Enter M, N:
+3 6
+ Enter the quantity of elements, which is considered to be enough to state row's similarity to 1st row in matrix: 2
+Enter element 1
+Enter element 2
+Enter element 3
+Enter element exit
+Enter element Enter element 
+Enter element Enter element Enter element Enter element Enter element Enter element 
+Enter element Enter element Enter element Enter element Enter element Enter element 
+Debug info for dev:)
+
+
+While out! k=3
+0 is similar to 0
+count=1
+
+While out! k=3
+0 is similar to 0
+count=2
+
+While out! k=3
+0 is similar to 0
+count=3
+
+While out! k=3
+0 is similar to 0
+count=4
+
+While out! k=3
+0 is similar to 0
+count=5
+
+While out! k=3
+0 is similar to 0
+count=6
+row_count=1
+
+While out! k=3
+0 is similar to 0
+count=1
+
+While out! k=3
+0 is similar to 0
+count=2
+
+While out! k=3
+0 is similar to 0
+count=3
+
+While out! k=3
+0 is similar to 0
+count=4
+
+While out! k=3
+0 is similar to 0
+count=5
+
+While out! k=3
+0 is similar to 0
+count=6
+row_count=2
+
+Ammount of rows, similar to first is 2
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ ./matrixhw
+Matrix 2-38
+1 - matrix4.cpp
+2 - matrix9.cpp
+3 - matrix30.cpp
+4 - matrix35.cpp
+5 - matrix36.cpp
+Type file number: 5
+Matrix 36:Enter M, N:
+6 3
+ Enter the quantity of elements, which is considered to be enough to state row's similarity to 1st row in matrix: 2
+Enter element 1
+Enter element 2
+Enter element 3
+
+Enter element 1
+Enter element 0
+Enter element 0
+
+Enter element 0
+Enter element 2
+Enter element 0
+
+Enter element 1
+Enter element 0
+Enter element 2
+
+Enter element 1
+Enter element 2
+Enter element 3
+
+Enter element 0
+Enter element 0
+Enter element 0
+
+Debug info for dev:)
+
+
+While out! k=0
+1 is similar to 1
+count=1
+
+While out! k=2
+0 is similar to 3
+count=1
+
+While out! k=2
+0 is similar to 3
+count=1
+row_count=0
+
+While out! k=2
+0 is similar to 3
+count=0
+
+While out! k=1
+2 is similar to 2
+count=1
+
+While out! k=2
+0 is similar to 3
+count=1
+row_count=0
+
+While out! k=0
+1 is similar to 1
+count=1
+
+While out! k=2
+0 is similar to 3
+count=1
+
+While out! k=1
+2 is similar to 2
+count=2
+row_count=1
+
+While out! k=0
+1 is similar to 1
+count=1
+
+While out! k=1
+2 is similar to 2
+count=2
+
+While out! k=2
+3 is similar to 3
+count=3
+row_count=2
+
+While out! k=2
+0 is similar to 3
+count=0
+
+While out! k=2
+0 is similar to 3
+count=0
+
+While out! k=2
+0 is similar to 3
+count=0
+row_count=2
+
+Ammount of rows, similar to first is 2
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ ./matrixhwMatrix 2-38
+1 - matrix4.cpp
+2 - matrix9.cpp
+3 - matrix30.cpp
+4 - matrix35.cpp
+5 - matrix36.cpp
+Type file number: 5
+Matrix 36:Enter M, N:
+6 3
+ Enter the quantity of elements, which is considered to be enough to state row's similarity to 1st row in matrix: 4
+Enter element exit
+Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+Enter element Enter element Enter element 
+Debug info for dev:)
+
+
+While out! k=0
+0 is similar to 0
+count=1
+
+While out! k=0
+0 is similar to 0
+count=2
+
+While out! k=0
+0 is similar to 0
+count=3
+row_count=0
+
+While out! k=0
+0 is similar to 0
+count=1
+
+While out! k=0
+0 is similar to 0
+count=2
+
+While out! k=0
+0 is similar to 0
+count=3
+row_count=0
+
+While out! k=0
+0 is similar to 0
+count=1
+
+While out! k=0
+0 is similar to 0
+count=2
+
+While out! k=0
+0 is similar to 0
+count=3
+row_count=0
+
+While out! k=0
+0 is similar to 0
+count=1
+
+While out! k=0
+0 is similar to 0
+count=2
+
+While out! k=0
+0 is similar to 0
+count=3
+row_count=0
+
+While out! k=0
+0 is similar to 0
+count=1
+
+While out! k=0
+0 is similar to 0
+count=2
+
+While out! k=0
+0 is similar to 0
+count=3
+row_count=0
+
+Ammount of rows, similar to first is 0
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ g++ main.cpp matrix4.cpp matrix9.cpp matrix30.cpp matrix35.cpp matrix36.cpp -o matrixhw
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ ./matrixhwMatrix 2-38
+1 - matrix4.cpp
+2 - matrix9.cpp
+3 - matrix30.cpp
+4 - matrix35.cpp
+5 - matrix36.cpp
+Type file number: 5
+Matrix 36:Enter M, N:
+6 3
+ Enter the quantity of elements, which is considered to be enough to state row's similarity to 1st row in matrix: 6
+Retry, check if "similarity" is less than 6 and more, than 0
+0
+Retry, check if "similarity" is less than 6 and more, than 0
+-1
+Retry, check if "similarity" is less than 6 and more, than 0
+2
+Enter element 1
+Enter element 2
+Enter element 3
+
+Enter element 1
+Enter element 2
+Enter element 3
+
+Enter element 1
+Enter element 2
+Enter element 0
+
+Enter element 1
+Enter element 0
+Enter element 1
+
+Enter element 0
+Enter element 0
+Enter element 0
+
+Enter element 0
+Enter element 1
+Enter element 1
+
+Debug info for dev:)
+
+
+While out! k=0
+1 is similar to 1
+count=1
+
+While out! k=1
+2 is similar to 2
+count=2
+
+While out! k=2
+3 is similar to 3
+count=3
+row_count=1
+
+While out! k=0
+1 is similar to 1
+count=1
+
+While out! k=1
+2 is similar to 2
+count=2
+
+While out! k=2
+0 is similar to 3
+count=2
+row_count=2
+
+While out! k=0
+1 is similar to 1
+count=1
+
+While out! k=2
+0 is similar to 3
+count=1
+
+While out! k=0
+1 is similar to 1
+count=2
+row_count=3
+
+While out! k=2
+0 is similar to 3
+count=0
+
+While out! k=2
+0 is similar to 3
+count=0
+
+While out! k=2
+0 is similar to 3
+count=0
+row_count=3
+
+While out! k=2
+0 is similar to 3
+count=0
+
+While out! k=0
+1 is similar to 1
+count=1
+
+While out! k=0
+1 is similar to 1
+count=2
+row_count=4
+
+Ammount of rows, similar to first is 4
+animakozak@animakozak-PC:~/Documents/homework/Matrix22-38$ 
+
