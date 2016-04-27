@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=user
-Date                   :=06/04/2016
+Date                   :=27/04/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/TDM-GCC-32/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-32/bin/g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := C:/TDM-GCC-32/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/26.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/6.cpp$(ObjectSuffix) 
 
 
 
@@ -93,13 +93,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/26.cpp$(ObjectSuffix): 26.cpp $(IntermediateDirectory)/26.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Denis/Homework/Array_Insane_Session/26.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/26.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/26.cpp$(DependSuffix): 26.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/26.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/26.cpp$(DependSuffix) -MM "26.cpp"
+$(IntermediateDirectory)/6.cpp$(ObjectSuffix): 6.cpp $(IntermediateDirectory)/6.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Denis/Homework/Array_Insane_Session/6.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/6.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/6.cpp$(DependSuffix): 6.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/6.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/6.cpp$(DependSuffix) -MM "6.cpp"
 
-$(IntermediateDirectory)/26.cpp$(PreprocessSuffix): 26.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/26.cpp$(PreprocessSuffix) "26.cpp"
+$(IntermediateDirectory)/6.cpp$(PreprocessSuffix): 6.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/6.cpp$(PreprocessSuffix) "6.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

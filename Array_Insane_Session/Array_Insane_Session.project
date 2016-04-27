@@ -92,9 +92,9 @@
   </Settings>
   <VirtualDirectory Name="src">
     <File Name="2.cpp" ExcludeProjConfig="Debug"/>
-    <File Name="6.cpp" ExcludeProjConfig="Debug"/>
+    <File Name="6.cpp" ExcludeProjConfig=""/>
     <File Name="12.cpp" ExcludeProjConfig="Debug"/>
-    <File Name="4.cpp" ExcludeProjConfig=""/>
+    <File Name="4.cpp" ExcludeProjConfig="Debug"/>
     <File Name="16.cpp" ExcludeProjConfig="Debug"/>
     <File Name="26.cpp" ExcludeProjConfig="Debug"/>
   </VirtualDirectory>

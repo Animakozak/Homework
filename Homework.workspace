@@ -16,7 +16,8 @@
   <Project Name="Matrix4-38" Path="Matrix4-38/Matrix4-38.project" Active="No"/>
   <Project Name="Matrix55-79" Path="Matrix55-79/Matrix55-79.project" Active="No"/>
   <Project Name="Matrix80-99" Path="Matrix80-99/Matrix80-99.project" Active="No"/>
-  <Project Name="String01" Path="String01/String01.project" Active="Yes"/>
+  <Project Name="String01" Path="String01/String01.project" Active="No"/>
+  <Project Name="structures_points" Path="structures_points/structures_points.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -37,6 +38,7 @@
       <Project Name="Matrix55-79" ConfigName="Debug"/>
       <Project Name="Matrix80-99" ConfigName="Debug"/>
       <Project Name="String01" ConfigName="Debug"/>
+      <Project Name="structures_points" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -57,6 +59,7 @@
       <Project Name="Matrix55-79" ConfigName="Release"/>
       <Project Name="Matrix80-99" ConfigName="Release"/>
       <Project Name="String01" ConfigName="Release"/>
+      <Project Name="structures_points" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
