@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="D:\Denis\Homework\Homework.workspace">
-  <int Value="0" Name="m_selectedTab"/>
+  <int Value="1" Name="m_selectedTab"/>
   <wxString Value="D:\Denis\Homework\Homework.workspace" Name="m_workspaceName"/>
-  <TabInfoArray Name="TabInfoArray"/>
+  <TabInfoArray Name="TabInfoArray">
+    <TabInfo>
+      <wxString Value="D:\Denis\Homework\structures_points\points.cpp" Name="FileName"/>
+      <int Value="97" Name="FirstVisibleLine"/>
+      <int Value="169" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds">
+        <IntVectorItem Value="6"/>
+        <IntVectorItem Value="10"/>
+        <IntVectorItem Value="13"/>
+        <IntVectorItem Value="52"/>
+      </IntVector>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\Denis\Homework\String01\main.cpp" Name="FileName"/>
+      <int Value="78" Name="FirstVisibleLine"/>
+      <int Value="99" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+  </TabInfoArray>
   <SerializedObject Name="m_breakpoints">
     <long Value="48" Name="Count"/>
     <SerializedObject Name="Breakpoint0">
@@ -758,8 +778,8 @@
       <int Value="0" Name="origin"/>
     </SerializedObject>
     <SerializedObject Name="Breakpoint47">
-      <wxString Value="D:\Denis\Homework\structures_points\points.cpp" Name="file"/>
-      <int Value="108" Name="lineno"/>
+      <wxString Value="D:\Denis\Homework\calcalc\main.cpp" Name="file"/>
+      <int Value="1951" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
       <wxString Value="" Name="memory_address"/>
       <int Value="1" Name="bp_type"/>
