@@ -14,7 +14,7 @@ void Create(){
 	cin>>root->data;
 	for(int i=1; i<count; i++){
 		cur->next=new Item;
-		cur=cur-next;
+		cur=cur->next;
 		cur->next=NULL;
 		cin>>cur->data;
 	}
@@ -41,12 +41,13 @@ void Add(){
 	cin>>cur->data;
 }
 void Delete(){
-	somedata key;
-	cout>>"Key: ";
-	Cin>>key;
+	int key;
+	cout<<"Key: ";
+	cin>>key;
 	cur=root;
-	while (cur->data!=key && cur) cur=cur->next;if(!cur){
-		cout<<"Key not found!"
+	while (cur->data!=key && cur) cur=cur->next;
+	if(!cur){
+		cout<<"Key not found!"<<endl;
 		return;
 	}
 	Item *temp=root;
@@ -55,12 +56,13 @@ void Delete(){
 	delete cur;
 }
 void Insert(){
-	somedata key;
-	cout>>"Key: ";
-	Cin>>key;
+	int key;
+	cout<<"Key: ";
+	cin>>key;
 	cur=root;
-	while (cur->data!=key && cur) cur=cur->next;if(!cur){
-		cout<<"Key not found!"
+	while (cur->data!=key && cur) cur=cur->next;
+    if(!cur){
+		cout<<"Key not found!"<<endl;
 		return;
 	}
 	Item *temp=new Item;
