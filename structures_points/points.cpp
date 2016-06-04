@@ -5,15 +5,15 @@
 using namespace std;
 #define N1 6
 struct point{
-    int x;
-    int y;
+    float x;
+    float y;
 };
 double point_distance(point first, point last){
     return sqrt(pow((first.x-last.x),2)+pow((first.y-last.y),2));
 }
 void array134(){
     cout<<"Array 134"<<endl;
-    int dist=0;
+    float dist=0;
     point face[N1];
     cout<<"Fill the array"<<endl;
     for(int i=0; i<N1; i++){
@@ -23,7 +23,7 @@ void array134(){
         cin>>face[i].y;
         cout<<endl;
     }
-    int max=0;
+    float max=0;
     int a=0;
     int b=0;
     int max_a=0;
@@ -52,11 +52,11 @@ void array134(){
 }
 void array136(){
     cout<<"Array 136"<<endl;
-    int min_sum=99999;
+    float min_sum=99999;
     point face[N1];
     int a=0;
     int min_a=0;
-    int sum=0;
+    float sum=0;
     cout<<"Fill the array"<<endl;
     for(int i=0; i<N1; i++){
         cout<<"x: ";
@@ -119,7 +119,7 @@ void array137(){
             }
         }
         }
-        
+
     }
     cout<<"Max triangular P is "<<p_max<<" formed with the following vertex: A("<<A.x<<";"<<A.y<<") B("<<B.x<<";"<<B.y<<") C("<<C.x<<";"<<C.y<<")"<<endl;
 }

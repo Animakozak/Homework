@@ -2,13 +2,13 @@
 #include <string>
 #include <cstring>
 using namespace std;
-char wordSwap(char stroke, char pos_1, int len_1, char pos_2, len_2){
-    char buffer[100]="\0";
-    strcpy(buffer, word2_pos, word2_len);
-}
-string wordSwap(string stroke, int pos1, int len_1, int pos_2, len_2){
-    
-}
+// char wordSwap(char stroke, char pos_1, int len_1, char pos_2, len_2){
+//     char buffer[100]="\0";
+//     strcpy(buffer, word2_pos, word2_len);
+// }
+// string wordSwap(string stroke, int pos1, int len_1, int pos_2, len_2){
+//
+// }
 void string1(){
     cout<<"Enter your test line: "<<endl;
     string S="Meanwhilewhile at the Batcave...";
@@ -46,35 +46,32 @@ void string4(){
     }
     cout<<count<<endl;
 }
-void string5(){
-    string input="aaabc xyz pop bbc";
-    int current_series=1; //current series len
-    int old_series=1; //Previuos series len
-    int word_cur_pos=0;
-    int word_cur_len=1;
-    int word_old_pos=0;
-    int word_old_len=1;
-    for (int i=0; i<input.size();i++){
-        if((input[i]!=' ' || input[i]!=',' || input[i]!='.')&&input[i]!=0){
-            if(input[i-1]==input[i]) current_series++;
-            else if(input[i-1]!=input[i]){
-                if(current_series>old_series){
-                    old_series=current_series;
-                    current_series=0;
-                }
-            }
-            word_cur_len++;
-        }
-        else if(){
-            
-        }
-        else{
-            word_cur_len=i-word_cur_len;
-            word_old_len=word_cur_len;
-            word_old_pos=word_cur_pos;
-        }
-    }
-}
+// void string5(){
+//     string input="aaabc xyz pop bbc";
+//     int current_series=1; //current series len
+//     int old_series=1; //Previuos series len
+//     int word_cur_pos=0;
+//     int word_cur_len=1;
+//     int word_old_pos=0;
+//     int word_old_len=1;
+//     for (int i=0; i<input.size();i++){
+//         if((input[i]!=' ' || input[i]!=',' || input[i]!='.')&&input[i]!=0){
+//             if(input[i-1]==input[i]) current_series++;
+//             else if(input[i-1]!=input[i]){
+//                 if(current_series>old_series){
+//                     old_series=current_series;
+//                     current_series=0;
+//                 }
+//             }
+//             word_cur_len++;
+//         }
+//         else{
+//             word_cur_len=i-word_cur_len;
+//             word_old_len=word_cur_len;
+//             word_old_pos=word_cur_pos;
+//         }
+//     }
+// }
 void char1(){
     char S[]="Meanwhilewhile at the Batcave...";
     char X[]="while";
@@ -107,9 +104,8 @@ void char3(){
     char buffer[20]="\0";
     strcpy(buffer, p);
     strncpy(p, X, 6);
-//    cout << p << endl;
     p+=6;
-    strcpy(p, buffer); 
+    strcpy(p, buffer);
     cout<<S<<endl;
 }
 void char4(){
@@ -128,6 +124,7 @@ void char4(){
     cout<<count<<endl;
 }
 int main(){
+    home:
     cout<<"Welcome to \"String01\", type \"string\" or \"char\" to use \"string\" class or \"char\" array respectedly: "<<endl;
     string method;
     error1:
@@ -160,5 +157,9 @@ int main(){
         cout<<"Error! Try again! Check your spelling!"<<endl;
         goto error1;
     }
+    string exit;
+    cin>>exit;
+    if(exit=="home") goto home;
     return 0;
 }
+
