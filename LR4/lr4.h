@@ -3,62 +3,70 @@ using namespace std;
 struct Item{
   int data;
   Item *next;
-} *root, *cur;
-void Create(){
+} *root, *cur, *peek;
+void itemCreate(){
 	int count;
-	cout<<"Enter element number";
+	cout<<"Enter quantity: ";
 	cin>>count;
 	if(!count) return;
-	root= new Item;
+	root = new Item;
 	root->next=NULL;
 	cin>>root->data;
+	cur=root;
 	for(int i=1; i<count; i++){
 		cur->next=new Item;
 		cur=cur->next;
 		cur->next=NULL;
 		cin>>cur->data;
 	}
+	peek=cur;
 }
-void Destroy(){
+void itemDestroy(){
 	while(root){
 		cur=root;
 		root=cur->next;
 		delete cur;
 	}
+//	if (peek) delete peek;
 }
-void view(){
+void itemView(){
 	cur=root;
+//	cur=cur->next;
 	while(cur){
 		cout<<cur->data<<endl;
 		cur=cur->next;
 	}
 }
-void Add(){
+void itemAdd(int value){
 	cur=root;
 	while(cur->next) cur=cur->next;
 	cur->next=new Item;
 	cur->next=NULL;
-	cin>>cur->data;
+	cur->data=value;
+	peek=cur;
 }
-void Delete(){
-	int key;
-	cout<<"Key: ";
-	cin>>key;
+void itemDelete(int key){
 	cur=root;
 	while (cur->data!=key && cur) cur=cur->next;
 	if(!cur){
 		cout<<"Key not found!"<<endl;
 		return;
 	}
-	Item *temp=root;
-	while (temp->next!=cur) temp=temp->next;
-	temp->next=cur->next;
+	if (cur == root) {
+		Item *temp = root;
+		temp -> next = cur -> next;
+		root = temp -> next;
+		delete cur;
+		return;
+	}
+	Item *temp = root;
+	while (temp -> next != cur) {
+		temp = temp -> next;
+	}
+	temp -> next = cur -> next;
 	delete cur;
 }
-void Insert(){
-	int key;
-	cout<<"Key: ";
-	cin>>key;
+void itemInsert(int value, int key){
 	cur=root;
 	while (cur->data!=key && cur) cur=cur->next;
     if(!cur){
@@ -67,6 +75,6 @@ void Insert(){
 	}
 	Item *temp=new Item;
 	temp->next=cur->next;
-	cin>>temp->data;
+	temp->data=value;
 	cur->next=temp;
 }
