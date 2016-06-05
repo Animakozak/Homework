@@ -20,8 +20,8 @@ int main(){
             if(input.find("-l")!=string::npos){
                 cout<<"--Creating list--\n";
                 itemCreate();
-                cout<<"--List successfully created--\n You can view it with \"view\"\n";
-                while(input!="exit"){
+                cout<<"--List successfully created--\n You can view it with \"view\"\nEnter \"up\" to exit list menu\n Do not forget to destroy it!\n";
+                while(input!="up"){
                     cin>>input;
                     if(input=="view"){
                         cout<<"--Viewing--\n";
@@ -46,17 +46,51 @@ int main(){
                         cout<<"...Insertion complete\n";
                     }
                     else if(input=="delete"){
-                        cout<<"Enter key: ";
-                        int key;
-                        cin>>key;
-                        cout<<"-_-WARNING-_-\n You are about to delete "<<key<<" Are you sure?\n";
+                        cout<<"Last or specific (with a key)?";
                         cin>>input;
-                        if(input=="yes"){
-                            cout<<"Deleting "<<key<<"...";
-                            itemDelete(key);
-                            cout<<"Deleted\n";
+                        if(input=="key"){
+                          cout<<"Enter key: ";
+                          int key;
+                          cin>>key;
+                          cout<<"-_-WARNING-_-\n You are about to delete "<<key<<" Are you sure?\n";
+                          cin>>input;
+                          if(input=="yes"){
+                              cout<<"Deleting "<<key<<"...";
+                              itemDelete(key);
+                              cout<<"Deleted\n";
+                          }
+                          else cout<<"Canceled\n";
                         }
-                        else cout<<"Canceled\n";
+                        else if(input=="last"){
+                          cout<<"-_-WARNING-_-\n You are about to delete last element. Are you sure?\n";
+                          cin>>input;
+                          if(input=="yes"){
+                              cout<<"Deleting...";
+                              itemDelete();
+                              cout<<"Deleted\n";
+                          }
+                          else cout<<"Canceled\n";
+                        }
+                    }
+                    else if(input=="shift"){
+                      int key, K;
+                      cout<<"Enter key: ";
+                      cin>>key;
+                      cout<<"Enter K: ";
+                      cin>>K;
+                      cout<<"--Shifting "<<key<<" on "<<K;
+                      itemShift(key,K);
+                      cout<<"...complete--\n";
+                    }
+                    else if(input=="move"){
+                      int first, last;
+                      cout<<"--Moving--\n Enter first key: ";
+                      cin>>first;
+                      cout<<"Enter last key: ";
+                      cin>>last;
+                      cout<<"Moving:"<<endl;
+                      itemMove(first,last);
+                      cout<<"\nMoving complete\n";
                     }
                     else if(input=="destroy"){
                         cout<<"-_-WARNING-_-\nAre you sure?\n";
@@ -68,13 +102,73 @@ int main(){
                         }
                         else cout<<"Canceled\n";
                     }
+                    else if(input=="up"){
+                        cout<<"-_-WARNING-_-\nYou are about to leave list menu, current list will be destroyed. Are you sure?\n";
+                        cin>>input;
+                        if(input=="yes") {
+                            cout << "--Destroying root...";
+                            itemDestroy();
+                            cout << "data structure successfully destroyed\n";
+                            input="up";
+                            input="up";
+                        }
+                        else cout<<"Canceled\n";
+                    }
                 }
             }
             else if(input.find("-s")!=string::npos){
                 cout<<"--Creating stack--\n";
                 itemCreate();
-                cout<<"--Stack successfully created--\n You can view it with \"view\"\n";
+                cout<<"--Stack successfully created--\n You can view it with \"view\"\n\nEnter \"up\" to exit list menu\n Do not forget to destroy it!\n";
+                while(input!="up"){
+                    cin>>input;
+                    if(input=="view"){
+                    cout<<"--Viewing--\n";
+                    itemView();
+                    cout<<"--End--\n";
+                }
+                    else if(input=="add"){
+                        cout<<"--Adding--\n";
+                        int value;
+                        cin>>value;
+                        itemAdd(value);
+                        cout<<"--Value added--\n";
+                    }
+                    else if(input=="delete"){
+                      cout<<"-_-WARNING-_-\n You are about to delete last element. Are you sure?\n";
+                      cin>>input;
+                      if(input=="yes"){
+                          cout<<"Deleting...";
+                          itemDelete();
+                          cout<<"Deleted\n";
+                      }
+                      else cout<<"Canceled\n";
+                    }
+                    else if(input=="destroy"){
+                        cout<<"-_-WARNING-_-\nAre you sure?\n";
+                        cin>>input;
+                        if(input=="yes") {
+                            cout << "--Destroying root...";
+                            itemDestroy();
+                            cout << "data structure successfully destroyed\n";
+                        }
+                        else cout<<"Canceled\n";
+                    }
+                    else if(input=="up"){
+                        cout<<"-_-WARNING-_-\nYou are about to leave list menu, current list will be destroyed. Are you sure?\n";
+                        cin>>input;
+                        if(input=="yes") {
+                            cout << "--Destroying root...";
+                            itemDestroy();
+                            cout << "data structure successfully destroyed\n";
+                            input="up";
+                            input="up";
+                        }
+                        else cout<<"Canceled\n";
+                    }
+                }
             }
+
             else if(input.find("-q")!=string::npos){
 
             }

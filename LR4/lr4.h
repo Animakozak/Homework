@@ -3,7 +3,7 @@ using namespace std;
 struct Item{
   int data;
   Item *next;
-} *root, *cur, *peek;
+} *root, *cur, *peek, *root2;
 void itemCreate(){
 	int count;
 	cout<<"Enter quantity: ";
@@ -66,6 +66,24 @@ void itemDelete(int key){
 	temp -> next = cur -> next;
 	delete cur;
 }
+void itemDelete(){
+	// cur=root;
+	// while (cur) cur=cur->next;
+	if (peek == root) {
+		Item *temp = root;
+		temp -> next = peek -> next;
+		root = temp -> next;
+		delete peek;
+		return;
+	}
+	Item *temp = root;
+	while (temp -> next != peek) {
+		temp = temp -> next;
+	}
+	temp -> next = peek -> next;
+	delete peek;
+    peek=temp;
+}
 void itemInsert(int value, int key){
 	cur=root;
 	while (cur->data!=key && cur) cur=cur->next;
@@ -77,4 +95,74 @@ void itemInsert(int value, int key){
 	temp->next=cur->next;
 	temp->data=value;
 	cur->next=temp;
+}
+void itemShift(int key, int K) {
+    cur = root;
+    int i = 1;
+    while (cur -> data != key && cur) {
+        cur = cur -> next;
+        i++;
+    }
+    if (!cur) {
+      cout<<"Key not found!"<<endl;
+        return;
+    }
+    Item *temp = cur;
+    if (cur == root) {
+        temp = cur;
+        cur = cur -> next;
+        root = cur;
+    }
+    else {
+        temp = cur;
+        cur = root;
+        int j = 1;
+        while (j < i-1) {
+            cur = cur -> next;
+            j++;
+        }
+        cur -> next = cur -> next -> next;
+    }
+    i = 1;
+    cur = root;
+    K--;
+    while (i < K && cur) {
+        cur = cur -> next;
+        i++;
+    }
+    if (!cur) {
+        return;
+    }
+    Item *temp2 = cur;
+    temp2 = temp2 -> next;
+    cur -> next = temp;
+    temp -> next = temp2;
+}
+void itemMove(int first, int last){
+  cur = root;
+   int i = 1;
+   while (cur -> next -> data != first) {
+       cur = cur -> next;
+       i++;
+   }
+   Item *temp = cur;
+   cur = cur -> next;
+   temp -> next = NULL;
+   root2 = cur;
+   while (cur -> data != last) {
+       cur = cur -> next;
+   }
+   Item *temp2;
+   temp2 = cur;
+   temp2 = temp2 -> next;
+   cur -> next = NULL;
+   temp -> next = temp2;
+
+   cur = root2;
+   cout << "New list: ";
+   while (cur) {
+       cout << cur -> data << " ";
+       cur = cur -> next;
+   }
+   cout << endl;
 }
