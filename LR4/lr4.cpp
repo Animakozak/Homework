@@ -13,7 +13,7 @@ int main(){
         }
         else if(input=="view"){
             cout<<"--Viewing--\n";
-            itemView();
+            itemView(root);
             cout<<"--End--\n";
         }
         else if(input.find("create")!=string::npos){
@@ -25,7 +25,7 @@ int main(){
                     cin>>input;
                     if(input=="view"){
                         cout<<"--Viewing--\n";
-                        itemView();
+                        itemView(root);
                         cout<<"--End--\n";
                     }
                     else if(input=="add"){
@@ -41,7 +41,7 @@ int main(){
                         cin>>key;
                         cout<<"Enter value: ";
                         cin>>value;
-                        cout<<"Insering "<<value<<" at "<<key;
+                        cout<<"Inserting "<<value<<" at "<<key;
                         itemInsert(value, key);
                         cout<<"...Insertion complete\n";
                     }
@@ -92,12 +92,26 @@ int main(){
                       itemMove(first,last);
                       cout<<"\nMoving complete\n";
                     }
+                    else if(input=="split"){
+                        cout<<"--Splitting--\nSplitting list into even and odd lists\n";
+                        itemSplit();
+                        cout<<"root\n";
+                        itemView(root);
+                        cout<<"root2\n";
+                        itemView(root2);
+                        cout<<"--Splitted--\n";
+                    }
+                    else if(input=="merge"){
+                        cout<<"--Merging--\nPlease enter new data\n";
+                        itemMerge();
+                        cout<<"--Merged--\n";
+                    }
                     else if(input=="destroy"){
                         cout<<"-_-WARNING-_-\nAre you sure?\n";
                         cin>>input;
                         if(input=="yes") {
                             cout << "--Destroying root...";
-                            itemDestroy();
+                            itemDestroy(root);
                             cout << "data structure successfully destroyed\n";
                         }
                         else cout<<"Canceled\n";
@@ -107,9 +121,11 @@ int main(){
                         cin>>input;
                         if(input=="yes") {
                             cout << "--Destroying root...";
-                            itemDestroy();
+                            itemDestroy(root);
                             cout << "data structure successfully destroyed\n";
-                            input="up";
+                            cout<<"--Destroying root2...";
+                            itemDestroy(root2);
+                            cout << "data structure successfully destroyed\n";
                             input="up";
                         }
                         else cout<<"Canceled\n";
@@ -124,7 +140,7 @@ int main(){
                     cin>>input;
                     if(input=="view"){
                     cout<<"--Viewing--\n";
-                    itemView();
+                    itemView(root);
                     cout<<"--End--\n";
                 }
                     else if(input=="add"){
@@ -144,12 +160,37 @@ int main(){
                       }
                       else cout<<"Canceled\n";
                     }
+                    else if(input=="move"){
+                        int count;
+                        cout<<"--Moving--\n";
+                        cout<<"Enter quantity of elements to move: ";
+                        cin>>count;
+                        itemMove(count);
+                        cout<<"Elements moved to new stack:\n";
+                        itemView(root);
+                        itemView(root2);
+                        cout<<"--Moved--\n";
+                    }
+                    else if(input=="split"){
+                        cout<<"--Splitting--\nSplitting stack into even and odd stacks\n";
+                        itemSplit();
+                        cout<<"root\n";
+                        itemView(root);
+                        cout<<"root2\n";
+                        itemView(root2);
+                        cout<<"--Splitted--\n";
+                    }
+                    else if(input=="merge"){
+                        cout<<"--Merging--\nPlease enter new data\n";
+                        itemMerge();
+                        cout<<"--Merged--\n";
+                    }
                     else if(input=="destroy"){
                         cout<<"-_-WARNING-_-\nAre you sure?\n";
                         cin>>input;
                         if(input=="yes") {
                             cout << "--Destroying root...";
-                            itemDestroy();
+                            itemDestroy(root);
                             cout << "data structure successfully destroyed\n";
                         }
                         else cout<<"Canceled\n";
@@ -159,16 +200,17 @@ int main(){
                         cin>>input;
                         if(input=="yes") {
                             cout << "--Destroying root...";
-                            itemDestroy();
+                            itemDestroy(root);
                             cout << "data structure successfully destroyed\n";
-                            input="up";
+                            cout<<"--Destroying root2...";
+                            itemDestroy(root2);
+                            cout << "data structure successfully destroyed\n";
                             input="up";
                         }
                         else cout<<"Canceled\n";
                     }
                 }
             }
-
             else if(input.find("-q")!=string::npos){
 
             }
@@ -184,7 +226,7 @@ int main(){
             cin>>input;
             if(input=="yes") {
                 cout << "--Destroying root...";
-                itemDestroy();
+                itemDestroy(root);
                 cout << "data structure successfully destroyed\n";
             }
             else cout<<"Canceled\n";

@@ -4,6 +4,15 @@ struct Item{
   int data;
   Item *next;
 } *root, *cur, *peek, *root2;
+int itemCount (Item) {
+	int count = 0;
+	cur = root;
+	while (cur) {
+		count++;
+		cur = cur -> next;
+	}
+	return count;
+}
 void itemCreate(){
 	int count;
 	cout<<"Enter quantity: ";
@@ -21,7 +30,7 @@ void itemCreate(){
 	}
 	peek=cur;
 }
-void itemDestroy(){
+void itemDestroy(Item *root){
 	while(root){
 		cur=root;
 		root=cur->next;
@@ -29,9 +38,8 @@ void itemDestroy(){
 	}
 //	if (peek) delete peek;
 }
-void itemView(){
+void itemView(Item *root){
 	cur=root;
-//	cur=cur->next;
 	while(cur){
 		cout<<cur->data<<endl;
 		cur=cur->next;
@@ -165,4 +173,111 @@ void itemMove(int first, int last){
        cur = cur -> next;
    }
    cout << endl;
+}
+void itemMove (int countOfElements) {
+	Item a;
+	countOfElements = itemCount(a) - countOfElements;
+	cout << "countOfElements = " << countOfElements << endl;
+	cur = root;
+	int i = 1;
+	while (i < countOfElements) {
+		cur = cur -> next;
+		i++;
+	}
+	Item *t = cur;
+	cur = cur -> next;
+	root2 = cur;
+	root2 -> next = cur -> next;
+	t -> next = NULL;
+	cur = root2;
+	cout << "New stack: ";
+	while (cur) {
+		cout << cur -> data << " ";
+		cur = cur -> next;
+	}
+	cout << endl;
+}
+void itemSplit () {
+	cout << "Before: \n";
+	itemView(root);
+	root2 = root;
+	Item *cur1 = root;
+	Item *cur2 = root;
+	cur = root;
+	if (root -> data % 2 == 0) {
+		while (cur -> data % 2 == 0 && cur->next) {
+			cur1 = cur;
+			cur = cur -> next;
+		}
+		if ((cur -> data) % 2 == 0) {
+			cout << "Data structure has only even numbers!" << endl;
+			return;
+		}
+		root2 = cur;
+		cur2 = root2;
+	}
+	else {
+		while (cur -> data % 2 != 0 && cur->next) {
+			cur2 = cur;
+			cur = cur -> next;
+		}
+		if (cur -> data % 2 != 0) {
+			cout << "Data structure has only odd numbers!" << endl;
+			return;
+		}
+		root2 = cur;
+		cur1 = root2;
+	}
+
+	cur = cur -> next;
+	while (cur) {
+		if (cur->data % 2 == 0) {
+			cur1 -> next = cur;
+			cur1 = cur;
+		}
+		else {
+			cur2 -> next = cur;
+			cur2 = cur;
+		}
+		cur = cur -> next;
+	}
+	cur1 -> next = NULL;
+	cur2 -> next = NULL;
+}
+
+void itemMerge () {
+	cur = root2;
+	cout << "New data structure: ";
+	while (cur) {
+		cout << cur -> data << '\t';
+		cur = cur -> next;
+	}
+	cout << endl;
+	cout << "Old ";
+	itemView(root);
+	cout << endl;
+
+	Item *temp1 = root;
+	Item *temp2 = root2;
+	Item *cur1 = root;
+	Item *cur2 = root2;
+
+	while (cur1->next) {
+		temp1 = cur1 -> next;
+		while (cur1 &&cur2 && (cur2->data > cur1->data && cur2->data < cur1->next->data)) {
+			temp2 = cur2;
+			cur2 = cur2 -> next;
+			cur1 -> next = temp2;
+			cur1 = temp2;
+			cur1 -> next = temp1;
+		}
+		cur1 = temp1;
+	}
+
+	while (cur2) {
+		cur1 -> next = cur2;
+		cur1 = cur2;
+		cur2 = cur2 -> next;
+	}
+	cur1 -> next = NULL;
 }
