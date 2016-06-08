@@ -32,7 +32,7 @@ int main(){
                         cout<<"--Adding--\n";
                         int value;
                         cin>>value;
-                        itemAdd(value);
+                        itemAdd(value, root);
                         cout<<"--Value added--\n";
                     }
                     else if(input=="insert"){
@@ -147,7 +147,7 @@ int main(){
                         cout<<"--Adding--\n";
                         int value;
                         cin>>value;
-                        itemAdd(value);
+                        itemAdd(value, root);
                         cout<<"--Value added--\n";
                     }
                     else if(input=="delete"){
