@@ -632,7 +632,7 @@ void itemSplit () {
 	cur2 -> next = NULL;
 }
 void itemBiSplit(){
-	ifstream fin ("d//laba4_2.txt");
+	ifstream fin ("d://laba4_2.txt");
 	if (!fin) cout << "File not opened!" << endl;
 	int x;
 	bool z1 = true, z2 = true;
@@ -678,9 +678,9 @@ void itemBiSplit(){
 		}
 	}
 	fin.close();
-	cout << "List/queue №1: ";
+	cout << "List/queue #1: ";
 	itemView(biroot);
-	cout << "\nList/queue №2: ";
+	cout << "\nList/queue #2: ";
 	itemView(biroot2);
 }
 void itemMerge () {
