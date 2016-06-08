@@ -441,7 +441,26 @@ int main(){
                 }
             }
             else if(input.find("-t")!=string::npos){                                                                    //Tree
-
+                int choice;
+                cout<<"--Binary or Ternary?--\n";
+                cin>>choice;
+                switch (choice){
+                    case 2:
+                        break;
+                    case 3:
+                        int value, level;
+                        cout<<"Enter root value (0): ";
+                        cin>>value;
+                        cout<<"Enter depth/level: ";
+                        cin>>level;
+                        treeTerCreate(rootree3,value,level);
+                        cout<<"Tree builded: ";
+                        treeTerView(rootree3);
+                        cout<<endl;
+                        itemTerCreate(0);
+                        printPreOrderPath(rootree3,0,0,biroot);
+                        break;
+                }
             }
             else{
                 cout<<"Use flag to specify the query\n";

@@ -5,11 +5,23 @@ struct Item{
   int data;
   Item *next;
 } *root, *cur, *peek, *root2;
+
 struct BiItem{
 	int data;
 	BiItem *prev;
 	BiItem *next;
 }*biroot, *biroot2, *cur1, *cur2, *cur3, *cur4, *bipeek;
+
+struct node{
+	int data;
+	node *left, *right;
+}*rootree;
+
+struct nodeTer{
+	int data;
+	nodeTer *mid, *right, *left;
+}*rootree3, *curt=rootree3;
+
 int itemCount (Item) {
 	int count = 0;
 	cur = root;
@@ -19,6 +31,7 @@ int itemCount (Item) {
 	}
 	return count;
 }
+
 int itemCount (BiItem) {
 	int count = 0;
 	cur1 = biroot;
@@ -28,6 +41,7 @@ int itemCount (BiItem) {
 	}
 	return count;
 }
+
 void itemCreate(){
 	int count;
 	cout<<"Enter quantity: ";
@@ -45,6 +59,7 @@ void itemCreate(){
 	}
 	peek=cur;
 }
+
 void BiItemCreate(){
 		int count;
 		cout << "Quantity: ";
@@ -65,7 +80,54 @@ void BiItemCreate(){
 			cur2 = cur1;
 		}
 		bipeek = cur1;
+}
+
+void itemTerCreate(int rootValue){
+//	int count=level;
+//	if(!count) return;
+	biroot = new BiItem;
+	biroot->data = rootValue;
+	biroot->next=NULL;
+	biroot->prev=NULL;
+	cur1 = biroot;
+	cur2 = biroot;
+//	for(int i=1; i<count; i++){
+//		cur1->next=new BiItem;
+//		cur1=cur1->next;
+//		cur1 -> next = NULL;
+//		cur1 -> prev = cur2;
+//		cur2 = cur1;
+//	}
+	bipeek=cur1;
+}
+
+void treeBiCreate(node *&rootree, int value){
+	if (!rootree) {
+		rootree = new node;
+		rootree -> data = value;
+		rootree -> left = NULL;
+		rootree -> right = NULL;
+		return;
 	}
+	if (rootree->data > value) {
+		treeBiCreate(rootree->left, value);
+	}
+	else treeBiCreate(rootree->right, value);
+};
+
+nodeTer * treeTerCreate(nodeTer *&rootree3, int value, int level){
+	if (level != 0) {
+		rootree3=new nodeTer;
+		rootree3->data = value;
+		rootree3->left=rootree3->right=rootree3->mid=NULL;
+		rootree3->left = treeTerCreate(rootree3->left, -1, level-1);
+		rootree3->mid = treeTerCreate(rootree3->mid, 0, level-1);
+		rootree3->right= treeTerCreate(rootree3->right, 1, level-1);
+		return rootree3;
+	}
+	else return NULL;
+}
+
 void itemDestroy(Item *root){
 	while(root){
 		cur=root;
@@ -73,6 +135,7 @@ void itemDestroy(Item *root){
 		delete cur;
 	}
 }
+
 void itemDestroy(BiItem *root){
 	while(root){
 		cur1=root;
@@ -80,6 +143,7 @@ void itemDestroy(BiItem *root){
 		delete cur1;
 	}
 }
+
 void itemView(Item *root){
 	cur=root;
 	while(cur){
@@ -87,6 +151,7 @@ void itemView(Item *root){
 		cur=cur->next;
 	}
 }
+
 void itemView(BiItem *root){
 	cur1=root;
 	while(cur1){
@@ -94,6 +159,7 @@ void itemView(BiItem *root){
 		cur1=cur1->next;
 	}
 }
+
 void itemRview(BiItem *root) {
 	cur1 = root;
 	if (!cur1) return;
@@ -106,19 +172,32 @@ void itemRview(BiItem *root) {
 	}
 	cout << endl;
 }
-void itemAdd(int value, Item *root){
+
+void treeTerView(nodeTer *ro) {
+	if(!rootree3){
+		cout<<"No node\n";
+		return;
+	}
+	cout << ro->data << " ";
+	if (ro->left) treeTerView(ro->left);
+	if (ro->mid) treeTerView(ro->mid);
+	if (ro->right) treeTerView(ro->right);
+}
+
+void itemAdd(int value, Item *root) {
 //	cur=root;
 //	while(cur->next) cur=cur->next;
-	cur=peek;
-	cur->next=new Item;
-	cur=cur->next;
-	cur->next=NULL;
-	cur->data=value;
-	peek=cur;
+	cur = peek;
+	cur->next = new Item;
+	cur = cur->next;
+	cur->next = NULL;
+	cur->data = value;
+	peek = cur;
 }
+
 void itemAdd(int value, BiItem *root){
-//	cur1=root;
-//	while(cur->next) cur=cur->next;
+	cur1=root;
+	while(cur1->next) cur1=cur1->next;
 	cur1=bipeek;
 	cur2 = cur1;
 	cur1 -> next = new BiItem;
@@ -128,6 +207,7 @@ void itemAdd(int value, BiItem *root){
 	cur1 -> prev = cur2;
 	bipeek=cur1;
 }
+
 void itemAdd(int value, int key, BiItem *root){
 	cur1 = root;
 	if (key == 0) {
@@ -159,6 +239,7 @@ void itemAdd(int value, int key, BiItem *root){
 	cur1 = cur1 -> next;
 	cur1 -> prev = cur2;
 }
+
 void itemAddUnique(int key, BiItem *root) {
 	cur1 = root;
 	bool z = true;
@@ -191,6 +272,7 @@ void itemAddUnique(int key, BiItem *root) {
 		itemAdd(0,key,root);
 	}
 }
+
 void itemDuplicate(BiItem *root) {
 	int a;
 	cout << "Enter 1 to duplicate first and last BEFORE existing" << endl;
@@ -222,6 +304,7 @@ void itemDuplicate(BiItem *root) {
 		cout << "Wrong choice!" << endl;
 	}
 }
+
 void itemDelete(int key){
 	cur=root;
 	while (cur->data!=key && cur) cur=cur->next;
@@ -243,6 +326,7 @@ void itemDelete(int key){
 	temp -> next = cur -> next;
 	delete cur;
 }
+
 void itemDelete(){
 	if (peek == root) {
 		Item *temp = root;
@@ -259,6 +343,7 @@ void itemDelete(){
 	delete peek;
     peek=temp;
 }
+
 void itemDelete(int key, BiItem *root){
 	cur1 = root;
 	while (cur1 -> data != key && cur1) {
@@ -287,6 +372,7 @@ void itemDelete(int key, BiItem *root){
 	cur2 -> prev = cur1 -> prev;
 	delete cur1;
 }
+
 void itemDelete(BiItem *root){
 	cur1 = root;
 	cur2 = cur1 -> next;
@@ -294,6 +380,7 @@ void itemDelete(BiItem *root){
 	root = cur2;
 	delete cur1;
 }
+
 void itemInsert(int value, int key){
 	cur=root;
 	while (cur->data!=key && cur) cur=cur->next;
@@ -306,6 +393,7 @@ void itemInsert(int value, int key){
 	temp->data=value;
 	cur->next=temp;
 }
+
 void itemInsert (int P1, int P2, int P) {
 	cur1 = biroot;
 	int i = 1;
@@ -392,6 +480,7 @@ void itemInsert (int P1, int P2, int P) {
 	cout << "\nList/queue №2: ";
 	itemView(biroot2);
 }
+
 void itemShift(int key, int offset) {
     cur = root;
     int i = 1;
@@ -434,6 +523,7 @@ void itemShift(int key, int offset) {
     cur -> next = temp;
     temp -> next = temp2;
 }
+
 void itemShift (int key, int offset, BiItem *root) {
 	cur1 = root;
 	while (cur1 -> data != key && cur1) {
@@ -506,6 +596,7 @@ void itemShift (int key, int offset, BiItem *root) {
 	}
 	itemView(root);
 }
+
 void itemMove(int first, int last){
   cur = root;
    int i = 1;
@@ -534,6 +625,7 @@ void itemMove(int first, int last){
    }
    cout << endl;
 }
+
 void itemMove (int countOfElements) {
 	Item a;
 	countOfElements = itemCount(a) - countOfElements;
@@ -557,6 +649,7 @@ void itemMove (int countOfElements) {
 	}
 	cout << endl;
 }
+
 void itemBiMove() {
 	cur1 = biroot;
 	cur3 = biroot2;
@@ -584,6 +677,7 @@ void itemBiMove() {
 	cout << "\nList/queue №2: ";
 	itemView(biroot2);
 }
+
 void itemSplit () {
 	cout << "Before: \n";
 	itemView(root);
@@ -631,6 +725,7 @@ void itemSplit () {
 	cur1 -> next = NULL;
 	cur2 -> next = NULL;
 }
+
 void itemBiSplit(){
 	ifstream fin ("d://laba4_2.txt");
 	if (!fin) cout << "File not opened!" << endl;
@@ -638,7 +733,7 @@ void itemBiSplit(){
 	bool z1 = true, z2 = true;
 	while (!fin.eof()) {
 		fin >> x;
-		if (x % 2 != 0) {
+		if (x % 2 != 4) {
 			if (z1) {
 				biroot = new BiItem;
 				biroot -> data = x;
@@ -683,6 +778,7 @@ void itemBiSplit(){
 	cout << "\nList/queue #2: ";
 	itemView(biroot2);
 }
+
 void itemMerge () {
 	cur = root2;
 	cout << "New data structure: ";
@@ -719,6 +815,7 @@ void itemMerge () {
 	}
 	cur1 -> next = NULL;
 }
+
 void itemBiMerge() {
 	cout << "List/queue №1: ";
 	itemView(biroot);
@@ -755,3 +852,65 @@ void itemBiMerge() {
 	cout << "List/queue: ";
 	itemView(biroot);
 }
+
+void treeRead () {
+	ifstream fin ("d://laba4_3.txt");
+	if (!fin) {
+		cout << "Error!" << endl;
+		return;
+	}
+	int x;
+	while (! fin.eof()) {
+		fin >> x;
+		treeBiCreate(rootree, x);
+	}
+	fin.close();
+}
+
+void pre_order (node *ro) {
+	cout << ro->data << " ";
+	if (ro->left) pre_order(ro->left);
+	if (ro->right) pre_order(ro->right);
+}
+
+void in_order (node *ro) {
+	if (ro -> left) in_order(ro->left);
+	cout << ro->data << " ";
+	if (ro->right) in_order(ro->right);
+}
+
+void post_order (node *ro) {
+	if (ro -> left) in_order(ro->left);
+	if (ro->right) in_order(ro->right);
+	cout << ro->data << " ";
+}
+
+void treeBiDestroy(node *ro) {
+	if (ro -> left) {
+		treeBiDestroy(ro->left);
+	}
+	if (ro -> right) {
+		treeBiDestroy(ro->right);
+	}
+	delete ro;
+}
+void printPreOrderPath(nodeTer *curt, int sumCurrent, int sumCheck, BiItem *root){
+	if (curt==NULL) return;
+	sumCurrent+=curt->data;
+	itemAdd(curt->data, root);
+	if (curt->right!=NULL && curt->left!=NULL && curt->mid!=NULL){
+		if (curt->right!=NULL) printPreOrderPath(curt->left, sumCurrent, sumCheck, root);
+		if (curt->mid!=NULL) printPreOrderPath(curt->mid, sumCurrent, sumCheck, root);
+		if (curt->left!=NULL) printPreOrderPath(curt->right, sumCurrent, sumCheck, root);
+	}
+	if (sumCurrent<=sumCheck){
+		cout<<endl;
+		itemView(root);
+		cout<<endl;
+		itemDestroy(root);
+	}
+	else{
+		itemDestroy(root);
+	}
+}
+
