@@ -123,9 +123,11 @@ int main(){
                             cout << "--Destroying root...";
                             itemDestroy(root);
                             cout << "data structure successfully destroyed\n";
-                            cout<<"--Destroying root2...";
-                            itemDestroy(root2);
-                            cout << "data structure successfully destroyed\n";
+                            if(root2!=NULL){
+                                cout<<"--Destroying root2...";
+                                itemDestroy(root2);
+                                cout << "data structure successfully destroyed\n";
+                            }
                             input="up";
                         }
                         else cout<<"Canceled\n";
@@ -202,9 +204,11 @@ int main(){
                             cout << "--Destroying root...";
                             itemDestroy(root);
                             cout << "data structure successfully destroyed\n";
-                            cout<<"--Destroying root2...";
-                            itemDestroy(root2);
-                            cout << "data structure successfully destroyed\n";
+                            if(root2!=NULL){
+                                cout<<"--Destroying root2...";
+                                itemDestroy(root2);
+                                cout << "data structure successfully destroyed\n";
+                            }
                             input="up";
                         }
                         else cout<<"Canceled\n";
@@ -212,12 +216,51 @@ int main(){
                 }
             }
             else if(input.find("-bil")!=string::npos){
-                if(input.find(" 2")!=string::npos){                                                                      //BiListx2
+                if(input.find("2")!=string::npos){                                                                      //BiListx2
+                    itemBiSplit();
                     while(input!="up"){
                         cin>>input;
                         if(input=="view"){
                             cout<<"--viewing--\n";
+                            itemView(biroot);
+                            cout<<"---------\n";
+                            itemView(biroot2);
                             cout<<"--end--\n";
+                        }
+                        else if(input=="insert"){
+                            int P1, P2, P;
+                            cout<<"--Inserting--\nEnter the beginning of the sequence: ";
+                            cin>>P1;
+                            cout<<"Enter the end of the sequence: ";
+                            cin>>P2;
+                            cout<<"Enter value to insert after: ";
+                            cin>>P;
+                            itemInsert(P1,P2,P);
+                            cout<<"--Inserted--\n";
+                        }
+                        else if(input=="move"){
+                            cout<<"--Moving sequence (which ends with '0') from the list--\n";
+                            itemBiMove();
+                            cout<<"--Moved--\n";
+                        }
+                        else if(input=="merge"){
+                            cout<<"--Merging--\n";
+                            itemBiMerge();
+                            cout<<"--Merged--\n";
+                        }
+                        else if(input=="up"){
+                            cout<<"-_-WARNING-_-\nYou are about to leave list menu, current list will be destroyed. Are you sure?\n";
+                            cin>>input;
+                            if(input=="yes") {
+                                cout << "--Destroying root...";
+                                itemDestroy(biroot);
+                                cout << "data structure successfully destroyed\n";
+                                cout<<"--Destroying root2...";
+                                itemDestroy(biroot2);
+                                cout << "data structure successfully destroyed\n";
+                                input="up";
+                            }
+                            else cout<<"Canceled\n";
                         }
                     }
                 }
@@ -309,7 +352,37 @@ int main(){
             }
             else if(input.find("-q")!=string::npos){
                 if(input.find(" 2")!=string::npos){                                                                      //Queuex2
-
+                    itemBiSplit();
+                    while(input!="up"){
+                        if(input=="view"){
+                            cout<<"--viewing--\n";
+                            itemView(biroot);
+                            cout<<"---------\n";
+                            itemView(biroot2);
+                            cout<<"--end--\n";
+                        }
+                        else if(input=="move"){
+                            cout<<"--Moving sequence (which ends with '0') from the queue--\n";
+                            itemBiMove();
+                            cout<<"--Moved--\n";
+                        }
+                        else if(input=="merge"){
+                            cout<<"--Merging--\n";
+                            itemBiMerge();
+                            cout<<"--Merged--\n";
+                        }
+                        else if(input=="up"){
+                            cout<<"-_-WARNING-_-\nYou are about to leave list menu, current list will be destroyed. Are you sure?\n";
+                            cin>>input;
+                            if(input=="yes") {
+                                cout << "--Destroying biroot...";
+                                itemDestroy(biroot);
+                                cout << "data structure successfully destroyed\n";
+                                input="up";
+                            }
+                            else cout<<"Canceled\n";
+                        }
+                    }
                 }
                 else{                                                                                                   //Queue
                     while(input!="up"){
