@@ -17,7 +17,7 @@ int main(){
             cout<<"--End--\n";
         }
         else if(input.find("create")!=string::npos){
-            if(input.find("-l")!=string::npos){
+            if(input.find("-l")!=string::npos){                                                                         //List
                 cout<<"--Creating list--\n";
                 itemCreate();
                 cout<<"--List successfully created--\n You can view it with \"view\"\nEnter \"up\" to exit list menu\n Do not forget to destroy it!\n";
@@ -132,7 +132,7 @@ int main(){
                     }
                 }
             }
-            else if(input.find("-s")!=string::npos){
+            else if(input.find("-s")!=string::npos){                                                                    //Stack
                 cout<<"--Creating stack--\n";
                 itemCreate();
                 cout<<"--Stack successfully created--\n You can view it with \"view\"\n\nEnter \"up\" to exit list menu\n Do not forget to destroy it!\n";
@@ -211,10 +211,163 @@ int main(){
                     }
                 }
             }
-            else if(input.find("-q")!=string::npos){
-
+            else if(input.find("-bil")!=string::npos){
+                if(input.find(" 2")!=string::npos){                                                                      //BiListx2
+                    while(input!="up"){
+                        cin>>input;
+                        if(input=="view"){
+                            cout<<"--viewing--\n";
+                            cout<<"--end--\n";
+                        }
+                    }
+                }
+                else{                                                                                                   //BiList
+                    BiItemCreate();
+                    while(input!="up"){
+                        cin>>input;
+                        if(input=="view"){
+                            cout<<"--viewing--\n";
+                            itemView(biroot);
+                            cout<<"--end--\n";
+                        }
+                        else if(input=="rview"){
+                            cout<<"--Reverse viewing--\n";
+                            itemRview(biroot);
+                            cout<<"--End--\n";
+                        }
+                        else if(input=="add"){
+                            int x;
+                            cin>>x;
+                            cout<<"--Adding to the peek--\n";
+                            itemAdd(x,biroot);
+                            cout<<"--Added--\n";
+                        }
+                        else if(input=="mid-add"){
+                            int x, y;
+                            cout<<"--Adding inside the list--\n Enter value: ";
+                            cin>>x;
+                            cout<<"Enter position: ";
+                            cin>>y;
+                            itemAdd(x,y,biroot);
+                            cout<<"--Added--\n";
+                        }
+                        else if(input=="delete"){
+                            int x;
+                            cout<<"--deleting--\nEnter element to delete: ";
+                            cin>>x;
+                            itemDelete(x,biroot);
+                            cout<<"--deleted--\n";
+                        }
+                        else if(input=="unique"){
+                            int x;
+                            cout<<"--Inserting unique element--\nEnter value: ";
+                            cin>>x;
+                            itemAddUnique(x,biroot);
+                            cout<<"--Inserted--\n";
+                        }
+                        else if(input=="duplicate"){
+                            cout<<"--Duplicating--\n";
+                            itemDuplicate(biroot);
+                            cout<<"--Duplicated--\n";
+                        }
+                        else if(input=="shift"){
+                            int k, x, c;
+                            cout<<"--Shifting--\nEnter value: ";
+                            cin>>x;
+                            cout<<"Enter offset: ";
+                            cin>>k;
+                            cout<<"1 - to beginning\n2 - ending\n";
+                            cin>>c;
+                            if(c==1)itemShift(x,-k,biroot);
+                            else if(c==2)itemShift(x,k,biroot);
+                            else cout<<"Canceled\n";
+                            cout<<"--End--\n";
+                        }
+                        else if(input=="destroy"){
+                            cout<<"-_-WARNING-_-\nAre you sure?\n";
+                            cin>>input;
+                            if(input=="yes") {
+                                cout << "--Destroying root...";
+                                itemDestroy(biroot);
+                                cout << "data structure successfully destroyed\n";
+                            }
+                            else cout<<"Canceled\n";
+                        }
+                        else if(input=="up"){
+                            cout<<"-_-WARNING-_-\nYou are about to leave list menu, current list will be destroyed. Are you sure?\n";
+                            cin>>input;
+                            if(input=="yes") {
+                                cout << "--Destroying biroot...";
+                                itemDestroy(biroot);
+                                cout << "data structure successfully destroyed\n";
+                                input="up";
+                            }
+                            else cout<<"Canceled\n";
+                        }
+                    }
+                }
             }
-            else if(input.find("-t")!=string::npos){
+            else if(input.find("-q")!=string::npos){
+                if(input.find(" 2")!=string::npos){                                                                      //Queuex2
+
+                }
+                else{                                                                                                   //Queue
+                    while(input!="up"){
+                        cin>>input;
+                        if(input=="view"){
+                            cout<<"--viewing--\n";
+                            itemView(biroot);
+                            cout<<"--end--\n";
+                        }
+                        else if(input=="rview"){
+                            cout<<"--Reverse viewing--\n";
+                            itemRview(biroot);
+                            cout<<"--End--\n";
+                        }
+                        else if(input=="add"){
+                            int x;
+                            cin>>x;
+                            cout<<"--Adding to the peek--\n";
+                            itemAdd(x,biroot);
+                            cout<<"--Added--\n";
+                        }
+                        else if(input=="delete"){
+                            cout<<"--First element will be deleted--\n";
+                            itemDelete(biroot);
+                            cout<<"--Deleted--";
+                        }
+                        else if(input=="unique"){
+                            int x;
+                            cout<<"--Inserting unique element--\nEnter value: ";
+                            cin>>x;
+                            itemAddUnique(x,biroot);
+                            cout<<"--Inserted--\n";
+                        }
+                        else if(input=="destroy"){
+                            cout<<"-_-WARNING-_-\nAre you sure?\n";
+                            cin>>input;
+                            if(input=="yes") {
+                                cout << "--Destroying root...";
+                                itemDestroy(biroot);
+                                cout << "data structure successfully destroyed\n";
+                            }
+                            else cout<<"Canceled\n";
+                        }
+                        else if(input=="up"){
+                            cout<<"-_-WARNING-_-\nYou are about to leave list menu, current list will be destroyed. Are you sure?\n";
+                            cin>>input;
+                            if(input=="yes") {
+                                cout << "--Destroying biroot...";
+                                itemDestroy(biroot);
+                                cout << "data structure successfully destroyed\n";
+                                input="up";
+                            }
+                            else cout<<"Canceled\n";
+                        }
+                    }
+                }
+            }
+            else if(input.find("-t")!=string::npos){                                                                    //Tree
 
             }
             else{

@@ -46,26 +46,26 @@ void itemCreate(){
 	peek=cur;
 }
 void BiItemCreate(){
-	int count;
-	cout<<"Enter quantity: ";
-	cin>>count;
-	if(!count) return;
-	biroot = new BiItem;
-	biroot->next=NULL;
-	biroot->prev=NULL;
-	cin>>biroot->data;
-	cur1 = biroot;
-	cur2 = biroot;
-	for(int i=1; i<count; i++){
-		cur1->next=new BiItem;
-		cur1=cur1->next;
-		cin >> cur1 -> data;
-		cur1 -> next = NULL;
-		cur1 -> prev = cur2;
-		cur2 = cur1;
+		int count;
+		cout << "Quantity: ";
+		cin >> count;
+		if (count <= 0) return;
+		biroot = new BiItem;
+		cin >> biroot -> data;
+		biroot -> next = NULL;
+		biroot -> prev = NULL;
+		cur1 = biroot;
+		cur2 = biroot;
+		for (int i = 2; i <= count; i++) {
+			cur1 -> next = new BiItem;
+			cur1 = cur1 -> next;
+			cin >> cur1 -> data;
+			cur1 -> next = NULL;
+			cur1 -> prev = cur2;
+			cur2 = cur1;
+		}
+		bipeek = cur1;
 	}
-	bipeek=cur1;
-}
 void itemDestroy(Item *root){
 	while(root){
 		cur=root;
@@ -89,9 +89,9 @@ void itemView(Item *root){
 }
 void itemView(BiItem *root){
 	cur1=root;
-	while(cur){
-		cout<<cur->data<<endl;
-		cur=cur->next;
+	while(cur1){
+		cout<<cur1->data<<endl;
+		cur1=cur1->next;
 	}
 }
 void itemRview(BiItem *root) {
