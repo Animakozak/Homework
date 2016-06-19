@@ -1,7 +1,7 @@
 #include <iostream>
 #include <array>
 using namespace std;
-void z82(){
+void shift(){
     array <float,10> a;
     int k;
     cout<<"Vvedit dovzhynu zsuvu: ";
@@ -20,7 +20,7 @@ void z82(){
         cout<<a[i]<<endl;
     }
 }
-void z83(){
+void shiftLooped(){
     int i,j,k;
     float temp;
     array <float,5> a;
@@ -49,15 +49,15 @@ void z83(){
             cout<<a[i]<<endl;
         }
     }
-    
+
 }
 int main(){
     cout<<"Vyberit zavdanya:"<<endl<<"1 - Zsuv"<<endl<<"2 - Cyclichniy zsuv"<<endl;
     int k = 0;
     cin>>k;
     switch(k){
-        case 1:z82();break;
-        case 2:z83();break;
+        case 1:shift();break;
+        case 2:shiftLooped();break;
     }
     return 0;
 }
