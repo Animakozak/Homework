@@ -14,9 +14,10 @@ int main(){
             }
             a[i]=0;
             cout<<"-Promizkoviy etap-"<<endl;
-            for(i=0;i<a.size();i++){
-                cout<<a[i]<<endl;
+            for(int l=0;l<a.size();l++){
+                cout<<a[l]<<endl;
             }
+            i++;
         }
     }
     cout<<"-Kinzeviy rezultat-"<<endl;
