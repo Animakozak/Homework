@@ -162,4 +162,3 @@ int main(){
     if(exit=="home") goto home;
     return 0;
 }
-
