@@ -57,8 +57,8 @@ int main(){
     int k = 0;
     cin>>k;
     switch(k){
-        case 1:shift();break;
-        case 2:shiftLooped();break;
+        case 1:shiftLeft();break;
+        case 2:shiftRightLooped();break;
     }
     return 0;
 }
