@@ -2,7 +2,7 @@
 #include <iostream>
 #include <array>
 using namespace std;
-void shift(){
+void shiftLeft(){
     array <float,10> a;
     int k;
     cout<<"Vvedit dovzhynu zsuvu: ";
@@ -21,7 +21,7 @@ void shift(){
         cout<<a[i]<<endl;
     }
 }
-void shiftLooped(){
+void shiftRightLooped(){
     int i,j,k;
     float temp;
     array <float,5> a;
@@ -57,8 +57,8 @@ int main(){
     int k = 0;
     cin>>k;
     switch(k){
-        case 1:shift();break;
-        case 2:shiftLooped();break;
+        case 1:shiftLeft();break;
+        case 2:shiftRightLooped();break;
     }
     return 0;
 }

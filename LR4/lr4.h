@@ -1,6 +1,10 @@
 #include <iostream>
 #include <fstream>
+#include <vector>
 using namespace std;
+vector <vector<int> > path;
+int i=0;
+int j=0;
 struct Item{
   int data;
   Item *next;
@@ -109,7 +113,7 @@ void treeBiCreate(node *&rootree, int value){
 		rootree -> right = NULL;
 		return;
 	}
-	if (rootree->data > value) {
+	if (rootree->data >= value) {
 		treeBiCreate(rootree->left, value);
 	}
 	else treeBiCreate(rootree->right, value);
@@ -141,6 +145,7 @@ void itemDestroy(BiItem *root){
 		cur1=root;
 		root=cur1->next;
 		delete cur1;
+        cout<<"Success!\n";
 	}
 }
 
@@ -656,7 +661,7 @@ void itemBiMove() {
 	while (cur3 -> next) {
 		cur3 = cur3 -> next;
 	}
-	while (cur1 -> data != 0 && cur1) {
+	while (cur1 -> data !=4 && cur1) {
 		BiItem *t = cur1;
 		cur1 = cur1 -> next;
 		cur1 -> prev = NULL;
@@ -733,7 +738,7 @@ void itemBiSplit(){
 	bool z1 = true, z2 = true;
 	while (!fin.eof()) {
 		fin >> x;
-		if (x % 2 != 4) {
+		if (x % 2 != 0) {
 			if (z1) {
 				biroot = new BiItem;
 				biroot -> data = x;
@@ -894,23 +899,85 @@ void treeBiDestroy(node *ro) {
 	}
 	delete ro;
 }
-void printPreOrderPath(nodeTer *curt, int sumCurrent, int sumCheck, BiItem *root){
-	if (curt==NULL) return;
+
+
+
+
+void printPathsRecur(struct nodeTer* node, int path[], int pathLen);
+void printArray(int ints[], int len);
+
+
+void printPaths(struct nodeTer* node) {
+    int path[1000];
+    printPathsRecur(node, path, 0);
+}
+
+void printPathsRecur(nodeTer *node, int path[], int pathLen) {
+    if (node == NULL) return;
+    path[pathLen] = node->data;
+    pathLen++;
+    if (node->left==NULL && node->right==NULL && node->mid==NULL) {
+        printArray(path, pathLen);
+    }
+    else {
+        printPathsRecur(node->left, path, pathLen);
+        printPathsRecur(node->mid, path, pathLen);
+        printPathsRecur(node->right, path, pathLen);
+    }
+}
+
+void printArray(int ints[], int len) {
+    int sum = 0;
+    for (int i = 0; i < len; i++) {
+        sum = sum + ints[i];
+    }
+    if (sum < 0) {
+        for (int i = 0; i < len; i++) {
+            cout << ints[i] << " ";
+        }
+        cout << endl;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+void printPreOrderPath(nodeTer *curt, int sumCurrent, int sumCheck, int level){        //, BiItem *root
+    if (curt==NULL) return;
 	sumCurrent+=curt->data;
-	itemAdd(curt->data, root);
+    path[i][j]==curt->data;
+    j++;
 	if (curt->right!=NULL && curt->left!=NULL && curt->mid!=NULL){
-		if (curt->right!=NULL) printPreOrderPath(curt->left, sumCurrent, sumCheck, root);
-		if (curt->mid!=NULL) printPreOrderPath(curt->mid, sumCurrent, sumCheck, root);
-		if (curt->left!=NULL) printPreOrderPath(curt->right, sumCurrent, sumCheck, root);
+		if (curt->right!=NULL) printPreOrderPath(curt->left, sumCurrent, sumCheck, level);
+		if (curt->mid!=NULL) printPreOrderPath(curt->mid, sumCurrent, sumCheck, level);
+		if (curt->left!=NULL) printPreOrderPath(curt->right, sumCurrent, sumCheck, level);
 	}
 	if (sumCurrent<=sumCheck){
 		cout<<endl;
-		itemView(root);
+        for(j=0;j<level;j++){
+            cout<<path[i][j]<<" ";
+        }
 		cout<<endl;
-		itemDestroy(root);
+        sumCurrent==0;
+        i++;
+        j=0;
 	}
 	else{
-		itemDestroy(root);
+        sumCurrent==0;
+        i++;
+        j=0;
 	}
 }
-
+void treeTerDestroy(nodeTer *ro) {
+    if (ro -> left) treeTerDestroy(ro->left);
+    if (ro -> mid) treeTerDestroy (ro->mid);
+    if (ro -> right) treeTerDestroy(ro->right);
+    delete ro;
+}

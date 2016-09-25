@@ -239,7 +239,7 @@ int main(){
                             cout<<"--Inserted--\n";
                         }
                         else if(input=="move"){
-                            cout<<"--Moving sequence (which ends with '0') from the list--\n";
+                            cout<<"--Moving sequence (which ends with '4') from the list--\n";
                             itemBiMove();
                             cout<<"--Moved--\n";
                         }
@@ -354,6 +354,7 @@ int main(){
                 if(input.find(" 2")!=string::npos){                                                                      //Queuex2
                     itemBiSplit();
                     while(input!="up"){
+                        cin>>input;
                         if(input=="view"){
                             cout<<"--viewing--\n";
                             itemView(biroot);
@@ -446,6 +447,21 @@ int main(){
                 cin>>choice;
                 switch (choice){
                     case 2:
+                        treeRead();
+                        cout<<"\nPre-Order:\n";
+                        pre_order(rootree);
+                        cout<<"\nIn-Order:\n";
+                        in_order(rootree);
+                        cout<<"\nPost-Order:\n";
+                        post_order(rootree);
+                        cout<<"-_-WARNING-_-\nYou are about to leave list menu, current list will be destroyed. Are you sure?\n";
+                        cin>>input;
+                        if(input=="yes") {
+                            cout << "--Destroying rootree3...";
+                            treeBiDestroy(rootree);
+                            cout << "data structure successfully destroyed\n";
+                        }
+                        else cout<<"Canceled\n";
                         break;
                     case 3:
                         int value, level;
@@ -457,10 +473,17 @@ int main(){
                         cout<<"Tree builded: ";
                         treeTerView(rootree3);
                         cout<<endl;
-                        itemTerCreate(0);
-                        printPreOrderPath(rootree3,0,0,biroot);
+                        printPaths(rootree3);
+                        cout<<"-_-WARNING-_-\nYou are about to leave list menu, current list will be destroyed. Are you sure?\n";
+                        cin>>input;
+                        if(input=="yes") {
+                            cout << "--Destroying rootree3...";
+                            treeTerDestroy(rootree3);
+                            cout << "data structure successfully destroyed\n";
+                        }
+                        else cout<<"Canceled\n";
                         break;
-                }
+                }                
             }
             else{
                 cout<<"Use flag to specify the query\n";
