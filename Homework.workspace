@@ -7,7 +7,7 @@
   <Project Name="SR9" Path="SR9/SR9.project" Active="No"/>
   <Project Name="SR10" Path="SR10/SR10.project" Active="No"/>
   <Project Name="SR9_CPP" Path="SR10_CPP/SR10_CPP.project" Active="No"/>
-  <Project Name="Laba2" Path="Laba2/Laba2.project" Active="No"/>
+  <Project Name="Laba2" Path="Laba2/Laba2.project" Active="Yes"/>
   <Project Name="Array_Insane_Session" Path="Array_Insane_Session/Array_Insane_Session.project" Active="No"/>
   <Project Name="MaxMin" Path="MaxMin/MaxMin.project" Active="No"/>
   <Project Name="Array69-111" Path="Array69-111/Array69-111.project" Active="No"/>
@@ -16,8 +16,9 @@
   <Project Name="Matrix4-38" Path="Matrix4-38/Matrix4-38.project" Active="No"/>
   <Project Name="Matrix55-79" Path="Matrix55-79/Matrix55-79.project" Active="No"/>
   <Project Name="Matrix80-99" Path="Matrix80-99/Matrix80-99.project" Active="No"/>
-  <Project Name="String01" Path="String01/String01.project" Active="Yes"/>
+  <Project Name="String01" Path="String01/String01.project" Active="No"/>
   <Project Name="structures_points" Path="structures_points/structures_points.project" Active="No"/>
+  <Project Name="LR4" Path="LR4/LR4.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -39,6 +40,7 @@
       <Project Name="Matrix80-99" ConfigName="Debug"/>
       <Project Name="String01" ConfigName="Debug"/>
       <Project Name="structures_points" ConfigName="Debug"/>
+      <Project Name="LR4" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -60,6 +62,7 @@
       <Project Name="Matrix80-99" ConfigName="Release"/>
       <Project Name="String01" ConfigName="Release"/>
       <Project Name="structures_points" ConfigName="Release"/>
+      <Project Name="LR4" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
