@@ -1,18 +1,17 @@
-import java.io.*;
+import java.util.Scanner;
 public class lab_1 {
   int first;
   int second;
+  public static Scanner input = new Scanner(System.in);
   public lab_1(int first, int second){//Constructor
     this.first=first;
     this.second=second;
   }
-    public void setValue()throws IOException{ //Muttator
+  public void setValue(){
         System.out.println("first: ");
-        DataInputStream dis1 = new DataInputStream(System.in);
-        first=dis1.readInt();
+        first=input.nextInt();
         System.out.println("second: ");
-        DataInputStream dis2 = new DataInputStream(System.in);
-        second=dis2.readInt();
+        second=input.nextInt();
     }
     public void getValue(){
         if (second<-1) System.out.println(first + "+" + -second + "i");
@@ -25,7 +24,7 @@ public class lab_1 {
       first=first*first-(second*second);
       second=first*second*2;
     }
-  public static void main(String[]args)throws IOException{
+  public static void main(String[]args){
     lab_1 obj1 = new lab_1(0,0);
     lab_1 obj2 = new lab_1(0,0);
     obj1.setValue();
