@@ -13,6 +13,12 @@ public class Main{
         //array
         lab_1[] objArray;
         objArray = new lab_1[2];
+//        int i=0;
+//        while (i<2) {
+//            objArray[i].setValue();
+//            objArray[i].getValue();
+//            i++;
+//        }
         objArray[0]=obj1;
         objArray[1]=obj2;
         objArray[1].getValue();

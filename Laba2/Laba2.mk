@@ -12,8 +12,8 @@ OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Денис
-Date                   :=28/12/2015
+User                   :=user
+Date                   :=26/09/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/TDM-GCC-32/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-32/bin/g++.exe -shared -fPIC
@@ -99,7 +99,7 @@ $(IntermediateDirectory)/new.cpp$(DependSuffix): new.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/new.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/new.cpp$(DependSuffix) -MM "new.cpp"
 
 $(IntermediateDirectory)/new.cpp$(PreprocessSuffix): new.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/new.cpp$(PreprocessSuffix) "new.cpp"
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/new.cpp$(PreprocessSuffix) "new.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

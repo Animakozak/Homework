@@ -10,9 +10,13 @@ int main(){
   obj2.sqr();
   cout<<"After:"<<endl;
   obj2.getValue();
-  array <lab_1, 2> objArray={obj1, obj2};
-  objArray[1].getValue();
-  objArray[1].setValue();
-  objArray[1].getValue();
+  array <lab_1, 2> objArray; //={obj1, obj2};
+  for(int i=0;i<2;i++){
+      objArray[i].setValue();
+      objArray[i].getValue();
+  }
+//  objArray[1].getValue();
+//  objArray[1].setValue();
+//  objArray[1].getValue();
   return 0;
 }
