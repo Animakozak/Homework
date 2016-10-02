@@ -21,7 +21,8 @@ public class lab_1 {
         else System.out.println(first + "-" + second + "i");
     }
     public void sqr(){
+        int first_t=first;
       first=first*first-(second*second);
-      second=first*second*2;
+      second=first_t*second*2;
     }
 }
