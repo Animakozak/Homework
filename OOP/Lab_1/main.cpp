@@ -23,7 +23,11 @@ int main(){
       objArray[i].setValue();
       objArray[i].getValue();
   }
+<<<<<<< HEAD
   //--Composition|Assignment|Negative Value-- 
+=======
+  //--Composition|Assignment|Negative Value--
+>>>>>>> da7f04177b9b647ed226dbd8e3599dc17a8a58e9
   cout<<"Array composition as obj3: "<<endl;
   obj3=objArray[0]*objArray[1];
   obj3.getValue();

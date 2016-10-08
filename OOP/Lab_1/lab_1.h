@@ -24,8 +24,27 @@ public:
       else cout << first << "-" << second << "i" << endl;
   }
   void sqr(){
+    int first_temp=first;
     first=first*first-(second*second);
-    second=first*second*2;
+    second=first_temp*second+first_temp*second;
+  }
+  //--operators' overload--
+  lab_1 operator= (lab_1 temp) {
+      first = temp.first;
+      second = temp.second;
+      return temp;
+  }
+  lab_1 operator* (lab_1 obj){
+    lab_1 temp;
+    temp.first=obj.first*first-(obj.second*second);
+    temp.second=obj.first*second+first*obj.second;
+    return temp;
+  }
+  lab_1 operator- (){
+    lab_1 temp;
+    temp.first=-first;
+    temp.second=-second;
+    return temp;
   }
   //--operators' overload--
   lab_1 operator= (lab_1 temp) {
