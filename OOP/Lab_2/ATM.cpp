@@ -10,7 +10,7 @@ ATM::ATM(){
     faceValue[6]=100;
     faceValue[7]=200;
     faceValue[8]=500;
-    minWithdrawal=0;
+    minWithdrawal=1;
     maxChangeQuantity=50;
 };
 void ATM::initValue(){
@@ -31,7 +31,7 @@ void ATM::initValue(){
     int ATM::getBalance(){
         int sum=0;
         for(int i=0; i<9; i++){
-            cout<<i<<". UAH="<<UAH[i]<<" faceValue="<<faceValue[i]<<endl; //DEBUG
+            // cout<<i<<". UAH="<<UAH[i]<<" faceValue="<<faceValue[i]<<endl; //DEBUG
             sum+=UAH[i]*faceValue[i];
         }
         return sum;
@@ -42,42 +42,37 @@ void ATM::initValue(){
     }
     void ATM::cashWithdrawal(int withdraw){
         int quantity=0;
-        bool hasNegativeValue = false;
         minWithdrawal=getMinWithdrawal();
-        // cout<<"minWithdrawal="<<minWithdrawal<<endl;  //DEBUG
         if (withdraw>=minWithdrawal && withdraw<=getBalance()){
             for(int i=8; i>=0; i--){
             if(withdraw/faceValue[i]>=1 && UAH[i]>0){
               int diff=quantity;
               quantity+=withdraw/faceValue[i];
               diff=quantity-diff;
-              if(diff<=UAH[i]){
+              if(diff>=UAH[i]){
+                quantityDecrement[i]=UAH[i];
+                diff-=UAH[i];
+                quantity+=diff;
+                quantity-=withdraw/faceValue[i];
+                withdraw-=UAH[i]*faceValue[i];
+              }
+              else{
                 quantityDecrement[i]=diff;
                 withdraw-=diff*faceValue[i];
               }
-              else{
-                cout<<"diff<=UAH[i] is FALSE"<<endl; //DEBUG
-                quantity-=withdraw/faceValue[i];
-                diff=quantity;
-              }
-              cout<<"quantityDecrement["<<i<<"]="<<quantityDecrement[i]<<endl; //DEBUG
-              cout<<i<<". quantityDecrement["<<i<<"]*UAH["<<i<<"]="<<quantityDecrement[i]<<"*"<<UAH[i]<<"="<<quantityDecrement[i]*UAH[i]<<endl; //DEBUG
-              cout<<i<<". withdraw="<<withdraw<<endl; //DEBUG
-              if(quantityDecrement[i]<0) hasNegativeValue=true;
             }
-            else cout<<"Skipping at"<<i<<endl; //DEBUG
           }
-            if(quantity<=maxChangeQuantity || hasNegativeValue==false){
+            if(quantity<=maxChangeQuantity){
               for(int i=8; i>=0; i--){
                 UAH[i]-=quantityDecrement[i];
-                quantityDecrement[i]=0;
               }
               getBalance_MSG();
             }
         else cout<<"The requested amount of money is unavailable due to lack of specific face values in  Try other sum."<<endl;
+        for (int i=0; i<9;i++){
+          quantityDecrement[i]=0;
+        }
     }
     else cout<<"The requested amount of money is unavailable due to lack of money in  Try other sum."<<endl;
-    quantity=0;
-    withdraw=0;
     return;
     }
