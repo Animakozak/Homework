@@ -16,6 +16,7 @@ ATM::ATM(){
 void ATM::initValue(){
         for(int i=0;i<9;i++){
             cin>>UAH[i];
+            quantityDecrement[i]=0;
         }
         cout<<"Complete\n";
         return;
@@ -38,30 +39,27 @@ void ATM::initValue(){
     }
     void ATM::cashWithdrawal(int withdraw){
         int quantity=0;
+        bool hasNegativeValue = false;
         minWithdrawal=getMinWithdrawal();
-        int withdraw_a = withdraw;
         cout<<"minWithdrawal="<<minWithdrawal<<endl;  //DEBUG
-        if (withdraw_a>=minWithdrawal){
+        if (withdraw>=minWithdrawal){
             for(int i=8; i>=0; i--){
-            if(withdraw_a/faceValue[i]>=1){
+            if(withdraw/faceValue[i]>=1){
               int diff=quantity;
-              quantity+=withdraw_a/faceValue[i];
+              quantity+=withdraw/faceValue[i];
               diff=quantity-diff;
-              withdraw_a-=diff*faceValue[i];
+              withdraw-=diff*faceValue[i];
+              quantityDecrement[i]=diff;
+              cout<<"quantityDecrement["<<i<<"]="<<quantityDecrement[i]<<endl; //DEBUG
+              cout<<i<<". quantityDecrement["<<i<<"]*UAH["<<i<<"]="<<quantityDecrement[i]<<"*"<<UAH[i]<<"="<<quantityDecrement[i]*UAH[i]<<endl; //DEBUG
+              cout<<i<<". withdraw="<<withdraw<<endl; //DEBUG
+              if(quantityDecrement[i]<0) hasNegativeValue=true;
             }
         }
-        if(quantity<=maxChangeQuantity){
+        if(quantity<=maxChangeQuantity || hasNegativeValue==false){
             for(int i=8; i>=0; i--){
-                if(withdraw/faceValue[i]>=1){
-                  int diff=UAH[i];
-                  UAH[i]-=withdraw/faceValue[i];
-                  diff-=UAH[i];
-                  withdraw-=diff*faceValue[i];
-                  cout<<i<<". faceValue["<<i<<"]*UAH["<<i<<"]="<<faceValue[i]<<"*"<<UAH[i]<<"="<<faceValue[i]*UAH[i]<<endl; //DEBUG
-                  cout<<i<<". withdraw="<<withdraw<<endl; //DEBUG
-                }
+              UAH[i]-=quantityDecrement[i];
             }
-            cout<< "Withdrew " << withdraw << " UAH" << endl;
             getBalance();
         }
         else cout<<"The requested amount of money is unavailable due to lack of specific face values in  Try other sum."<<endl;
@@ -69,6 +67,5 @@ void ATM::initValue(){
     else cout<<"The requested amount of money is unavailable due to lack of money in  Try other sum."<<endl;
     quantity=0;
     withdraw=0;
-    withdraw_a=0;
     return;
     }
