@@ -5,7 +5,7 @@ using namespace std;
 int main(){
     ATM ATM_1;
     cout<<"------------------------ATM---------------------------\n";
-    ATM_1.getBalance();
+    ATM_1.getBalance_MSG();
     cout<<endl<<"1 - Resuply ATM with money                           Withdraw money - 2"<<endl<<"9 - Terminate session                 Check balance - 3"<<endl;
     bool sessionTerminated = false;
     while(sessionTerminated==false){
@@ -21,7 +21,7 @@ int main(){
             cin>>request;
             ATM_1.cashWithdrawal(request);
         }
-        else if(input==3) ATM_1.getBalance();
+        else if(input==3) ATM_1.getBalance_MSG();
         else if(input==9) sessionTerminated=true;
         input=0;
     }

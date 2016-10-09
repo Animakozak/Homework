@@ -14,7 +14,8 @@ namespace std{
           ATM();
           void initValue();
           double getMinWithdrawal();
-          void getBalance();
+          int getBalance();
+          void getBalance_MSG();
           void cashWithdrawal(int withdraw);
 };
 }
