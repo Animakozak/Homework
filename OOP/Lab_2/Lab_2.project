@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Project Name="Lab_2" InternalType="Console">
   <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00010001N0005Debug000000000000]]>
+    </Plugin>
     <Plugin Name="CMakePlugin">
       <![CDATA[[{
   "name": "Debug",
@@ -13,9 +16,6 @@
   "parentProject": ""
  }]]]>
     </Plugin>
-    <Plugin Name="qmake">
-      <![CDATA[00010001N0005Debug000000000000]]>
-    </Plugin>
   </Plugins>
   <Description/>
   <Dependencies/>
@@ -23,6 +23,8 @@
     <File Name="main.cpp"/>
     <File Name="ATM.h"/>
     <File Name="ATM.cpp"/>
+    <File Name="Bank.cpp"/>
+    <File Name="Bank.h"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>

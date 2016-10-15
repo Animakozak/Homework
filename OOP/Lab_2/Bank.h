@@ -1,6 +1,6 @@
 #ifndef BANK_H
 #define BANK_H
-#define B 4
+#define B 2
 #include "ATM.h"
 #include <iostream>
 namespace std{

@@ -15,28 +15,24 @@ class Pet{
     protected boolean isHungry;
     Scanner input = new Scanner(System.in);
     String setName(){
-        String newName;
         System.out.println("Name: ");
-        newName=input.nextLine();
+        name=input.nextLine();
         return name;
     }
     int setMass(){
-        int newMass;
         System.out.println("Mass: ");
-        newMass=input.nextInt();
-        return newMass;
+        mass=input.nextInt();
+        return mass;
     }
     int setAge(){
-        int newAge;
         System.out.println("Age: ");
-        newAge=input.nextInt();
-        return newAge;
+        age=input.nextInt();
+        return age;
     }
     String setFood() {
-        String newFood;
         System.out.println("Food: ");
-        newFood = input.nextLine();
-        return newFood;
+        food = input.nextLine();
+        return food;
     }
     boolean setStatusAsleep(){
         boolean statement;
@@ -53,6 +49,18 @@ class Pet{
     Pet(){
         isAsleep=true;
         isHungry=true;
+    }
+    String getName(){
+        return name;
+    }
+    String getFood(){
+        return food;
+    }
+    int getAge(){
+        return age;
+    }
+    int getMass(){
+        return mass;
     }
     void feedPet(String giveFood){
         if(!isHungry) System.out.println(name+":Nay, hungry I am not");
@@ -73,5 +81,8 @@ class Pet{
                 System.out.println(name+":Hungry I am");
             }
         }
+    }
+    static int getPetAgeDiff(Pet one, Pet two){
+        return one.getAge()-two.getAge();
     }
 }
