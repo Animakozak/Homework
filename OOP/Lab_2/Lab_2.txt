@@ -1,1 +1,1 @@
-./Debug/main.cpp.o ./Debug/ATM.cpp.o   
+./Debug/main.cpp.o ./Debug/ATM.cpp.o ./Debug/Bank.cpp.o   

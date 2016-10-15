@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=user
-Date                   :=06/10/2016
+Date                   :=11/10/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/TDM-GCC-32/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-32/bin/g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := C:/TDM-GCC-32/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/ATM.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/ATM.cpp$(ObjectSuffix) $(IntermediateDirectory)/Bank.cpp$(ObjectSuffix) 
 
 
 
@@ -108,6 +108,14 @@ $(IntermediateDirectory)/ATM.cpp$(DependSuffix): ATM.cpp
 
 $(IntermediateDirectory)/ATM.cpp$(PreprocessSuffix): ATM.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/ATM.cpp$(PreprocessSuffix) "ATM.cpp"
+
+$(IntermediateDirectory)/Bank.cpp$(ObjectSuffix): Bank.cpp $(IntermediateDirectory)/Bank.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Denis/Homework/OOP/Lab_2/Bank.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Bank.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Bank.cpp$(DependSuffix): Bank.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Bank.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Bank.cpp$(DependSuffix) -MM "Bank.cpp"
+
+$(IntermediateDirectory)/Bank.cpp$(PreprocessSuffix): Bank.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Bank.cpp$(PreprocessSuffix) "Bank.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
