@@ -1,39 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="D:\Denis\Homework\Homework.workspace">
-  <int Value="2" Name="m_selectedTab"/>
+  <int Value="1" Name="m_selectedTab"/>
   <wxString Value="D:\Denis\Homework\Homework.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="D:\Denis\Homework\Lab_2\main.cpp" Name="FileName"/>
+      <wxString Value="D:\Denis\Homework\OOP\Lab_2\ATM.h" Name="FileName"/>
+      <int Value="6" Name="FirstVisibleLine"/>
+      <int Value="12" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\Denis\Homework\OOP\Lab_2\ATM.cpp" Name="FileName"/>
+      <int Value="39" Name="FirstVisibleLine"/>
+      <int Value="52" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\Denis\Homework\OOP\Lab_2\main.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="4" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="D:\Denis\Homework\OOP\Lab_1\lab_1.h" Name="FileName"/>
-      <int Value="4" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="D:\Denis\Homework\Lab_2\ATM.h" Name="FileName"/>
-      <int Value="42" Name="FirstVisibleLine"/>
-      <int Value="51" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="D:\Denis\Homework\Lab_2\ATM.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
+      <int Value="15" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
   </TabInfoArray>
   <SerializedObject Name="m_breakpoints">
-    <long Value="49" Name="Count"/>
+    <long Value="48" Name="Count"/>
     <SerializedObject Name="Breakpoint0">
       <wxString Value="D:\Denis\Homework\Array116-130\main_menu.cpp" Name="file"/>
       <int Value="15" Name="lineno"/>
@@ -387,22 +380,6 @@
       <int Value="0" Name="origin"/>
     </SerializedObject>
     <SerializedObject Name="Breakpoint22">
-      <wxString Value="D:\Denis\Homework\OOP\Lab_1\main.cpp" Name="file"/>
-      <int Value="21" Name="lineno"/>
-      <wxString Value="" Name="function_name"/>
-      <wxString Value="" Name="memory_address"/>
-      <int Value="1" Name="bp_type"/>
-      <int Value="0" Name="watchpoint_type"/>
-      <wxString Value="" Name="watchpt_data"/>
-      <CData Name="commandlist"/>
-      <bool Value="0" Name="regex"/>
-      <bool Value="0" Name="is_temp"/>
-      <bool Value="1" Name="is_enabled"/>
-      <int Value="0" Name="ignore_number"/>
-      <wxString Value="" Name="conditions"/>
-      <int Value="0" Name="origin"/>
-    </SerializedObject>
-    <SerializedObject Name="Breakpoint23">
       <wxString Value="D:\Denis\Homework\SR10\C++\Proc12.cpp" Name="file"/>
       <int Value="40" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -418,7 +395,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint24">
+    <SerializedObject Name="Breakpoint23">
       <wxString Value="D:\Denis\Homework\SR10\C++\Proc18.cpp" Name="file"/>
       <int Value="18" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -434,7 +411,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint25">
+    <SerializedObject Name="Breakpoint24">
       <wxString Value="D:\Denis\Homework\SR10_CPP\Series13.cpp" Name="file"/>
       <int Value="19" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -450,7 +427,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint26">
+    <SerializedObject Name="Breakpoint25">
       <wxString Value="D:\Denis\Homework\SR10_CPP\Series36.cpp" Name="file"/>
       <int Value="21" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -466,7 +443,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint27">
+    <SerializedObject Name="Breakpoint26">
       <wxString Value="D:\Denis\Homework\SR7\1.cpp" Name="file"/>
       <int Value="36" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -482,7 +459,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint28">
+    <SerializedObject Name="Breakpoint27">
       <wxString Value="D:\Denis\Homework\SR7_1\1.c" Name="file"/>
       <int Value="34" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -498,7 +475,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint29">
+    <SerializedObject Name="Breakpoint28">
       <wxString Value="D:\Denis\Homework\SR7_1\2.c" Name="file"/>
       <int Value="34" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -514,7 +491,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint30">
+    <SerializedObject Name="Breakpoint29">
       <wxString Value="D:\Denis\Homework\SR7_1\2.cpp" Name="file"/>
       <int Value="35" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -530,7 +507,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint31">
+    <SerializedObject Name="Breakpoint30">
       <wxString Value="D:\Denis\Homework\SR7_1\3.c" Name="file"/>
       <int Value="37" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -546,7 +523,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint32">
+    <SerializedObject Name="Breakpoint31">
       <wxString Value="D:\Denis\Homework\SR7_1\3.cpp" Name="file"/>
       <int Value="38" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -562,7 +539,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint33">
+    <SerializedObject Name="Breakpoint32">
       <wxString Value="D:\Denis\Homework\SR7_1\main.cpp" Name="file"/>
       <int Value="30" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -578,7 +555,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint34">
+    <SerializedObject Name="Breakpoint33">
       <wxString Value="D:\Denis\Homework\SR8\11_While.c" Name="file"/>
       <int Value="32" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -594,7 +571,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint35">
+    <SerializedObject Name="Breakpoint34">
       <wxString Value="D:\Denis\Homework\SR8\Add2.c" Name="file"/>
       <int Value="28" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -610,7 +587,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint36">
+    <SerializedObject Name="Breakpoint35">
       <wxString Value="D:\Denis\Homework\SR8\C++\Add1.cpp" Name="file"/>
       <int Value="12" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -626,7 +603,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint37">
+    <SerializedObject Name="Breakpoint36">
       <wxString Value="D:\Denis\Homework\SR8\C++\Add2.cpp" Name="file"/>
       <int Value="30" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -642,7 +619,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint38">
+    <SerializedObject Name="Breakpoint37">
       <wxString Value="D:\Denis\Homework\SR8\While1.c" Name="file"/>
       <int Value="18" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -658,7 +635,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint39">
+    <SerializedObject Name="Breakpoint38">
       <wxString Value="D:\Denis\Homework\SR8\While1.cpp" Name="file"/>
       <int Value="19" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -674,7 +651,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint40">
+    <SerializedObject Name="Breakpoint39">
       <wxString Value="D:\Denis\Homework\SR8\While11.cpp" Name="file"/>
       <int Value="33" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -690,7 +667,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint41">
+    <SerializedObject Name="Breakpoint40">
       <wxString Value="D:\Denis\Homework\SR8\While19.cpp" Name="file"/>
       <int Value="21" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -706,7 +683,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint42">
+    <SerializedObject Name="Breakpoint41">
       <wxString Value="D:\Denis\Homework\SR8\While24.c" Name="file"/>
       <int Value="25" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -722,7 +699,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint43">
+    <SerializedObject Name="Breakpoint42">
       <wxString Value="D:\Denis\Homework\SR8\While24.cpp" Name="file"/>
       <int Value="26" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -738,7 +715,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint44">
+    <SerializedObject Name="Breakpoint43">
       <wxString Value="D:\Denis\Homework\SR8\While7.c" Name="file"/>
       <int Value="20" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -754,7 +731,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint45">
+    <SerializedObject Name="Breakpoint44">
       <wxString Value="D:\Denis\Homework\SR8\While7.cpp" Name="file"/>
       <int Value="21" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -770,7 +747,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint46">
+    <SerializedObject Name="Breakpoint45">
       <wxString Value="D:\Denis\Homework\SR9\Series34.c" Name="file"/>
       <int Value="26" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -786,7 +763,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint47">
+    <SerializedObject Name="Breakpoint46">
       <wxString Value="D:\Denis\Homework\String01\main.cpp" Name="file"/>
       <int Value="163" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -802,7 +779,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint48">
+    <SerializedObject Name="Breakpoint47">
       <wxString Value="D:\Denis\Homework\calcalc\main.cpp" Name="file"/>
       <int Value="1951" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
