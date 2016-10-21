@@ -7,11 +7,10 @@ class Circle : Point
 public:
     Circle();
     Circle(Point center, float radius);
-    float setCircleRadius(Point circlePoint);
-    void initCircle(Point center, Point capPoint);
+    void initCircle(Point center, float radius);
     float getCircleLength();
     float getCircleSquare();
-
+    float setCircleRadius(Point circlePoint);
 private:
     float circleRadius;
     const float Pi=3.14;

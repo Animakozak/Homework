@@ -7,7 +7,3 @@ Point::Point(int a, int b){
     x=a;
     y=b;
 }
-void Point::setPointCoordinates(int a, int b) {
-    x=a;
-    y=b;
-}
