@@ -9,7 +9,8 @@ public:
     Circle(float a, float b);
     void setCircleCoordinate_X(float a);
     void setCircleCoordinate_Y(float b);
-    float setCircleRadius();
+    float getCircleRadius();
+    void setCircleRadius();
     void initCircle(float circleCenterX, float circleCenterY, float circlePointX, float circlePointY);
     float getCircleLength();
     float getCircleSquare();

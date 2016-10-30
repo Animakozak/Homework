@@ -4,7 +4,7 @@
 class Point{
 public:
     Point();
-    Point(int x, int y);
+    Point(float a, float b);
     void setPointCoordinate_X(float input);
     void setPointCoordinate_Y(float input);
 protected:

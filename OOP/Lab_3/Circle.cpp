@@ -3,10 +3,12 @@ using namespace std;
 Circle::Circle(){
     x1=0;
     y1=0;
+    setCircleRadius();
 }
 Circle::Circle(float a, float b){
     x1=a;
     y1=b;
+    setCircleRadius();
 }
 void Circle::setCircleCoordinate_X(float a){
     x1=a;
@@ -14,7 +16,7 @@ void Circle::setCircleCoordinate_X(float a){
 void Circle::setCircleCoordinate_Y(float b){
     y1=b;
 }
-float Circle::setCircleRadius(){
+float Circle::getCircleRadius(){
     return sqrt(pow((x1-x),2)+pow((y1-y),2));
 }
 void Circle::initCircle(float circleCenterX, float circleCenterY, float circlePointX, float circlePointY){
@@ -22,7 +24,10 @@ void Circle::initCircle(float circleCenterX, float circleCenterY, float circlePo
     setPointCoordinate_Y(circleCenterY);
     setCircleCoordinate_X(circlePointX);
     setCircleCoordinate_Y(circlePointY);
-    circleRadius=setCircleRadius();
+    setCircleRadius();
+}
+void Circle::setCircleRadius(){
+    circleRadius=getCircleRadius();
 }
 float Circle::getCircleLength(){
     return circleRadius*2*Pi;
