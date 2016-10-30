@@ -5,10 +5,10 @@ class Point{
 public:
     Point();
     Point(int x, int y);
-    void setPointCoordinates(int a, int b);
-//private:
-    int x;
-    int y;
+    void setPointCoordinate_X(float input);
+    void setPointCoordinate_Y(float input);
+protected:
+  float x;
+  float y;
 };
-
 #endif

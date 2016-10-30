@@ -7,7 +7,9 @@ Point::Point(int a, int b){
     x=a;
     y=b;
 }
-void Point::setPointCoordinates(int a, int b) {
-    x=a;
-    y=b;
+void Point::setPointCoordinate_X(float input) {
+    x=input;
+}
+void Point::setPointCoordinate_Y(float input) {
+    y=input;
 }

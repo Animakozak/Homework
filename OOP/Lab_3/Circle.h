@@ -6,16 +6,21 @@ class Circle : Point
 {
 public:
     Circle();
-    Circle(Point center, float radius);
-    float setCircleRadius(Point circlePoint);
-    void initCircle(Point center, Point capPoint);
+    Circle(float a, float b);
+    void setCircleCoordinate_X(float a);
+    void setCircleCoordinate_Y(float b);
+    float setCircleRadius();
+    void initCircle(float circleCenterX, float circleCenterY, float circlePointX, float circlePointY);
     float getCircleLength();
     float getCircleSquare();
-
+    void getCircleStats_MSG();
+    void getCircleLength_MSG();
+    void getCircleSquare_MSG();
 private:
+    float x1;
+    float y1;
     float circleRadius;
     const float Pi=3.14;
-    Point circleCenter;
 };
 
 #endif // CIRCLE_H
