@@ -1,13 +1,13 @@
 #include "Circle.h"
 using namespace std;
-Circle::Circle(){
+Circle::Circle():Point(){
     x1=0;
     y1=0;
     setCircleRadius();
 }
-Circle::Circle(float a, float b){
-    x1=a;
-    y1=b;
+Circle::Circle(float a, float b, float c, float d):Point(a,b){
+    x1=c;
+    y1=d;
     setCircleRadius();
 }
 void Circle::setCircleCoordinate_X(float a){

@@ -17,8 +17,9 @@ int main() {
         O1.getCircleSquare_MSG();
     }
     else{
-        Point circleCenter(a, b);
-        Circle circlePoint(c, d);
+//        Point circleCenter(a, b);
+//        Circle circlePoint(a, b, c, d);
+        Circle circlePoint(a, b, c, d);
         circlePoint.getCircleStats_MSG();
         circlePoint.getCircleLength_MSG();
         circlePoint.getCircleSquare_MSG();

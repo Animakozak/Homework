@@ -6,7 +6,8 @@ class Circle : Point
 {
 public:
     Circle();
-    Circle(float a, float b);
+//    Circle(float a, float b);
+    Circle(float a, float b, float c, float d);
     void setCircleCoordinate_X(float a);
     void setCircleCoordinate_Y(float b);
     float getCircleRadius();
