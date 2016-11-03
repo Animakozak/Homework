@@ -44,21 +44,8 @@ public class Circle {
     }
     return inScale;
   }
-  public double union(Circle O1, Circle O2){
-      double uniScale=0;
-      if(O1.getSquare()>O2.getSquare()){
-          uniScale=O1.getSquare()+O2.getSquare()-(O1.getSquare()-O2.getSquare());
-      }
-      else if(O1.getSquare()<O2.getSquare()){
-          uniScale=O1.getSquare()+O2.getSquare()-(O2.getSquare()-O1.getSquare());
-      }
-      else if(O1.x+O1.r>O2.x && O1.y+O1.r>O2.y){
-          uniScale=O1.getSquare();
-      }
-      else if(O2.x+O2.r>O1.x && O2.y+O2.r>O1.y){
-          uniScale=O2.getSquare();
-      }
-      return uniScale;
+  public Circle union(Circle O1, Circle O2){
+      Circle i = new Circle()
   }
   public boolean equals(double x1, double y1, double r1, double x2, double y2, double r2){
       return x1==x2 && y1==y2 && r1==r2;
