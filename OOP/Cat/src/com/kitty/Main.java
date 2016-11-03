@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+//        Pet project objects
 //        Kitty catWilliam = new Kitty();
 //        Dog dogDouge = new Dog();
         Kitty[] cats = new Kitty[5]; //13.10
@@ -26,6 +27,7 @@ public class Main {
             }
         }
 
+//        Pet project:
 //        catWilliam.setStatusAwake("Ahoj!");
 //        catWilliam.setStatusAwake("Ahoj, William!");
 //        dogDouge.setStatusAwake("Ahoj, Dog!");
