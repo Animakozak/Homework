@@ -15,7 +15,7 @@ using namespace std;
 B::B():C(){
     b=0;
     cout<<"Heya from B!"<<endl;
-};
+}
 B::~B(){
     cout<<"Left B"<<endl;
-};
+}

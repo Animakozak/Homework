@@ -16,11 +16,16 @@
 //    int b;
 //};
 //Zavd2
-class B : public C {
+//class B : public C {
+//public:
+//    B();
+//    ~B();
+//    int b;
+//};
+class B : public virtual C {
 public:
     B();
     ~B();
     int b;
 };
-
 #endif //LAB_4_B_H

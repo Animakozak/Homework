@@ -17,7 +17,13 @@
 //    int a;
 //};
 //Zavd2
-class A : public C{
+//class A : public C{
+//public:
+//    A();
+//    ~A();
+//    int a;
+//};
+class A : virtual public C{
 public:
     A();
     ~A();

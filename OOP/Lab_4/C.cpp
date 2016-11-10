@@ -17,7 +17,7 @@ using namespace std;
 C::C(){
     c=0;
     cout<<"Heya from C!"<<endl;
-};
+}
 C::~C(){
     cout<<"Left C"<<endl;
-};
+}
