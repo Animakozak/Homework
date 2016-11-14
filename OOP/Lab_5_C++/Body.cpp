@@ -17,9 +17,9 @@ Body::Body(double radiusInner, double radiusOuter, double faceQuantity, double e
     p=edgeQuantity;
     a=edgeLength;
 }
-double Body::bodyArea(){
+double Body::area(){
     return (a/2.0)*(a/2.0)*faceNum*p*1/tan(3.14/p);
 }
-double Body::bodyVolume() {
+double Body::volume() {
     return radIn*radIn*p*tan(3.14/p)*radIn*1/3.0;
 }

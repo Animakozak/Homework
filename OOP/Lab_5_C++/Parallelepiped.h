@@ -4,10 +4,17 @@
 
 #ifndef LAB_5_C_PARALLELEPIPED_H
 #define LAB_5_C_PARALLELEPIPED_H
+#include "Body.h"
 
-
-class Parallelepiped {
-
+class Parallelepiped: Body {
+    Parallelepiped();
+    Parallelepiped(double a,double b,double c, double d);
+    double a;
+    double b;
+    double c;
+    double d;
+    double volume();
+    double area();
 };
 
 

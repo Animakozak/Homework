@@ -15,8 +15,8 @@ public:
     double faceNum;
     double p;
     double a;
-    double bodyVolume();
-    double bodyArea();
+    double volume();
+    double area();
 };
 
 
