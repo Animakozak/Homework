@@ -6,18 +6,19 @@
 #include "C.h"
 using namespace std;
 
-//C::C():B(){
+C::C():B(){
 //    c=0;
-//    cout<<"Heya from C!"<<endl;
-//};
-//C::~C(){
-//    cout<<"Left C"<<endl;
-//};
-//Zavd2
-C::C(){
-    c=0;
+    b=0;
     cout<<"Heya from C!"<<endl;
-}
+};
 C::~C(){
     cout<<"Left C"<<endl;
-}
+};
+//Zavd2
+//C::C(){
+//    c=0;
+//    cout<<"Heya from C!"<<endl;
+//}
+//C::~C(){
+//    cout<<"Left C"<<endl;
+//}
