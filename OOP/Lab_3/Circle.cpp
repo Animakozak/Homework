@@ -40,9 +40,7 @@ void Circle::getCircleStats_MSG() {
 }
 void Circle::getCircleLength_MSG(){
     cout<<"Circle length is "<<getCircleLength()<<endl;
-    return;
 }
 void Circle::getCircleSquare_MSG(){
     cout<<"Circle square is "<<getCircleSquare()<<endl;
-    return;
 }
