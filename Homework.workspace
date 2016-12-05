@@ -2,7 +2,7 @@
 <CodeLite_Workspace Name="Homework" Database="">
   <Project Name="SR7" Path="SR7/SR7.project" Active="No"/>
   <Project Name="SR7_1" Path="SR7_1/SR7_1.project" Active="No"/>
-  <Project Name="SR8" Path="SR8/SR8.project" Active="Yes"/>
+  <Project Name="SR8" Path="SR8/SR8.project" Active="No"/>
   <Project Name="Laba1" Path="Laba1/Laba1.project" Active="No"/>
   <Project Name="SR9" Path="SR9/SR9.project" Active="No"/>
   <Project Name="SR10" Path="SR10/SR10.project" Active="No"/>
@@ -19,9 +19,10 @@
   <Project Name="String01" Path="String01/String01.project" Active="No"/>
   <Project Name="structures_points" Path="structures_points/structures_points.project" Active="No"/>
   <Project Name="LR4" Path="LR4/LR4.project" Active="No"/>
-  <Project Name="Lab_1" Path="OOP/Lab_1/Lab_1.project" Active="No"/>
+  <Project Name="Lab_1" Path="OOP/Lab_1/Lab_1.project" Active="Yes"/>
   <Project Name="Lab_2" Path="OOP/Lab_2/Lab_2.project" Active="No"/>
   <Project Name="Lab_3" Path="OOP/Lab_3/Lab_3.project" Active="No"/>
+  <Project Name="Lab_4" Path="OOP/Lab_4/Lab_4.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -48,6 +49,7 @@
       <Project Name="Lab_2" ConfigName="Debug"/>
       <Project Name="Lab_2" ConfigName="Debug"/>
       <Project Name="Lab_3" ConfigName="Debug"/>
+      <Project Name="Lab_4" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -74,6 +76,7 @@
       <Project Name="Lab_2" ConfigName="Release"/>
       <Project Name="Lab_2" ConfigName="Release"/>
       <Project Name="Lab_3" ConfigName="Release"/>
+      <Project Name="Lab_4" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

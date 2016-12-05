@@ -8,14 +8,14 @@
 #include <iostream>
 
 //#include "B.h"
-#include "C.h"
+//#include "C.h"
 
-//class A {
-//public:
-//    A();
-//    ~A();
-//    int a;
-//};
+class A {
+public:
+    A();
+    ~A();
+    int a;
+};
 //Zavd2
 //class A : public C{
 //public:
@@ -23,11 +23,11 @@
 //    ~A();
 //    int a;
 //};
-class A : virtual public C{
-public:
-    A();
-    ~A();
-    int a;
-};
+//class A : virtual public C{
+//public:
+//    A();
+//   ~A();
+//    int a;
+//};
 
 #endif //LAB_4_A_H

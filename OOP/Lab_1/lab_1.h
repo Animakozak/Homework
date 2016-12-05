@@ -28,29 +28,29 @@ public:
     first=first*first-(second*second);
     second=first_temp*second+first_temp*second;
   }
+  // //--operators' overload--
+  // lab_1 operator= (lab_1 temp) {
+  //     first = temp.first;
+  //     second = temp.second;
+  //     return temp;
+  // }
+  // lab_1 operator* (lab_1 obj){
+  //   lab_1 temp;
+  //   temp.first=obj.first*first-(obj.second*second);
+  //   temp.second=obj.first*second+first*obj.second;
+  //   return temp;
+  // }
+  // lab_1 operator- (){
+  //   lab_1 temp;
+  //   temp.first=-first;
+  //   temp.second=-second;
+  //   return temp;
+  // }
   //--operators' overload--
   lab_1 operator= (lab_1 temp) {
-      first = temp.first;
-      second = temp.second;
-      return temp;
-  }
-  lab_1 operator* (lab_1 obj){
-    lab_1 temp;
-    temp.first=obj.first*first-(obj.second*second);
-    temp.second=obj.first*second+first*obj.second;
-    return temp;
-  }
-  lab_1 operator- (){
-    lab_1 temp;
-    temp.first=-first;
-    temp.second=-second;
-    return temp;
-  }
-  //--operators' overload--
-  lab_1 operator= (lab_1 temp) {
-      first = temp.first;
-      second = temp.second;
-      return temp;
+      this->first = temp.first;
+      this->second = temp.second;
+      return *this;
   }
   lab_1 operator* (lab_1 obj){
     lab_1 temp;
