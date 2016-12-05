@@ -26,9 +26,9 @@ void Circle::initCircle(float circleCenterX, float circleCenterY, float circlePo
     setCircleCoordinate_Y(circlePointY);
     setCircleRadius();
 }
-void Circle::setCircleRadius(){
-    circleRadius=getCircleRadius();
-}
+//void Circle::setCircleRadius(){
+//    circleRadius=getCircleRadius();
+//}
 float Circle::getCircleLength(){
     return circleRadius*2*Pi;
 }

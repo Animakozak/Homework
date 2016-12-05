@@ -31,7 +31,8 @@ class Pet{
     }
     String setFood() {
         System.out.println("Food: ");
-        food = input.nextLine();
+        Scanner inputFood = new Scanner(System.in);
+        food = inputFood.nextLine();
         return food;
     }
     boolean setStatusAsleep(){

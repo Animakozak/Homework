@@ -19,7 +19,7 @@
   <Project Name="String01" Path="String01/String01.project" Active="No"/>
   <Project Name="structures_points" Path="structures_points/structures_points.project" Active="No"/>
   <Project Name="LR4" Path="LR4/LR4.project" Active="No"/>
-  <Project Name="Lab_1" Path="OOP/Lab_1/Lab_1.project" Active="No"/>
+  <Project Name="Lab_1" Path="OOP/Lab_1/Lab_1.project" Active="Yes"/>
   <Project Name="Lab_2" Path="OOP/Lab_2/Lab_2.project" Active="No"/>
   <Project Name="Lab_3" Path="OOP/Lab_3/Lab_3.project" Active="No"/>
   <Project Name="Lab_4" Path="OOP/Lab_4/Lab_4.project" Active="Yes"/>
