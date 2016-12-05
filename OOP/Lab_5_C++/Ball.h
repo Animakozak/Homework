@@ -6,8 +6,15 @@
 #define LAB_5_C_BALL_H
 
 
-class Ball {
+#include "Body.h"
 
+class Ball : public Body {
+public:
+    Ball();
+    Ball(double radius);
+    double r;
+    double area();
+    double volume();
 };
 
 
