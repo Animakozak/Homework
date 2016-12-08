@@ -43,11 +43,11 @@ public class Circle {
       Circle i = new Circle();
       return i;
     }
-    else if(O2.r>d){
+    else if(O2.r>d && O1.r>d && O1.r>O2.r){
       Circle i = new Circle(O1.x, O1.y, O1.r);
       return i;
     }
-    else if(O1.r>d){
+    else if(O1.r>d && O2.r>d && O1.r>O2.r){
       Circle i = new Circle(O2.x, O2.y, O2.r);
       return i;
     }
