@@ -11,7 +11,7 @@ class Body {
 public:
     Body();
     Body(double radiusInner, double radiusOuter, double facePerVertexQuantity, double edgePerVertexQuantity, double edgeLength);
-    virtual ~Body()=0;
+    virtual ~Body() {};
     double radIn;
     double radOut;
     double faceNum;

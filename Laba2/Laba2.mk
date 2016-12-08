@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=Laba2
 ConfigurationName      :=Debug
-WorkspacePath          := "D:\Denis\Homework"
-ProjectPath            := "D:\Denis\Homework\Laba2"
+WorkspacePath          := "C:\Users\user\Documents\GitHub\Homework"
+ProjectPath            := "C:\Users\user\Documents\GitHub\Homework\Laba2"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=user
-Date                   :=26/09/2016
+Date                   :=07/12/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/TDM-GCC-32/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-32/bin/g++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/new.cpp$(ObjectSuffix): new.cpp $(IntermediateDirectory)/new.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Denis/Homework/Laba2/new.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/new.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/user/Documents/GitHub/Homework/Laba2/new.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/new.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/new.cpp$(DependSuffix): new.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/new.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/new.cpp$(DependSuffix) -MM "new.cpp"
 

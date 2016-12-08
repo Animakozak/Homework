@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=SR10
 ConfigurationName      :=Debug
-WorkspacePath          := "D:\Denis\Homework"
-ProjectPath            := "D:\Denis\Homework\SR10"
+WorkspacePath          := "C:\Users\user\Documents\GitHub\Homework"
+ProjectPath            := "C:\Users\user\Documents\GitHub\Homework\SR10"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=user
-Date                   :=17/02/2016
+Date                   :=07/12/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/TDM-GCC-32/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-32/bin/g++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/C++_Proc25.cpp$(ObjectSuffix): C++/Proc25.cpp $(IntermediateDirectory)/C++_Proc25.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Denis/Homework/SR10/C++/Proc25.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/C++_Proc25.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/user/Documents/GitHub/Homework/SR10/C++/Proc25.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/C++_Proc25.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/C++_Proc25.cpp$(DependSuffix): C++/Proc25.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/C++_Proc25.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/C++_Proc25.cpp$(DependSuffix) -MM "C++/Proc25.cpp"
 

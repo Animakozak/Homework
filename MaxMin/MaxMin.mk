@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=MaxMin
 ConfigurationName      :=Debug
-WorkspacePath          := "D:\Denis\Homework"
-ProjectPath            := "D:\Denis\Homework\MaxMin"
+WorkspacePath          := "C:\Users\user\Documents\GitHub\Homework"
+ProjectPath            := "C:\Users\user\Documents\GitHub\Homework\MaxMin"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=user
-Date                   :=03/04/2016
+Date                   :=07/12/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/TDM-GCC-32/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-32/bin/g++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/minmax17.cpp$(ObjectSuffix): minmax17.cpp $(IntermediateDirectory)/minmax17.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Denis/Homework/MaxMin/minmax17.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/minmax17.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/user/Documents/GitHub/Homework/MaxMin/minmax17.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/minmax17.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/minmax17.cpp$(DependSuffix): minmax17.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/minmax17.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/minmax17.cpp$(DependSuffix) -MM "minmax17.cpp"
 

@@ -97,4 +97,6 @@
     <File Name="Circle.h"/>
     <File Name="Circle.cpp"/>
   </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
 </CodeLite_Project>

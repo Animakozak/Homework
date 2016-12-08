@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=SR9_CPP
 ConfigurationName      :=Debug
-WorkspacePath          := "D:\Denis\Homework"
-ProjectPath            := "D:\Denis\Homework\SR10_CPP"
+WorkspacePath          := "C:\Users\user\Documents\GitHub\Homework"
+ProjectPath            := "C:\Users\user\Documents\GitHub\Homework\SR10_CPP"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Денис
-Date                   :=27/12/2015
+User                   :=user
+Date                   :=07/12/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/TDM-GCC-32/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-32/bin/g++.exe -shared -fPIC
@@ -94,12 +94,12 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/Series36.cpp$(ObjectSuffix): Series36.cpp $(IntermediateDirectory)/Series36.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Denis/Homework/SR10_CPP/Series36.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Series36.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/user/Documents/GitHub/Homework/SR10_CPP/Series36.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Series36.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Series36.cpp$(DependSuffix): Series36.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Series36.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Series36.cpp$(DependSuffix) -MM "Series36.cpp"
 
 $(IntermediateDirectory)/Series36.cpp$(PreprocessSuffix): Series36.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Series36.cpp$(PreprocessSuffix) "Series36.cpp"
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Series36.cpp$(PreprocessSuffix) "Series36.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

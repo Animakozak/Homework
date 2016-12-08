@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=Laba1
 ConfigurationName      :=Debug
-WorkspacePath          := "D:\Denis\Homework"
-ProjectPath            := "D:\Denis\Homework\Laba1"
+WorkspacePath          := "C:\Users\user\Documents\GitHub\Homework"
+ProjectPath            := "C:\Users\user\Documents\GitHub\Homework\Laba1"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Денис
-Date                   :=15/01/2016
+User                   :=user
+Date                   :=07/12/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/TDM-GCC-32/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-32/bin/g++.exe -shared -fPIC
@@ -94,12 +94,12 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/Lab1_quicksort.cpp$(ObjectSuffix): Lab1_quicksort.cpp $(IntermediateDirectory)/Lab1_quicksort.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Denis/Homework/Laba1/Lab1_quicksort.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Lab1_quicksort.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/user/Documents/GitHub/Homework/Laba1/Lab1_quicksort.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Lab1_quicksort.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Lab1_quicksort.cpp$(DependSuffix): Lab1_quicksort.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Lab1_quicksort.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Lab1_quicksort.cpp$(DependSuffix) -MM "Lab1_quicksort.cpp"
 
 $(IntermediateDirectory)/Lab1_quicksort.cpp$(PreprocessSuffix): Lab1_quicksort.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Lab1_quicksort.cpp$(PreprocessSuffix) "Lab1_quicksort.cpp"
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Lab1_quicksort.cpp$(PreprocessSuffix) "Lab1_quicksort.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
