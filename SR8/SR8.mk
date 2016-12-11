@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=SR8
 ConfigurationName      :=Debug
-WorkspacePath          := "D:\Denis\Homework"
-ProjectPath            := "D:\Denis\Homework\SR8"
+WorkspacePath          := "C:\Users\user\Documents\GitHub\Homework"
+ProjectPath            := "C:\Users\user\Documents\GitHub\Homework\SR8"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Денис
-Date                   :=26/12/2015
+User                   :=user
+Date                   :=14/11/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/TDM-GCC-32/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-32/bin/g++.exe -shared -fPIC
@@ -94,12 +94,12 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/C++_Add1.cpp$(ObjectSuffix): C++/Add1.cpp $(IntermediateDirectory)/C++_Add1.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Denis/Homework/SR8/C++/Add1.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/C++_Add1.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/user/Documents/GitHub/Homework/SR8/C++/Add1.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/C++_Add1.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/C++_Add1.cpp$(DependSuffix): C++/Add1.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/C++_Add1.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/C++_Add1.cpp$(DependSuffix) -MM "C++/Add1.cpp"
 
 $(IntermediateDirectory)/C++_Add1.cpp$(PreprocessSuffix): C++/Add1.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/C++_Add1.cpp$(PreprocessSuffix) "C++/Add1.cpp"
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/C++_Add1.cpp$(PreprocessSuffix) "C++/Add1.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

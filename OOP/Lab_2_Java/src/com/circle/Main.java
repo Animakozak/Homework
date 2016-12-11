@@ -5,14 +5,14 @@ import java.util.Scanner;
 class Main {
   public static void main(String[] args){
     Scanner input = new Scanner(System.in);
-    Circle Circle1 = new Circle();
+    Circle Circle1 = new Circle();                      //Creating first circle
     System.out.println("Type in x coordinate:");
     Circle1.setCircleCenter_x(input.nextDouble());
     System.out.println("Type in y coordinate:");
     Circle1.setCircleCenter_y(input.nextDouble());
     System.out.println("Type in radius:");
     Circle1.setCircleRadius(input.nextDouble());
-    Circle Circle2 = new Circle();
+    Circle Circle2 = new Circle();                      //Creating second circle
     System.out.println("Type in x coordinate:");
     Circle2.setCircleCenter_x(input.nextDouble());
     System.out.println("Type in y coordinate:");
@@ -27,16 +27,15 @@ class Main {
     System.out.println("Circle2 length is " + Circle2.getPerimeter());
     System.out.println("Circle2 square is " + Circle2.getSquare());
     System.out.println("Type in offset (Ox, Oy)");
-    double Ox = input.nextDouble();
-    double Oy = input.nextDouble();
+    double Ox = input.nextDouble();                     //Ox offset - 0, if you don't want to offset Circle 2
+    double Oy = input.nextDouble();                     //Oy offset - 0, if you don't want to offset Circle 2
     Circle2.move(Ox,Oy);
     System.out.println(Circle2);
+    System.out.println("Type in scale measure"); //Upscale Circle 1
     double Or = input.nextDouble();
     Circle1.scale(Or);
-    Circle unionCircle = new Circle();
-    unionCircle = Circle1.union(Circle1,Circle2);
     System.out.println(Circle1);
-    System.out.println("Union of Circle1 and Circle2 has a wapping area of "+);
-    System.out.println("Circle, folded in the intersection of Circle1 and Circle2 has a wapping area of "+Circle1.intersects(Circle1,Circle2));
+    System.out.println("Union of Circle1 and Circle2: "+Circle1.union(Circle1,Circle2));
+    System.out.println("Circle, folded in the intersection of Circle1 and Circle2: "+Circle1.intersects(Circle1,Circle2));
   }
 }

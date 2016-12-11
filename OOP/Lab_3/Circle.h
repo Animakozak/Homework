@@ -21,7 +21,7 @@ public:
 private:
     float x1;
     float y1;
-    float circleRadius;
+//    float circleRadius;
     const float Pi=3.14;
 };
 
