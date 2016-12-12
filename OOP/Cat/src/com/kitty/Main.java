@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-//        Kitty catWilliam = new Kitty();
-//        Dog dogDouge = new Dog();
+//       Kitty catWilliam = new Kitty();
+//       Dog dogDouge = new Dog();
 /* These lines are from original Pet assignment;
 * Comment everything between this comment and the lower one;
 * Uncomment everything outside;
 */
-//      AGE COMPARISON AND FOOD CONSUMPTION
+/*      AGE COMPARISON AND FOOD CONSUMPTION*/
         int N=3;
         Kitty[] cats = new Kitty[N]; //13.10
         for(int i=0; i<N; i++){

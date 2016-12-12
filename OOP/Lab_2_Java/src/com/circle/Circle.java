@@ -95,7 +95,7 @@ public class Circle {
       else{
         u.x=(O1.x+O2.x)/2.0;
         u.y=(O1.y+O2.y)/2.0;
-        u.r=O1.r+O2.r;
+        u.r=(O1.r+O2.r)/2;
       }
       return u;
     }
