@@ -15,8 +15,10 @@ public:
     dataBase();
     dataBase(int s);
     void read();
-    void read(std::ifstream &f);
+    void read(std::ifstream *f);
     void disp();
+    void find(std::string query);
+    void find(std::string q, int i);
     std::multimap <std::string, std::string> geo;
 };
 
