@@ -12,11 +12,8 @@ public class Point {
         x=a;
         y=b;
     }
-    public void setPointCoordinate_X(double input){
-        x=input;
-    }
-    public void setPointCoordinate_Y(double input){
-        y=input;
+    public void view(){
+        System.out.println("("+x+";"+y+")");
     }
     protected double x;
     protected double y;

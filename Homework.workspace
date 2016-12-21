@@ -24,7 +24,9 @@
   <Project Name="Lab_3" Path="OOP/Lab_3/Lab_3.project" Active="No"/>
   <Project Name="Lab_4" Path="OOP/Lab_4/Lab_4.project" Active="No"/>
   <Project Name="Lab_5" Path="OOP/Lab_5_C++/Lab_5.project" Active="No"/>
-  <Project Name="Module_2016" Path="OOP/Module_2016/Module_2016.project" Active="Yes"/>
+  <Project Name="Module_2016" Path="OOP/Module_2016/Module_2016.project" Active="No"/>
+  <Project Name="Lab_map_c" Path="Lab_map_c/Lab_map_c.project"/>
+  <Project Name="Maps" Path="OOP/Lab_Maps_c++/Maps.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -54,6 +56,8 @@
       <Project Name="Lab_4" ConfigName="Debug"/>
       <Project Name="Lab_5" ConfigName="Debug"/>
       <Project Name="Module_2016" ConfigName="Debug"/>
+      <Project Name="Lab_map_c" ConfigName="Debug"/>
+      <Project Name="Maps" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -83,6 +87,8 @@
       <Project Name="Lab_4" ConfigName="Release"/>
       <Project Name="Lab_5" ConfigName="Release"/>
       <Project Name="Module_2016" ConfigName="Release"/>
+      <Project Name="Lab_map_c" ConfigName="Release"/>
+      <Project Name="Maps" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

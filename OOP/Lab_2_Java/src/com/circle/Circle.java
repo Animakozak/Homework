@@ -100,9 +100,9 @@ public class Circle {
         u.y=O1.y;
       }
       else{
-        u.x=(O1.x+O2.x)/2.0;
-        u.y=(O1.y+O2.y)/2.0;
-        u.r=(O1.r+O2.r)/2;
+        u.x=(O1.x-O1.r+O2.x+O2.r)/2.0;
+//        u.y=(O1.y+O2.y)/2.0;
+        u.r=(sqrt(pow(O1.x-O1.r-O2.x+O2.r,2)))/2;
       }
       return u;
     }

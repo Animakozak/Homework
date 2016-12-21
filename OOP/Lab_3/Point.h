@@ -5,8 +5,9 @@ class Point{
 public:
     Point();
     Point(float a, float b);
-    void setPointCoordinate_X(float input);
-    void setPointCoordinate_Y(float input);
+    void view();
+    // void setPointCoordinate_X(float input);
+    // void setPointCoordinate_Y(float input);
 protected:
   float x;
   float y;
