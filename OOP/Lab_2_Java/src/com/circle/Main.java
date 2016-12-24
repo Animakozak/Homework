@@ -37,7 +37,7 @@ class Main {
     double Or = input.nextDouble();
     Circle1.scale(Or);
     System.out.println(Circle1);
-    System.out.println("Union of Circle1 and Circle2: "+Circle1.union(Circle1,Circle2));
-    System.out.println("Circle, folded in the intersection of Circle1 and Circle2: "+Circle1.intersects(Circle1,Circle2));
+    System.out.println("Union of Circle1 and Circle2: "+Circle1.union(Circle2));
+    System.out.println("Circle, folded in the intersection of Circle1 and Circle2: "+Circle1.intersects(Circle2));
   }
 }
