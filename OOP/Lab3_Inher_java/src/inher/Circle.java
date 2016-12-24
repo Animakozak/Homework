@@ -8,50 +8,39 @@ public class Circle extends Point {
     Circle(){
         x1=0;
         y1=0;
-        setCircleRadius();
+        
     }
     Circle(double a, double b, double c, double d){
         super(a,b);
         x1=c;
         y1=d;
-        setCircleRadius();
+        
     }
-    public void setCircleCoordinate_X(double a){
-        x1=a;
-    }
-    public void setCircleCoordinate_Y(double b){
-        y1=b;
-    }
+    public void view(){System.out.println("("+x1+";"+y1+")");}
     public double getCircleRadius(){
         return Math.sqrt(Math.pow((x1-x),2)+Math.pow((y1-y),2));
     }
-    public void setCircleRadius(){
-        circleRadius=getCircleRadius();
-    }
-    public void initCircle(double circleCenterX, double circleCenterY, double circlePointX, double circlePointY){
-        setPointCoordinate_X(circleCenterX);
-        setPointCoordinate_Y(circleCenterY);
-        setCircleCoordinate_X(circlePointX);
-        setCircleCoordinate_Y(circlePointY);
-        setCircleRadius();
-    }
     public double getCircleLength(){
-        return circleRadius*2*Pi;
+        return getCircleRadius()*2*Pi;
     }
     public double getCircleSquare(){
-        return circleRadius*circleRadius*Pi;
+        return getCircleRadius()*getCircleRadius()*Pi;
     }
     public void getCircleStats_MSG(){
-        System.out.println("inher.Circle Center Coordinates are: ("+x+";"+y+")"+"inher.Circle point Coordinates are: ("+x1+";"+y1+")"+"inher.Circle Radius is "+circleRadius);
+        System.out.println("Circle Center Coordinates are: ");
+        super.view();
+        System.out.println("Circle point Coordinates are: ");
+//        view(x1,y1);
+        view();
+        System.out.println("Radius is "+getCircleRadius());
     }
     public void getCircleLength_MSG(){
-        System.out.println("inher.Circle length is "+getCircleLength());
+        System.out.println("Circle length is "+getCircleLength());
     }
     public void getCircleSquare_MSG(){
-        System.out.println("inher.Circle square is "+getCircleSquare());
+        System.out.println("Circle square is "+getCircleSquare());
     }
     private double x1;
     private double y1;
-    private double circleRadius;
     private double Pi=3.14;
 }

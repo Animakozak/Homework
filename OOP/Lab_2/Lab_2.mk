@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=Lab_2
 ConfigurationName      :=Debug
-WorkspacePath          := "D:\Denis\Homework"
-ProjectPath            := "D:\Denis\Homework\OOP\Lab_2"
+WorkspacePath          := "C:\Users\user\Documents\GitHub\Homework"
+ProjectPath            := "C:\Users\user\Documents\GitHub\Homework\OOP\Lab_2"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=user
-Date                   :=11/10/2016
+Date                   :=07/12/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/TDM-GCC-32/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-32/bin/g++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Denis/Homework/OOP/Lab_2/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/user/Documents/GitHub/Homework/OOP/Lab_2/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM "main.cpp"
 
@@ -102,7 +102,7 @@ $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) "main.cpp"
 
 $(IntermediateDirectory)/ATM.cpp$(ObjectSuffix): ATM.cpp $(IntermediateDirectory)/ATM.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Denis/Homework/OOP/Lab_2/ATM.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/ATM.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/user/Documents/GitHub/Homework/OOP/Lab_2/ATM.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/ATM.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/ATM.cpp$(DependSuffix): ATM.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/ATM.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/ATM.cpp$(DependSuffix) -MM "ATM.cpp"
 
@@ -110,7 +110,7 @@ $(IntermediateDirectory)/ATM.cpp$(PreprocessSuffix): ATM.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/ATM.cpp$(PreprocessSuffix) "ATM.cpp"
 
 $(IntermediateDirectory)/Bank.cpp$(ObjectSuffix): Bank.cpp $(IntermediateDirectory)/Bank.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Denis/Homework/OOP/Lab_2/Bank.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Bank.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/user/Documents/GitHub/Homework/OOP/Lab_2/Bank.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Bank.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Bank.cpp$(DependSuffix): Bank.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Bank.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Bank.cpp$(DependSuffix) -MM "Bank.cpp"
 

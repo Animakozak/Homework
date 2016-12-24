@@ -1,0 +1,1 @@
+./Debug/main.cpp.o ./Debug/Ball.cpp.o ./Debug/Body.cpp.o ./Debug/Parallelepiped.cpp.o   

@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=Array69-111
 ConfigurationName      :=Debug
-WorkspacePath          := "D:\Denis\Homework"
-ProjectPath            := "D:\Denis\Homework\Array69-111"
+WorkspacePath          := "C:\Users\user\Documents\GitHub\Homework"
+ProjectPath            := "C:\Users\user\Documents\GitHub\Homework\Array69-111"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=user
-Date                   :=16/03/2016
+Date                   :=07/12/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/TDM-GCC-32/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-32/bin/g++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/Array82-83.cpp$(ObjectSuffix): Array82-83.cpp $(IntermediateDirectory)/Array82-83.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Denis/Homework/Array69-111/Array82-83.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Array82-83.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/user/Documents/GitHub/Homework/Array69-111/Array82-83.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Array82-83.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Array82-83.cpp$(DependSuffix): Array82-83.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Array82-83.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Array82-83.cpp$(DependSuffix) -MM "Array82-83.cpp"
 

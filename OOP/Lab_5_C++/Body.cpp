@@ -17,15 +17,15 @@ Body::Body(double radiusInner, double radiusOuter, double facePerVertexQuantity,
     p=edgePerVertexQuantity;
     a=edgeLength;
 }
-double Body::area(){
+/*double Body::area(){
     return (a/2.0)*(a/2.0)*faceNum*p*1/tan(3.14/p);
 }
-double Body::volume() {
+double Body::volume(){
     return radIn*radIn*p*tan(3.14/p)*radIn*1/3.0;
-}
+}*/
 void Body::getInfo() {
     cout<<"Area: "<<area()<<endl<<"Volume: "<<volume()<<endl<<"--.-.-.-.-.--"<<endl;
 }
-Body::~Body() {
-    cout<<"G'bye!"<<endl;
-}
+//Body::~Body() {
+//    cout<<"G'bye!"<<endl;
+//}

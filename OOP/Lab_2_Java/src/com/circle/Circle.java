@@ -66,9 +66,16 @@ public class Circle {
 //      k.x = i.x - (O2.x-O1.x)/d*(sqrt(O2.r*O2.r-b*b));
 //      k.y = i.y - (O2.y-O1.y)/d*(sqrt(O2.r*O2.r-b*b));
 //      i.r=sqrt(pow((O1.x-j.x),2)+pow((O1.y-j.y),2));
-      i.x=(O1.x+a+O2.x+b)/2.0;
-      i.y=(O1.y+a+O2.y+b)/2.0;
-      i.r=-diff/2.0;
+      if(O2.x>0 && O2.y>0){
+        i.x=(O1.x+a+O2.x-b)/2.0;
+        i.y=(O1.y+a+O2.y-b)/2.0;
+        i.r=-diff/2.0;
+      }
+      else if(O2.x<0 && O2.y<0){
+        i.x=(O1.x-a+O2.x+b)/2.0;
+        i.y=(O1.y-a+O2.y+b)/2.0;
+        i.r=-diff/2.0;
+      }
       return i;
     }
   }
@@ -93,9 +100,9 @@ public class Circle {
         u.y=O1.y;
       }
       else{
-        u.x=(O1.x+O2.x)/2.0;
-        u.y=(O1.y+O2.y)/2.0;
-        u.r=O1.r+O2.r;
+        u.x=(O1.x-O1.r+O2.x+O2.r)/2.0;
+//        u.y=(O1.y+O2.y)/2.0;
+        u.r=(sqrt(pow(O1.x-O1.r-O2.x+O2.r,2)))/2;
       }
       return u;
     }

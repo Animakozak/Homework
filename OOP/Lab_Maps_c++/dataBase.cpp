@@ -41,13 +41,12 @@ void dataBase::disp() {
 }
 void dataBase::find(std::string query) {
     std::cout<<"There are "<<geo.count(query)<<" results:"<<std::endl;
-    for(std::multimap<std::string,std::string>::iterator it=geo.equal_range(query).first; it!=geo.equal_range(query).second; ++it){
+    for(std::multimap<std::string,std::string>::iterator it=geo.equal_range(query).first; it!=geo.equal_range(query).second; it++){
         std::cout<<it->second<<std::endl;
     }
 }
 void dataBase::find(std::string q, int i) {
     std::multimap<std::string,std::string>::iterator it;
-//    std::cout<<"POP!";
     for(it=geo.begin(); it!=geo.end(); it++){
         if(it->second==q){
             std::cout<<"Found: "<<it->first<<"\n";

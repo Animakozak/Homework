@@ -21,8 +21,8 @@ int main() {
 ///*    i->getInfo(); /*We can't create i*/
 //    j->getInfo(); /*pre-virtual*/
 //    k->getInfo(); /*pre-virtual*/
-    Body *arr[3];
-    for(int o=0;o<3;o++){
+    Body *arr[10];
+    for(int o=0;o<10;o++){
         if(o%2==0){
             if((-10 + rand() % 20)%2==0){
                 arr[o]=new Parallelepiped(2,4,6,3);
@@ -40,7 +40,7 @@ int main() {
             }
         }
     }
-    for(int o=0;o<3;o++){
+    for(int o=0;o<10;o++){
         if(o%2==0) cout<<"Parallelepiped:"<<endl;
         else cout<<"Ball:"<<endl;
         arr[o]->getInfo();

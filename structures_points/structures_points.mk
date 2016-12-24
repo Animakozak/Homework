@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=structures_points
 ConfigurationName      :=Debug
-WorkspacePath          := "D:\Denis\Homework"
-ProjectPath            := "D:\Denis\Homework\structures_points"
+WorkspacePath          := "C:\Users\user\Documents\GitHub\Homework"
+ProjectPath            := "C:\Users\user\Documents\GitHub\Homework\structures_points"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=user
-Date                   :=14/05/2016
+Date                   :=07/12/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/TDM-GCC-32/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-32/bin/g++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/points.cpp$(ObjectSuffix): points.cpp $(IntermediateDirectory)/points.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Denis/Homework/structures_points/points.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/points.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/user/Documents/GitHub/Homework/structures_points/points.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/points.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/points.cpp$(DependSuffix): points.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/points.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/points.cpp$(DependSuffix) -MM "points.cpp"
 

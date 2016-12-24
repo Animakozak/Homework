@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=Array_Insane_Session
 ConfigurationName      :=Debug
-WorkspacePath          := "D:\Denis\Homework"
-ProjectPath            := "D:\Denis\Homework\Array_Insane_Session"
+WorkspacePath          := "C:\Users\user\Documents\GitHub\Homework"
+ProjectPath            := "C:\Users\user\Documents\GitHub\Homework\Array_Insane_Session"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=user
-Date                   :=27/04/2016
+Date                   :=07/12/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/TDM-GCC-32/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-32/bin/g++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/6.cpp$(ObjectSuffix): 6.cpp $(IntermediateDirectory)/6.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Denis/Homework/Array_Insane_Session/6.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/6.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/user/Documents/GitHub/Homework/Array_Insane_Session/6.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/6.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/6.cpp$(DependSuffix): 6.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/6.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/6.cpp$(DependSuffix) -MM "6.cpp"
 

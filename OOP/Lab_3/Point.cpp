@@ -7,9 +7,6 @@ Point::Point(float a, float b){
     x=a;
     y=b;
 }
-void Point::setPointCoordinate_X(float input) {
-    x=input;
-}
-void Point::setPointCoordinate_Y(float input) {
-    y=input;
+void Point::view(){
+    std::cout<<"("<<x<<";"<<y<<")";
 }

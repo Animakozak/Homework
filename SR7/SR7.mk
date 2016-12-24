@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=SR7
 ConfigurationName      :=Debug
-WorkspacePath          := "D:\Denis\Homework"
-ProjectPath            := "D:\Denis\Homework\SR7"
+WorkspacePath          := "C:\Users\user\Documents\GitHub\Homework"
+ProjectPath            := "C:\Users\user\Documents\GitHub\Homework\SR7"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Денис
-Date                   :=09/12/2015
+User                   :=user
+Date                   :=07/12/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/TDM-GCC-32/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-32/bin/g++.exe -shared -fPIC
@@ -94,12 +94,12 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/SR7_1_3.cpp$(ObjectSuffix): ../SR7_1/3.cpp $(IntermediateDirectory)/SR7_1_3.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Denis/Homework/SR7_1/3.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/SR7_1_3.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/user/Documents/GitHub/Homework/SR7_1/3.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/SR7_1_3.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/SR7_1_3.cpp$(DependSuffix): ../SR7_1/3.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/SR7_1_3.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/SR7_1_3.cpp$(DependSuffix) -MM "../SR7_1/3.cpp"
 
 $(IntermediateDirectory)/SR7_1_3.cpp$(PreprocessSuffix): ../SR7_1/3.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/SR7_1_3.cpp$(PreprocessSuffix) "../SR7_1/3.cpp"
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/SR7_1_3.cpp$(PreprocessSuffix) "../SR7_1/3.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

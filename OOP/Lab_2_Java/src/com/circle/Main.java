@@ -20,12 +20,14 @@ class Main {
     System.out.println("Type in radius:");
     Circle2.setCircleRadius(input.nextDouble());
     //methods
-    Circle1.toString();
-    System.out.println("Circle1 length is " + Circle1.getPerimeter());
-    System.out.println("Circle1 square is " + Circle1.getSquare());
-    Circle2.toString();
-    System.out.println("Circle2 length is " + Circle2.getPerimeter());
-    System.out.println("Circle2 square is " + Circle2.getSquare());
+//    Circle1.toString();
+//    System.out.println("Circle1 length is " + Circle1.getPerimeter());
+//    System.out.println("Circle1 square is " + Circle1.getSquare());
+//    Circle2.toString();
+//    System.out.println("Circle2 length is " + Circle2.getPerimeter());
+//    System.out.println("Circle2 square is " + Circle2.getSquare());
+    System.out.println(Circle1);
+    System.out.println(Circle2);
     System.out.println("Type in offset (Ox, Oy)");
     double Ox = input.nextDouble();                     //Ox offset - 0, if you don't want to offset Circle 2
     double Oy = input.nextDouble();                     //Oy offset - 0, if you don't want to offset Circle 2

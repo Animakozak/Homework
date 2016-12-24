@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=SR9
 ConfigurationName      :=Debug
-WorkspacePath          := "D:\Denis\Homework"
-ProjectPath            := "D:\Denis\Homework\SR9"
+WorkspacePath          := "C:\Users\user\Documents\GitHub\Homework"
+ProjectPath            := "C:\Users\user\Documents\GitHub\Homework\SR9"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Денис
-Date                   :=26/12/2015
+User                   :=user
+Date                   :=07/12/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/TDM-GCC-32/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-32/bin/g++.exe -shared -fPIC
@@ -62,11 +62,9 @@ AS       := C:/TDM-GCC-32/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/С++_A.cpp$(ObjectSuffix) 
 
 
-
-Objects=$(Objects0) 
+Objects=
 
 ##
 ## Main Build Targets 
@@ -77,7 +75,6 @@ all: $(OutputFile)
 $(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
 	@$(MakeDirCommand) $(@D)
 	@echo "" > $(IntermediateDirectory)/.d
-	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
 MakeIntermediateDirs:
@@ -93,14 +90,6 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/С++_A.cpp$(ObjectSuffix): С++/A.cpp $(IntermediateDirectory)/С++_A.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Denis/Homework/SR9/С++/A.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/С++_A.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/С++_A.cpp$(DependSuffix): С++/A.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/С++_A.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/С++_A.cpp$(DependSuffix) -MM "С++/A.cpp"
-
-$(IntermediateDirectory)/С++_A.cpp$(PreprocessSuffix): С++/A.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/С++_A.cpp$(PreprocessSuffix) "С++/A.cpp"
-
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
 ##

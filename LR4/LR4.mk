@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=LR4
 ConfigurationName      :=Debug
-WorkspacePath          := "D:\Denis\Homework"
-ProjectPath            := "D:\Denis\Homework\LR4"
+WorkspacePath          := "C:\Users\user\Documents\GitHub\Homework"
+ProjectPath            := "C:\Users\user\Documents\GitHub\Homework\LR4"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=user
-Date                   :=08/06/2016
+Date                   :=07/12/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/TDM-GCC-32/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-32/bin/g++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/lr4.cpp$(ObjectSuffix): lr4.cpp $(IntermediateDirectory)/lr4.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Denis/Homework/LR4/lr4.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/lr4.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/user/Documents/GitHub/Homework/LR4/lr4.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/lr4.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/lr4.cpp$(DependSuffix): lr4.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/lr4.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/lr4.cpp$(DependSuffix) -MM "lr4.cpp"
 

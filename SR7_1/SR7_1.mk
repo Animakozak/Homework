@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=SR7_1
 ConfigurationName      :=Debug
-WorkspacePath          := "D:\Denis\Homework"
-ProjectPath            := "D:\Denis\Homework\SR7_1"
+WorkspacePath          := "C:\Users\user\Documents\GitHub\Homework"
+ProjectPath            := "C:\Users\user\Documents\GitHub\Homework\SR7_1"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Денис
-Date                   :=07/12/2015
+User                   :=user
+Date                   :=07/12/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/TDM-GCC-32/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-32/bin/g++.exe -shared -fPIC
@@ -94,12 +94,12 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/1.cpp$(ObjectSuffix): 1.cpp $(IntermediateDirectory)/1.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Denis/Homework/SR7_1/1.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/1.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/user/Documents/GitHub/Homework/SR7_1/1.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/1.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/1.cpp$(DependSuffix): 1.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/1.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/1.cpp$(DependSuffix) -MM "1.cpp"
 
 $(IntermediateDirectory)/1.cpp$(PreprocessSuffix): 1.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/1.cpp$(PreprocessSuffix) "1.cpp"
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/1.cpp$(PreprocessSuffix) "1.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
