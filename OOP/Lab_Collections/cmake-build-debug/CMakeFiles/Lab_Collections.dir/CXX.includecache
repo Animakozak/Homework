@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/Book.cpp
+Book.h
+C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/Book.h
+
+C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/Book.h
+iostream
+-
+cstring
+-
+fstream
+-
+list
+-
+algorithm
+-
+numeric
+-
+iterator
+-
+string
+-
+
+C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/main.cpp
+Book.h
+C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/Book.h
+

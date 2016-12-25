@@ -1,0 +1,3 @@
+"C:\Program Files (x86)\JetBrains\CLion 2016.3.1\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\Lab_Collections.dir/objects.a
+C:\TDM-GCC-32\bin\ar.exe cr CMakeFiles\Lab_Collections.dir/objects.a @CMakeFiles\Lab_Collections.dir\objects1.rsp
+C:\TDM-GCC-32\bin\g++.exe   -std=c++11 -g   -Wl,--whole-archive CMakeFiles\Lab_Collections.dir/objects.a -Wl,--no-whole-archive  -o Lab_Collections.exe -Wl,--out-implib,libLab_Collections.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Lab_Collections.dir\linklibs.rsp

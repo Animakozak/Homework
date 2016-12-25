@@ -1,5 +1,5 @@
 #include <iostream>
-public class Book{
+class Book{
     public:
     Book();
     Book(char* a, char* b,char* c,int d, int e);
@@ -9,4 +9,4 @@ public class Book{
     int releaseYear;
     int pages;
     bool operator==();
-}
+};

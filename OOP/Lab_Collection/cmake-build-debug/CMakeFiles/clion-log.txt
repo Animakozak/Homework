@@ -1,0 +1,65 @@
+"C:\Program Files (x86)\JetBrains\CLion 2016.3.1\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collection
+-- The C compiler identification is unknown
+-- The CXX compiler identification is unknown
+-- Check for working C compiler: C:/TDM-GCC-32/bin/gcc.exe
+-- Check for working C compiler: C:/TDM-GCC-32/bin/gcc.exe -- broken
+CMake Error at C:/Program Files (x86)/JetBrains/CLion 2016.3.1/bin/cmake/share/cmake-3.6/Modules/CMakeTestCCompiler.cmake:61 (message):
+  The C compiler "C:/TDM-GCC-32/bin/gcc.exe" is not able to compile a simple
+  test program.
+
+  It fails with the following output:
+
+   Change Dir: C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp
+
+  
+
+  Run Build Command:"C:/TDM-GCC-32/bin/mingw32-make.exe" "cmTC_ac6fa/fast"
+
+  C:/TDM-GCC-32/bin/mingw32-make.exe -f CMakeFiles\cmTC_ac6fa.dir\build.make
+  CMakeFiles/cmTC_ac6fa.dir/build
+
+  mingw32-make.exe[1]: Entering directory
+  'C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+  Building C object CMakeFiles/cmTC_ac6fa.dir/testCCompiler.c.obj
+
+  C:\TDM-GCC-32\bin\gcc.exe -o CMakeFiles\cmTC_ac6fa.dir\testCCompiler.c.obj
+  -c
+  C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collection\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+
+
+  CMakeFiles\cmTC_ac6fa.dir\build.make:64: recipe for target
+  'CMakeFiles/cmTC_ac6fa.dir/testCCompiler.c.obj' failed
+
+  process_begin: CreateProcess(C:\TDM-GCC-32\bin\gcc.exe,
+  C:\TDM-GCC-32\bin\gcc.exe -o CMakeFiles\cmTC_ac6fa.dir\testCCompiler.c.obj
+  -c
+  C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collection\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c,
+  ...) failed.
+
+
+
+  mingw32-make.exe[1]: *** [CMakeFiles/cmTC_ac6fa.dir/testCCompiler.c.obj]
+  Error 740
+
+  mingw32-make.exe[1]: Leaving directory
+  'C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+  Makefile:125: recipe for target 'cmTC_ac6fa/fast' failed
+
+  mingw32-make.exe: *** [cmTC_ac6fa/fast] Error 2
+
+  
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeError.log".

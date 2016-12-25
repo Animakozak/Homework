@@ -1,6 +1,9 @@
+package com.lab.backpack;
+
 /**
  * Created by Den on 21.12.2016.
  */
+
 public class Thing {
     public int mass;
     public int value;

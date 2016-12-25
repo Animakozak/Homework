@@ -1,0 +1,438 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: -c
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: -Aa
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: -D__CLASSIC_C__
+
+The output was:
+The requested operation requires elevation
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/TDM-GCC-32/bin/g++.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/TDM-GCC-32/bin/g++.exe 
+Build flags: 
+Id flags: -c
+
+The output was:
+The requested operation requires elevation
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/TDM-GCC-32/bin/mingw32-make.exe" "cmTC_ab71b/fast"
+C:/TDM-GCC-32/bin/mingw32-make.exe -f CMakeFiles\cmTC_ab71b.dir\build.make CMakeFiles/cmTC_ab71b.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ab71b.dir/testCCompiler.c.obj
+C:\TDM-GCC-32\bin\gcc.exe     -o CMakeFiles\cmTC_ab71b.dir\testCCompiler.c.obj   -c C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collection\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+CMakeFiles\cmTC_ab71b.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_ab71b.dir/testCCompiler.c.obj' failed
+process_begin: CreateProcess(C:\TDM-GCC-32\bin\gcc.exe, C:\TDM-GCC-32\bin\gcc.exe -o CMakeFiles\cmTC_ab71b.dir\testCCompiler.c.obj -c C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collection\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c, ...) failed.
+make (e=740): The requested operation requires elevation.
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_ab71b.dir/testCCompiler.c.obj] Error 740
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_ab71b/fast' failed
+mingw32-make.exe: *** [cmTC_ab71b/fast] Error 2
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: -c
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: -Aa
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: -D__CLASSIC_C__
+
+The output was:
+The requested operation requires elevation
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/TDM-GCC-32/bin/g++.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/TDM-GCC-32/bin/g++.exe 
+Build flags: 
+Id flags: -c
+
+The output was:
+The requested operation requires elevation
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/TDM-GCC-32/bin/mingw32-make.exe" "cmTC_ea007/fast"
+C:/TDM-GCC-32/bin/mingw32-make.exe -f CMakeFiles\cmTC_ea007.dir\build.make CMakeFiles/cmTC_ea007.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ea007.dir/testCCompiler.c.obj
+C:\TDM-GCC-32\bin\gcc.exe     -o CMakeFiles\cmTC_ea007.dir\testCCompiler.c.obj   -c C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collection\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+CMakeFiles\cmTC_ea007.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_ea007.dir/testCCompiler.c.obj' failed
+process_begin: CreateProcess(C:\TDM-GCC-32\bin\gcc.exe, C:\TDM-GCC-32\bin\gcc.exe -o CMakeFiles\cmTC_ea007.dir\testCCompiler.c.obj -c C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collection\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c, ...) failed.
+make (e=740): The requested operation requires elevation.
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_ea007.dir/testCCompiler.c.obj] Error 740
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_ea007/fast' failed
+mingw32-make.exe: *** [cmTC_ea007/fast] Error 2
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: -c
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: -Aa
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: -D__CLASSIC_C__
+
+The output was:
+The requested operation requires elevation
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/TDM-GCC-32/bin/g++.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/TDM-GCC-32/bin/g++.exe 
+Build flags: 
+Id flags: -c
+
+The output was:
+The requested operation requires elevation
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/TDM-GCC-32/bin/mingw32-make.exe" "cmTC_570c5/fast"
+C:/TDM-GCC-32/bin/mingw32-make.exe -f CMakeFiles\cmTC_570c5.dir\build.make CMakeFiles/cmTC_570c5.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_570c5.dir/testCCompiler.c.obj
+C:\TDM-GCC-32\bin\gcc.exe     -o CMakeFiles\cmTC_570c5.dir\testCCompiler.c.obj   -c C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collection\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+CMakeFiles\cmTC_570c5.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_570c5.dir/testCCompiler.c.obj' failed
+process_begin: CreateProcess(C:\TDM-GCC-32\bin\gcc.exe, C:\TDM-GCC-32\bin\gcc.exe -o CMakeFiles\cmTC_570c5.dir\testCCompiler.c.obj -c C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collection\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c, ...) failed.
+make (e=740): The requested operation requires elevation.
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_570c5.dir/testCCompiler.c.obj] Error 740
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_570c5/fast' failed
+mingw32-make.exe: *** [cmTC_570c5/fast] Error 2
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: -c
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: -Aa
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: -D__CLASSIC_C__
+
+The output was:
+The requested operation requires elevation
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/TDM-GCC-32/bin/g++.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/TDM-GCC-32/bin/g++.exe 
+Build flags: 
+Id flags: -c
+
+The output was:
+The requested operation requires elevation
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/TDM-GCC-32/bin/mingw32-make.exe" "cmTC_4883d/fast"
+C:/TDM-GCC-32/bin/mingw32-make.exe -f CMakeFiles\cmTC_4883d.dir\build.make CMakeFiles/cmTC_4883d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4883d.dir/testCCompiler.c.obj
+C:\TDM-GCC-32\bin\gcc.exe     -o CMakeFiles\cmTC_4883d.dir\testCCompiler.c.obj   -c C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collection\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+CMakeFiles\cmTC_4883d.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_4883d.dir/testCCompiler.c.obj' failed
+process_begin: CreateProcess(C:\TDM-GCC-32\bin\gcc.exe, C:\TDM-GCC-32\bin\gcc.exe -o CMakeFiles\cmTC_4883d.dir\testCCompiler.c.obj -c C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collection\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c, ...) failed.
+make (e=740): The requested operation requires elevation.
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_4883d.dir/testCCompiler.c.obj] Error 740
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_4883d/fast' failed
+mingw32-make.exe: *** [cmTC_4883d/fast] Error 2
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: -c
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: -Aa
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: -D__CLASSIC_C__
+
+The output was:
+The requested operation requires elevation
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/TDM-GCC-32/bin/g++.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/TDM-GCC-32/bin/g++.exe 
+Build flags: 
+Id flags: -c
+
+The output was:
+The requested operation requires elevation
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/TDM-GCC-32/bin/mingw32-make.exe" "cmTC_7c224/fast"
+C:/TDM-GCC-32/bin/mingw32-make.exe -f CMakeFiles\cmTC_7c224.dir\build.make CMakeFiles/cmTC_7c224.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7c224.dir/testCCompiler.c.obj
+C:\TDM-GCC-32\bin\gcc.exe     -o CMakeFiles\cmTC_7c224.dir\testCCompiler.c.obj   -c C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collection\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+CMakeFiles\cmTC_7c224.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_7c224.dir/testCCompiler.c.obj' failed
+process_begin: CreateProcess(C:\TDM-GCC-32\bin\gcc.exe, C:\TDM-GCC-32\bin\gcc.exe -o CMakeFiles\cmTC_7c224.dir\testCCompiler.c.obj -c C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collection\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c, ...) failed.
+make (e=740): The requested operation requires elevation.
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_7c224.dir/testCCompiler.c.obj] Error 740
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_7c224/fast' failed
+mingw32-make.exe: *** [cmTC_7c224/fast] Error 2
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: -c
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: -Aa
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/TDM-GCC-32/bin/gcc.exe 
+Build flags: 
+Id flags: -D__CLASSIC_C__
+
+The output was:
+The requested operation requires elevation
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/TDM-GCC-32/bin/g++.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+The requested operation requires elevation
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/TDM-GCC-32/bin/g++.exe 
+Build flags: 
+Id flags: -c
+
+The output was:
+The requested operation requires elevation
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/TDM-GCC-32/bin/mingw32-make.exe" "cmTC_ac6fa/fast"
+C:/TDM-GCC-32/bin/mingw32-make.exe -f CMakeFiles\cmTC_ac6fa.dir\build.make CMakeFiles/cmTC_ac6fa.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ac6fa.dir/testCCompiler.c.obj
+C:\TDM-GCC-32\bin\gcc.exe     -o CMakeFiles\cmTC_ac6fa.dir\testCCompiler.c.obj   -c C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collection\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+CMakeFiles\cmTC_ac6fa.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_ac6fa.dir/testCCompiler.c.obj' failed
+process_begin: CreateProcess(C:\TDM-GCC-32\bin\gcc.exe, C:\TDM-GCC-32\bin\gcc.exe -o CMakeFiles\cmTC_ac6fa.dir\testCCompiler.c.obj -c C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collection\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c, ...) failed.
+make (e=740): The requested operation requires elevation.
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_ac6fa.dir/testCCompiler.c.obj] Error 740
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collection/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_ac6fa/fast' failed
+mingw32-make.exe: *** [cmTC_ac6fa/fast] Error 2
+
+
