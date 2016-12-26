@@ -1,34 +1,4 @@
-"C:\Program Files (x86)\JetBrains\CLion 2016.3.1\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collections
--- The C compiler identification is unknown
--- The CXX compiler identification is unknown
-CMake Error at CMakeLists.txt:2 (project):
-  The CMAKE_C_COMPILER:
-
-    C:/TDM-GCC-32/bin/gcc.exe
-
-  is not a full path to an existing compiler tool.
-
-  Tell CMake where to find the compiler by setting either the environment
-  variable "CC" or the CMake cache entry CMAKE_C_COMPILER to the full path to
-  the compiler, or to the compiler name if it is in the PATH.
-
-
-CMake Error at CMakeLists.txt:2 (project):
-  The CMAKE_CXX_COMPILER:
-
-    C:/TDM-GCC-32/bin/g++.exe
-
-  is not a full path to an existing compiler tool.
-
-  Tell CMake where to find the compiler by setting either the environment
-  variable "CXX" or the CMake cache entry CMAKE_CXX_COMPILER to the full path
-  to the compiler, or to the compiler name if it is in the PATH.
-
-
--- Configuring incomplete, errors occurred!
-See also "C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug/CMakeFiles/CMakeOutput.log".
-See also "C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug/CMakeFiles/CMakeError.log".
-Cannot read C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collections\cmake-build-debug\CMakeFiles\3.6.2\CMakeCCompiler.cmake
-Cannot read C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collections\cmake-build-debug\CMakeFiles\3.6.2\CMakeCXXCompiler.cmake
-Cannot get compiler information for configuration Debug:
-	Cannot run program "C:\TDM-GCC-32\bin\g++.exe" (in directory "C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collections\cmake-build-debug"): CreateProcess error=2, The system cannot find the file specified
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Den\Documents\GitHub\Homework\OOP\Lab_Collections
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug

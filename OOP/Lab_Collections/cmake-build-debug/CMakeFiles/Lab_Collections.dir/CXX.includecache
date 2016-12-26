@@ -6,29 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/Book.cpp
-Book.h
-C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/Book.h
-
-C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/Book.h
+C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/main.cpp
 iostream
--
-cstring
 -
 fstream
 -
 list
 -
-algorithm
+set
 -
-numeric
+algorithm
 -
 iterator
 -
-string
--
-
-C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/main.cpp
-Book.h
-C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/Book.h
 

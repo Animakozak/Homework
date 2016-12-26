@@ -17,6 +17,16 @@
 					<DistClean command="C:/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="Lab_Collections">
 				<Option output="C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug/Lab_Collections.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug"/>
@@ -24,14 +34,12 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="c:\tdm-gcc-32\bin\../lib/gcc/mingw32/4.8.1/include"/>
-					<Add directory="c:\tdm-gcc-32\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
-					<Add directory="c:\tdm-gcc-32\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
-					<Add directory="c:\tdm-gcc-32\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
-					<Add directory="/mingw/include"/>
-					<Add directory="c:\tdm-gcc-32\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
-					<Add directory="c:\tdm-gcc-32\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
-					<Add directory="c:\tdm-gcc-32\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab_Collections"/>
@@ -47,27 +55,15 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="c:\tdm-gcc-32\bin\../lib/gcc/mingw32/4.8.1/include"/>
-					<Add directory="c:\tdm-gcc-32\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
-					<Add directory="c:\tdm-gcc-32\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
-					<Add directory="c:\tdm-gcc-32\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
-					<Add directory="/mingw/include"/>
-					<Add directory="c:\tdm-gcc-32\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
-					<Add directory="c:\tdm-gcc-32\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
-					<Add directory="c:\tdm-gcc-32\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab_Collections/fast"/>
-					<CompileFile command="C:/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="C:/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -84,12 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/Book.cpp">
-			<Option target="Lab_Collections"/>
-		</Unit>
-		<Unit filename="C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/Book.h">
-			<Option target="Lab_Collections"/>
-		</Unit>
 		<Unit filename="C:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/main.cpp">
 			<Option target="Lab_Collections"/>
 		</Unit>
