@@ -53,15 +53,24 @@ public:
         return pages;
     }
 
-    Book & operator= (const Book &obj) {
+    Book & operator= (const Book &obj){
         Name = obj.Name;
         Author = obj.Author;
         Publisher = obj.Publisher;
         releaseYear=obj.releaseYear;
         pages=obj.pages;
-
         return *this;
     }
+
+    // Book operator= (const Book &obj) const {
+    //     Book temp;
+    //     temp.Name = obj.Name;
+    //     temp.Author = obj.Author;
+    //     temp.Publisher = obj.Publisher;
+    //     temp.releaseYear=obj.releaseYear;
+    //     temp.pages=obj.pages;
+    //     return temp;
+    // }
 
     bool operator== (Book obj) const {
         return releaseYear==obj.releaseYear;
@@ -87,9 +96,13 @@ int operator+(int &a, Book &obj) {
 
 
 void for_each_function(Book b){
-    if(b.getReleaseYear()<1941) cout<<b.getReleaseYear()<<endl;
+    if(b.getReleaseYear()<1939) cout<<b;
 }
 
+bool isOdd(Book b){
+  if(b.getReleaseYear()%2!=0) return true;
+  else return false;
+}
 
 ostream& operator<< (ostream& os, const Book& book) {
     os<<book.Name<<", "<<book.Author<<", "<<book.Publisher<<", "<<book.releaseYear<<", "<<book.pages<<endl;
@@ -102,7 +115,7 @@ istream& operator>>(istream& is, Book& book){
 }
 
 ifstream& operator>> (ifstream& is, Book& book){
-    ifstream f ("d:/library.csv");
+    ifstream f ("/home/animakozak/Documents/Homework/OOP/Lab_Collections/library.csv");
     if (!f) throw 0;
     if (cur_line >= lines) {
         f.close();
@@ -128,6 +141,11 @@ ifstream& operator>> (ifstream& is, Book& book){
 
     getline (f, temp, ',' );
     book.Author = temp;
+    for(string::iterator it=book.Author.begin();it!=book.Author.end();++it){
+      if(isdigit(*it)){
+        throw (short int) 1;
+      }
+    }
 
     getline (f, temp, ',' );
     book.Publisher = temp;
@@ -149,7 +167,7 @@ ifstream& operator>> (ifstream& is, Book& book){
 
 void static getLinesQuantity() {
     string line;
-    ifstream f ("d:/library.csv");
+    ifstream f ("/home/animakozak/Documents/Homework/OOP/Lab_Collections/library.csv");
     int i = 0;
     if (!f) throw 0;
     while (!f.eof()) {
@@ -185,7 +203,7 @@ int main() {
             continue;
         }
         catch (...) {
-            ferrors_log.push_back(input.getName());
+            ferrors_log.push_back(input.getName()+" "+input.getAuthor());
             pos=next_pos;
             cur_line++;
             continue;
@@ -193,7 +211,7 @@ int main() {
         Library.insert(input);
     }
 
-    file.close();
+    set <Book> LibraryMod=Library;
 
     cout << "Library contains: "<<endl;
     for(set<Book>::iterator it=Library.begin(); it!=Library.end();++it){
@@ -211,9 +229,19 @@ int main() {
         cout<<*it<<endl;
     }
 
-    cout<<"Reverse order list: "<<endl;
+    cout<<endl<<"Reverse order list: "<<endl;
     for (set<Book>::const_reverse_iterator r_it = Library.rbegin(); r_it != Library.rend(); ++r_it) {
         cout << *r_it;
     }
+
+    cout<<endl<<"Books published before WWII: (using non-mod \"for_each\")"<<endl;
+    for_each(Library.begin(), Library.end(), for_each_function);
+
+    // cout<<endl<<"Books published in even years: (using \"remove_if\")"<<endl;
+    // remove_if(LibraryMod.begin(), LibraryMod.end(), isOdd);
+    // for (set<Book>::iterator it = LibraryMod.begin(); it != LibraryMod.end(); ++it) {
+    //     cout << *it;
+    // }
+
     return 0;
 }
