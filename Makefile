@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ Maps - Debug ]----------"
-	@cd "OOP\Lab_Maps_c++" && "$(MAKE)" -f  "Maps.mk"
+	@echo "----------Building project:[ Lab_Collections - Debug ]----------"
+	@cd "OOP\Lab_Collections" && "$(MAKE)" -f  "Lab_Collections.mk"
 clean:
-	@echo "----------Cleaning project:[ Maps - Debug ]----------"
-	@cd "OOP\Lab_Maps_c++" && "$(MAKE)" -f  "Maps.mk" clean
+	@echo "----------Cleaning project:[ Lab_Collections - Debug ]----------"
+	@cd "OOP\Lab_Collections" && "$(MAKE)" -f  "Lab_Collections.mk" clean

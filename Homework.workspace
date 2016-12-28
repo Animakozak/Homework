@@ -11,7 +11,7 @@
   <Project Name="Array_Insane_Session" Path="Array_Insane_Session/Array_Insane_Session.project" Active="No"/>
   <Project Name="MaxMin" Path="MaxMin/MaxMin.project" Active="No"/>
   <Project Name="Array69-111" Path="Array69-111/Array69-111.project" Active="No"/>
-  <Project Name="Array116-130" Path="Array116-130/Array116-130.project" Active="Yes"/>
+  <Project Name="Array116-130" Path="Array116-130/Array116-130.project" Active="No"/>
   <Project Name="Array4-37" Path="4-37/4-37.project"/>
   <Project Name="Matrix4-38" Path="Matrix4-38/Matrix4-38.project" Active="No"/>
   <Project Name="Matrix55-79" Path="Matrix55-79/Matrix55-79.project" Active="No"/>
@@ -27,6 +27,7 @@
   <Project Name="Module_2016" Path="OOP/Module_2016/Module_2016.project" Active="No"/>
   <Project Name="Lab_map_c" Path="Lab_map_c/Lab_map_c.project"/>
   <Project Name="Maps" Path="OOP/Lab_Maps_c++/Maps.project" Active="No"/>
+  <Project Name="Lab_Collections" Path="OOP/Lab_Collections/Lab_Collections.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -58,6 +59,7 @@
       <Project Name="Module_2016" ConfigName="Debug"/>
       <Project Name="Lab_map_c" ConfigName="Debug"/>
       <Project Name="Maps" ConfigName="Debug"/>
+      <Project Name="Lab_Collections" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -89,6 +91,7 @@
       <Project Name="Module_2016" ConfigName="Release"/>
       <Project Name="Lab_map_c" ConfigName="Release"/>
       <Project Name="Maps" ConfigName="Release"/>
+      <Project Name="Lab_Collections" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

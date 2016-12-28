@@ -49,6 +49,7 @@ public:
     int getReleaseYear() {
         return releaseYear;
     }
+    
     int getPages() {
         return pages;
     }
@@ -61,16 +62,11 @@ public:
         pages=obj.pages;
         return *this;
     }
-
-    // Book operator= (const Book &obj) const {
-    //     Book temp;
-    //     temp.Name = obj.Name;
-    //     temp.Author = obj.Author;
-    //     temp.Publisher = obj.Publisher;
-    //     temp.releaseYear=obj.releaseYear;
-    //     temp.pages=obj.pages;
-    //     return temp;
-    // }
+    
+    Book& operator= (const int & a){
+        releaseYear=a;
+        return *this;
+    }
 
     bool operator== (Book obj) const {
         return releaseYear==obj.releaseYear;
@@ -99,9 +95,11 @@ void for_each_function(Book b){
     if(b.getReleaseYear()<1939) cout<<b;
 }
 
-bool isOdd(Book b){
-  if(b.getReleaseYear()%2!=0) return true;
-  else return false;
+void isOdd(Book b){
+  if(b.getReleaseYear()%2!=0){
+      b=1000+(rand()%1017);
+  }
+  cout<<b;
 }
 
 ostream& operator<< (ostream& os, const Book& book) {
@@ -115,7 +113,7 @@ istream& operator>>(istream& is, Book& book){
 }
 
 ifstream& operator>> (ifstream& is, Book& book){
-    ifstream f ("/home/animakozak/Documents/Homework/OOP/Lab_Collections/library.csv");
+    ifstream f ("C:/Users/user/Documents/GitHub/Homework/OOP/Lab_Collections/library.csv");
     if (!f) throw 0;
     if (cur_line >= lines) {
         f.close();
@@ -126,7 +124,7 @@ ifstream& operator>> (ifstream& is, Book& book){
     f.seekg(pos);
     prev_pos = pos;
     if (cur_line == lines-1) {
-        getline(f, temp1);
+        getline(f,  temp1);
         next_pos = f.end;
     }
     else {
@@ -151,6 +149,11 @@ ifstream& operator>> (ifstream& is, Book& book){
     book.Publisher = temp;
 
     getline (f, temp, ',' );
+    for(string::iterator it=temp.begin();it!=temp.end();++it){
+        if(isalpha(*it)){
+            throw (short int) 1;
+        }
+    }
     book.releaseYear = atoi(temp.c_str());
 
     getline (f, temp, '\n');
@@ -161,13 +164,12 @@ ifstream& operator>> (ifstream& is, Book& book){
     f.close();
 
     if (book.releaseYear < 1000 || book.pages < 0) throw 'a';
-
     return is;
 }
 
 void static getLinesQuantity() {
     string line;
-    ifstream f ("/home/animakozak/Documents/Homework/OOP/Lab_Collections/library.csv");
+    ifstream f ("C:/Users/user/Documents/GitHub/Homework/OOP/Lab_Collections/library.csv");
     int i = 0;
     if (!f) throw 0;
     while (!f.eof()) {
@@ -189,6 +191,8 @@ int main() {
     for (int i=0;i<lines;++i){
         try {
             file>>input;
+            file.ignore();
+            file.clear();
         }
         catch (int a){
             cout<<"Unable to load file!"<<endl;
@@ -237,11 +241,9 @@ int main() {
     cout<<endl<<"Books published before WWII: (using non-mod \"for_each\")"<<endl;
     for_each(Library.begin(), Library.end(), for_each_function);
 
-    // cout<<endl<<"Books published in even years: (using \"remove_if\")"<<endl;
-    // remove_if(LibraryMod.begin(), LibraryMod.end(), isOdd);
-    // for (set<Book>::iterator it = LibraryMod.begin(); it != LibraryMod.end(); ++it) {
-    //     cout << *it;
-    // }
+    cout<<endl<<"Books published in even years get new values: (using \"for_each\")"<<endl;
+    for_each(LibraryMod.begin(), LibraryMod.end(), isOdd);
+
 
     return 0;
 }
