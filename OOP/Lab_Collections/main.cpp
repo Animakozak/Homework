@@ -40,13 +40,13 @@ public:
     string getName(){
         return Name;
     }
-    string getAuthor(){
+    string getAuthor()const {
         return Author;
     }
-    string getPublisher() {
+    string getPublisher() const{
         return Publisher;
     }
-    int getReleaseYear() {
+    int getReleaseYear() const{
         return releaseYear;
     }
     
@@ -62,7 +62,7 @@ public:
         pages=obj.pages;
         return *this;
     }
-    
+
     Book& operator= (const int & a){
         releaseYear=a;
         return *this;
@@ -90,7 +90,6 @@ int operator+(int &a, Book &obj) {
     return temp;
 }
 
-
 void for_each_function(Book b){
     if(b.getReleaseYear()<1939) cout<<b;
 }
@@ -101,6 +100,7 @@ void isOdd(Book b){
   }
   cout<<b;
 }
+
 
 ostream& operator<< (ostream& os, const Book& book) {
     os<<book.Name<<", "<<book.Author<<", "<<book.Publisher<<", "<<book.releaseYear<<", "<<book.pages<<endl;
@@ -113,7 +113,7 @@ istream& operator>>(istream& is, Book& book){
 }
 
 ifstream& operator>> (ifstream& is, Book& book){
-    ifstream f ("C:/Users/user/Documents/GitHub/Homework/OOP/Lab_Collections/library.csv");
+    ifstream f ("c:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/library.csv");
     if (!f) throw 0;
     if (cur_line >= lines) {
         f.close();
@@ -133,6 +133,8 @@ ifstream& operator>> (ifstream& is, Book& book){
     }
     pos = prev_pos;
     f.seekg(pos);
+
+//    f.ignore(1000,'\n');
 
     getline (f, temp, ',');
     book.Name = temp;
@@ -157,6 +159,11 @@ ifstream& operator>> (ifstream& is, Book& book){
     book.releaseYear = atoi(temp.c_str());
 
     getline (f, temp, '\n');
+    for(string::iterator it=temp.begin();it!=temp.end();++it){
+        if(isalpha(*it)){
+            throw (short int) 1;
+        }
+    }
     book.pages = atoi(temp.c_str());
 
     pos = f.tellg();
@@ -169,7 +176,7 @@ ifstream& operator>> (ifstream& is, Book& book){
 
 void static getLinesQuantity() {
     string line;
-    ifstream f ("C:/Users/user/Documents/GitHub/Homework/OOP/Lab_Collections/library.csv");
+    ifstream f ("c:/Users/Den/Documents/GitHub/Homework/OOP/Lab_Collections/library.csv");
     int i = 0;
     if (!f) throw 0;
     while (!f.eof()) {
@@ -191,8 +198,6 @@ int main() {
     for (int i=0;i<lines;++i){
         try {
             file>>input;
-            file.ignore();
-            file.clear();
         }
         catch (int a){
             cout<<"Unable to load file!"<<endl;
@@ -243,6 +248,30 @@ int main() {
 
     cout<<endl<<"Books published in even years get new values: (using \"for_each\")"<<endl;
     for_each(LibraryMod.begin(), LibraryMod.end(), isOdd);
+
+    cout<<endl<<"Books published after:\n";
+    int year;
+    cin>>year;
+    for(set<Book>::iterator it=Library.begin(); it!=Library.end();++it){
+        if(it->getReleaseYear()>=year)cout<<*it;
+    }
+
+    string console;
+
+    cout<<endl<<"Books published by \n";
+    cin.ignore();
+    getline(cin,console,'\n');
+    for(set<Book>::iterator it=Library.begin(); it!=Library.end();++it){
+        if(console==it->getPublisher()) cout<<*it;
+    }
+
+    cout<<endl<<"Books written by \n";
+    cin.clear();
+    string console2;
+    getline(cin,console2,'\n');
+    for(set<Book>::iterator it=Library.begin(); it!=Library.end();++it){
+        if(console2==it->getAuthor()) cout<<*it;
+    }
 
 
     return 0;
