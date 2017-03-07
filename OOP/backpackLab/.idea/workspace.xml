@@ -2,127 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a7253e5-da25-4999-83b7-44666e64a9d6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/out/production/Lab_7_Interfaces/classes/Grid$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/out/production/Lab_7_Interfaces/classes/Grid$RobotGrid$RobotTypes.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/out/production/Lab_7_Interfaces/classes/Grid$RobotGrid.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/out/production/Lab_7_Interfaces/classes/Grid.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/out/production/Lab_7_Interfaces/classes/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/out/production/Lab_7_Interfaces/classes/Robot.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/out/production/Lab_7_Interfaces/classes/RotRobot.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/out/production/Lab_7_Interfaces/classes/ShiftRobot.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/out/production/Lab_7_Interfaces/classes/WalkingRobot$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/out/production/Lab_7_Interfaces/classes/WalkingRobot$Action$ActionTypes.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/out/production/Lab_7_Interfaces/classes/WalkingRobot$Action.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/out/production/Lab_7_Interfaces/classes/WalkingRobot.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/out/production/Lab_7_Interfaces/interfaces/Grid.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/out/production/Lab_7_Interfaces/interfaces/Movable.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/out/production/Lab_7_Interfaces/interfaces/Rotatable.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/out/production/Lab_7_Interfaces/interfaces/Shiftable.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../4-37/Array4-37.mk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../4-37/Array4-37.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../4-37/Debug/.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../4-37/Debug/main.cpp.o.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Lab_map_c/Lab_map_c.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Lab_map_c/main.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_5_C++/Debug/.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_5_C++/Debug/Ball.cpp.o.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_5_C++/Debug/Body.cpp.o.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_5_C++/Debug/Parallelepiped.cpp.o.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_5_C++/Debug/main.cpp.o.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_5_C++/Lab_5.mk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_5_C++/Lab_5.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_5_C++/Lab_5.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/Lab_7_Interfaces.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/src/classes/Grid.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/src/classes/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/src/interfaces/Grid.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_Maps_c++/Debug/.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_Maps_c++/Debug/dataBase.cpp.o.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_Maps_c++/Debug/main.cpp.o.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_Maps_c++/Maps.mk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_Maps_c++/Maps.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Lab_Maps_c++/Maps.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Module_2016/Debug/.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Module_2016/Debug/main.cpp.o.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Module_2016/Module_2016.mk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Module_2016/Module_2016.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Module_2016/Module_2016.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Module_2016/main.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Thing.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../SR7_1/Debug/.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../SR7_1/Debug/1.cpp.o.d" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Lab_7_Interfaces/classes/Robot.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Lab_7_Interfaces/classes/RotRobot.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Lab_7_Interfaces/interfaces/Movable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Lab_7_Interfaces/interfaces/Rotatable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Lab_7_Interfaces/interfaces/Shiftable.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Lab_7_Interfaces/classes/Robot.java" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/src/classes/Robot.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Lab_7_Interfaces/classes/RotRobot.java" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/src/classes/RotRobot.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Lab_7_Interfaces/classes/ShiftRobot.java" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/src/classes/ShiftRobot.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Lab_7_Interfaces/classes/WalkingRobot.java" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/src/classes/WalkingRobot.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Lab_7_Interfaces/interfaces/Movable.java" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/src/interfaces/Movable.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Lab_7_Interfaces/interfaces/Rotatable.java" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/src/interfaces/Rotatable.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Lab_7_Interfaces/interfaces/Shiftable.java" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/src/interfaces/Shiftable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../.codelite/Homework.tags" afterPath="$PROJECT_DIR$/../../.codelite/Homework.tags" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../.codelite/compilation.db" afterPath="$PROJECT_DIR$/../../.codelite/compilation.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../.codelite/refactoring.db" afterPath="$PROJECT_DIR$/../../.codelite/refactoring.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab3_Inher_java/out/production/Lab3_Inher_java/inher/Circle.class" afterPath="$PROJECT_DIR$/../Lab3_Inher_java/out/production/Lab3_Inher_java/inher/Circle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab3_Inher_java/out/production/Lab3_Inher_java/inher/Point.class" afterPath="$PROJECT_DIR$/../Lab3_Inher_java/out/production/Lab3_Inher_java/inher/Point.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_2_Java/out/production/Lab_2_Java/com/circle/Circle.class" afterPath="$PROJECT_DIR$/../Lab_2_Java/out/production/Lab_2_Java/com/circle/Circle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_2_Java/out/production/Lab_2_Java/com/circle/Main.class" afterPath="$PROJECT_DIR$/../Lab_2_Java/out/production/Lab_2_Java/com/circle/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_5_Java/out/production/Lab_5_Java/abstr/Main.class" afterPath="$PROJECT_DIR$/../Lab_5_Java/out/production/Lab_5_Java/abstr/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../.codelite/.tern-port" afterPath="$PROJECT_DIR$/../../.codelite/.tern-port" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../.codelite/Homework.session" afterPath="$PROJECT_DIR$/../../.codelite/Homework.session" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Array116-130/Array116-130.mk" afterPath="$PROJECT_DIR$/../../Array116-130/Array116-130.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Array69-111/Array69-111.mk" afterPath="$PROJECT_DIR$/../../Array69-111/Array69-111.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Array_Insane_Session/Array_Insane_Session.mk" afterPath="$PROJECT_DIR$/../../Array_Insane_Session/Array_Insane_Session.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Homework.workspace" afterPath="$PROJECT_DIR$/../../Homework.workspace" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../LR4/LR4.mk" afterPath="$PROJECT_DIR$/../../LR4/LR4.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Laba1/Laba1.mk" afterPath="$PROJECT_DIR$/../../Laba1/Laba1.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Laba2/Laba2.mk" afterPath="$PROJECT_DIR$/../../Laba2/Laba2.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Makefile" afterPath="$PROJECT_DIR$/../../Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Matrix4-38/Matrix4-38.mk" afterPath="$PROJECT_DIR$/../../Matrix4-38/Matrix4-38.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Matrix55-79/Matrix55-79.mk" afterPath="$PROJECT_DIR$/../../Matrix55-79/Matrix55-79.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Matrix80-99/Matrix80-99.mk" afterPath="$PROJECT_DIR$/../../Matrix80-99/Matrix80-99.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../MaxMin/MaxMin.mk" afterPath="$PROJECT_DIR$/../../MaxMin/MaxMin.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cat/src/com/kitty/Main.java" afterPath="$PROJECT_DIR$/../Cat/src/com/kitty/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab3_Inher_java/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Lab3_Inher_java/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab3_Inher_java/src/inher/Circle.java" afterPath="$PROJECT_DIR$/../Lab3_Inher_java/src/inher/Circle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab3_Inher_java/src/inher/Point.java" afterPath="$PROJECT_DIR$/../Lab3_Inher_java/src/inher/Point.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_1/Lab_1.mk" afterPath="$PROJECT_DIR$/../Lab_1/Lab_1.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_1/Lab_1.project" afterPath="$PROJECT_DIR$/../Lab_1/Lab_1.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_2/Lab_2.mk" afterPath="$PROJECT_DIR$/../Lab_2/Lab_2.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_2/Lab_2.project" afterPath="$PROJECT_DIR$/../Lab_2/Lab_2.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_2_Java/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Lab_2_Java/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_2_Java/src/com/circle/Circle.java" afterPath="$PROJECT_DIR$/../Lab_2_Java/src/com/circle/Circle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_2_Java/src/com/circle/Main.java" afterPath="$PROJECT_DIR$/../Lab_2_Java/src/com/circle/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_3/Circle.cpp" afterPath="$PROJECT_DIR$/../Lab_3/Circle.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_3/Circle.h" afterPath="$PROJECT_DIR$/../Lab_3/Circle.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_3/Lab_3.mk" afterPath="$PROJECT_DIR$/../Lab_3/Lab_3.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_3/Lab_3.project" afterPath="$PROJECT_DIR$/../Lab_3/Lab_3.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_3/Point.cpp" afterPath="$PROJECT_DIR$/../Lab_3/Point.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_3/Point.h" afterPath="$PROJECT_DIR$/../Lab_3/Point.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_4/Lab_4.mk" afterPath="$PROJECT_DIR$/../Lab_4/Lab_4.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_4/Lab_4.project" afterPath="$PROJECT_DIR$/../Lab_4/Lab_4.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_5_C++/Body.cpp" afterPath="$PROJECT_DIR$/../Lab_5_C++/Body.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_5_C++/Body.h" afterPath="$PROJECT_DIR$/../Lab_5_C++/Body.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_5_C++/main.cpp" afterPath="$PROJECT_DIR$/../Lab_5_C++/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_5_Java/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Lab_5_Java/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_7_Interfaces/.idea/misc.xml" afterPath="$PROJECT_DIR$/../Lab_7_Interfaces/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_Maps_c++/dataBase.cpp" afterPath="$PROJECT_DIR$/../Lab_Maps_c++/dataBase.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_Maps_java/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Lab_Maps_java/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SR10/SR10.mk" afterPath="$PROJECT_DIR$/../../SR10/SR10.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SR10_CPP/SR9_CPP.mk" afterPath="$PROJECT_DIR$/../../SR10_CPP/SR9_CPP.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SR7/SR7.mk" afterPath="$PROJECT_DIR$/../../SR7/SR7.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SR7_1/SR7_1.mk" afterPath="$PROJECT_DIR$/../../SR7_1/SR7_1.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SR7_1/SR7_1.txt" afterPath="$PROJECT_DIR$/../../SR7_1/SR7_1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SR8/SR8.mk" afterPath="$PROJECT_DIR$/../../SR8/SR8.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SR9/SR9.mk" afterPath="$PROJECT_DIR$/../../SR9/SR9.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../String01/String01.mk" afterPath="$PROJECT_DIR$/../../String01/String01.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../structures_points/structures_points.mk" afterPath="$PROJECT_DIR$/../../structures_points/structures_points.mk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_1/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Lab_1/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab_Collections/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Lab_Collections/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="backpackLab.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -143,12 +26,12 @@
     <favorites_list name="backpackLab" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Thing.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lab/backpack/Thing.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
                 <element signature="e#307#308#0" expanded="true" />
                 <element signature="e#360#361#0" expanded="true" />
@@ -160,16 +43,9 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/lab/backpack/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-873">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding>
-                <element signature="e#334#346#0" expanded="true" />
-                <element signature="e#504#511#0" expanded="true" />
-                <element signature="e#597#604#0" expanded="true" />
-                <element signature="e#724#731#0" expanded="true" />
-                <element signature="e#1383#1390#0" expanded="true" />
-                <element signature="e#2203#2210#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="54">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -197,6 +73,7 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Thing.java" />
         <option value="$PROJECT_DIR$/src/com/lab/backpack/Thing.java" />
+        <option value="$PROJECT_DIR$/src/com/lab/backpack/Main.java" />
       </list>
     </option>
   </component>
@@ -208,20 +85,11 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="y" value="22" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1066" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -237,14 +105,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backpackLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="backpackLab" />
@@ -275,7 +138,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
@@ -287,6 +149,127 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="js-jscs-nodeInterpreter" value="C:\Users\Den\AppData\Local\atom\app-1.12.6\resources\app\apm\bin\node.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../guitest" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../.codelite/.tern-port</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../.codelite/Homework.session</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../.codelite/Homework.tags</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../.codelite/compilation.db</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../.codelite/refactoring.db</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../Homework.workspace</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../Makefile</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../Lab_Collections/Lab_Collections.mk</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../Lab_Collections/Lab_Collections.project</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../Lab_Collections/main.cpp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../Module_2016/main.cpp</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -308,30 +291,7 @@
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="GAPID_DISABLE_PCS" value="false" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
+      <predefined_log_file id="idea.log" enabled="true" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -353,7 +313,11 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <method />
     </configuration>
@@ -531,6 +495,8 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
@@ -546,27 +512,6 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -667,39 +612,17 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
@@ -719,6 +642,30 @@
         <item index="0" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -734,42 +681,51 @@
       <option name="presentableId" value="Default" />
       <updated>1482348968049</updated>
       <workItem from="1482348974997" duration="10989000" />
+      <workItem from="1484651894139" duration="127000" />
+      <workItem from="1488909277712" duration="671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10989000" />
+    <option name="totallyTimeSpent" value="11787000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13272922" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1337953" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -794,7 +750,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/lab/backpack/Thing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="e#307#308#0" expanded="true" />
             <element signature="e#360#361#0" expanded="true" />
@@ -804,16 +760,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lab/backpack/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-873">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lab/backpack/Thing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#334#346#0" expanded="true" />
-            <element signature="e#504#511#0" expanded="true" />
-            <element signature="e#597#604#0" expanded="true" />
-            <element signature="e#724#731#0" expanded="true" />
-            <element signature="e#1383#1390#0" expanded="true" />
-            <element signature="e#2203#2210#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lab/backpack/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lab/backpack/Thing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lab/backpack/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

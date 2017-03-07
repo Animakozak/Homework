@@ -1,0 +1,2 @@
+ToolSet: 3.21@C:\MinGW
+CMake: 3.7.1@C:\Program Files\CMake\bin\cmake.exe

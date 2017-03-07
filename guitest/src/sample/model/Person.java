@@ -44,10 +44,13 @@ public class Person {
     public void setFirstName(String firstName){
         this.firstName.set(firstName);
     }
+    public StringProperty firstNameProperty(){
+        return firstName;
+    }
     public String getLastName(){
         return lastName.get();
     }
-    public String setLastName(String lastName){
+    public void setLastName(String lastName){
         this.lastName.set(lastName);
     }
     public StringProperty lastNameProperty(){
@@ -62,6 +65,15 @@ public class Person {
     public StringProperty streetProperty(){
         return street;
     }
+    public int getPostalCode(){
+        return postalCode.get();
+    }
+    public void setPostalCode(int postalCode){
+        this.postalCode.set(postalCode);
+    }
+    public IntegerProperty postalCode(){
+        return postalCode;
+    }
     public String getCity(){
         return street.get();
     }
@@ -73,5 +85,11 @@ public class Person {
     }
     public LocalDate getBirthday(){
         return birthday.get();
+    }
+    public void getBirthday(LocalDate birthday){
+        this.birthday.set(birthday);
+    }
+    public ObjectProperty<LocalDate> birthdayProperty(){
+        return birthday;
     }
 }
