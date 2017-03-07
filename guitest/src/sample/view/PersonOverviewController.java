@@ -15,22 +15,39 @@ public class PersonOverviewController {
     @FXML
     private TableView<Person> personTable;
     @FXML
+    private TableView<Person> personTableNew;
+    @FXML
     private TableColumn<Person,String> firstNameColumn;
     @FXML
     private TableColumn<Person,String> lastNameColumn;
-
     @FXML
-    private Label firstNameLabel;
+    private TableColumn<Person,String> groupColumn;
     @FXML
-    private Label lastNameLabel;
+    private TableColumn<Person,Integer> yearEnrolledColumn;
     @FXML
-    private Label streetLabel;
+    private TableColumn<Person,Integer> yearCourseColumn;
     @FXML
-    private Label postalCodeLabel;
+    private TableColumn<Person,Integer> subjectOOPColumn;
     @FXML
-    private Label cityLabel;
+    private TableColumn<Person,Integer> subjectAlgoColumn;
     @FXML
-    private Label birthdayLabel;
+    private TableColumn<Person,Integer> subjectProbColumn;
+    @FXML
+    private TableColumn<Person,String> firstNameColumnNew;
+    @FXML
+    private TableColumn<Person,String> lastNameColumnNew;
+    @FXML
+    private TableColumn<Person,String> groupColumnNew;
+    @FXML
+    private TableColumn<Person,Integer> yearEnrolledColumnNew;
+    @FXML
+    private TableColumn<Person,Integer> yearCourseColumnNew;
+    @FXML
+    private TableColumn<Person,Integer> subjectOOPColumnNew;
+    @FXML
+    private TableColumn<Person,Integer> subjectAlgoColumnNew;
+    @FXML
+    private TableColumn<Person,Integer> subjectProbColumnNew;
 
     // Reference to the main application.
     private Main mainApp;
@@ -48,9 +65,24 @@ public class PersonOverviewController {
      */
     @FXML
     private void initialize() {
-        // Initialize the person table with the two columns.
+        // Initialize the person table with initial data.
         firstNameColumn.setCellValueFactory(cellData -> cellData.getValue().firstNameProperty());
         lastNameColumn.setCellValueFactory(cellData -> cellData.getValue().lastNameProperty());
+        groupColumn.setCellValueFactory(cellData -> cellData.getValue().groupProperty());
+        yearEnrolledColumn.setCellValueFactory(cellData -> cellData.getValue().yearEnrolledProperty().asObject());
+        yearCourseColumn.setCellValueFactory(cellData -> cellData.getValue().yearCourseProperty().asObject());
+        subjectOOPColumn.setCellValueFactory(cellData -> cellData.getValue().subjectOOPProperty().asObject());
+        subjectAlgoColumn.setCellValueFactory(cellData -> cellData.getValue().subjectAlgoProperty().asObject());
+        subjectProbColumn.setCellValueFactory(cellData -> cellData.getValue().subjectProbProperty().asObject());
+
+        firstNameColumnNew.setCellValueFactory(cellData -> cellData.getValue().firstNameProperty());
+        lastNameColumnNew.setCellValueFactory(cellData -> cellData.getValue().lastNameProperty());
+        groupColumnNew.setCellValueFactory(cellData -> cellData.getValue().groupProperty());
+        yearEnrolledColumnNew.setCellValueFactory(cellData -> cellData.getValue().yearEnrolledProperty().asObject());
+        yearCourseColumnNew.setCellValueFactory(cellData -> cellData.getValue().yearCourseProperty().asObject());
+        subjectOOPColumnNew.setCellValueFactory(cellData -> cellData.getValue().subjectOOPProperty().asObject());
+        subjectAlgoColumnNew.setCellValueFactory(cellData -> cellData.getValue().subjectAlgoProperty().asObject());
+        subjectProbColumnNew.setCellValueFactory(cellData -> cellData.getValue().subjectProbProperty().asObject());
     }
 
     /**
@@ -63,5 +95,6 @@ public class PersonOverviewController {
 
         // Add observable list data to the table
         personTable.setItems(mainApp.getPersonData());
+        personTableNew.setItems(mainApp.getPersonDataNew());
     }
 }

@@ -23,20 +23,28 @@ public class Main extends Application {
     private BorderPane rootLayout;
 
     private ObservableList<Person> personData = FXCollections.observableArrayList();
+    private ObservableList<Person> personDataNew = FXCollections.observableArrayList();
 
     //Constructor
 
     public Main(){
-        //Placeholder data
-        personData.add(new Person("Denys","Kuznietsov"));
-        personData.add(new Person("Anton","Astakhov"));
-        personData.add(new Person("Tatyanya","Buzikina"));
-        personData.add(new Person("Alexandra","Tmenova"));
+        //Initial Data
+        personData.add(new Person("Denys","Kuznietsov","CS21",2015,2,5,5,4));
+        personData.add(new Person("Anton","Astakhov","CS21",2015,2,5,5,3));
+        personData.add(new Person("Tatyanya","Buzikina","CS21",2015,2,4,5,4));
+        personData.add(new Person("Alexandra","Tmenova","CS21",2015,2,5,5,5));
+        personData.add(new Person("Ivan","Smotrizkiy","CS22",2015,2,4,4,3));
+        personData.add(new Person("Eugene","Khoroshenko","CS21",2015,2,3,4,3));
+        personData.add(new Person("Alexandr","Chudiy","CS22",2015,2,3,3,3));
+        personData.add(new Person("Margo","Doroshenko","CS22",2015,2,5,4,3));
+
+        //A-graders data
+        getAgraders(personData);
     }
     @Override
     public void start(Stage primaryStage){
         this.primaryStage = primaryStage;
-        this.primaryStage.setTitle("GUI Test");
+        this.primaryStage.setTitle("Student Base");
 
         initRootLayout();
 
@@ -84,6 +92,16 @@ public class Main extends Application {
         }
     }
 
+    /* Finds A-graders and adds them to the list
+     * @proc
+     */
+
+    public void getAgraders(ObservableList<Person> personData){
+        for (Person temp:personData) {
+            if((temp.getSubjectOOP()+temp.getSubjectAlgo()+temp.getSubjectProb())/3.0>=4.25) personDataNew.add(temp);
+        }
+    }
+
     /* Returns the main Stage
      * @return
      */
@@ -98,6 +116,14 @@ public class Main extends Application {
 
     public ObservableList<Person> getPersonData(){
         return personData;
+    }
+
+    /* Returns the data as an observable list of new persons
+     * @return
+     */
+
+    public ObservableList<Person> getPersonDataNew(){
+        return personDataNew;
     }
 
     public static void main(String[] args) {

@@ -16,28 +16,34 @@ import javafx.beans.property.StringProperty;
 public class Person {
     private final StringProperty firstName;
     private final StringProperty lastName;
-    private final StringProperty street;
-    private final IntegerProperty postalCode;
-    private final StringProperty city;
-    private final ObjectProperty<LocalDate> birthday;
+    private final StringProperty group;
+    private final IntegerProperty yearEnrolled;
+    private final IntegerProperty yearCourse;
+    private final IntegerProperty subjectOOP;
+    private final IntegerProperty subjectAlgo;
+    private final IntegerProperty subjectProb;
+//    private final ObjectProperty<LocalDate> birthday;
 
     //Default Constructor
     public Person(){
-        this(null,null);
+        this(null,null,null,0,0,0,0,0);
     }
 
     /*Constructor w/ initial data
      * @param firstName
      * @param lastName
      */
-    public Person(String firstName, String lastName){
+    public Person(String firstName, String lastName, String group, int yearEnrolled, int yearCourse, int OOP, int Algo, int Prob){
         this.firstName = new SimpleStringProperty(firstName);
         this.lastName = new SimpleStringProperty(lastName);
-        this.street = new SimpleStringProperty("Enter Street");
-        this.postalCode = new SimpleIntegerProperty(02140);
-        this.city = new SimpleStringProperty("Enter City");
-        this.birthday = new SimpleObjectProperty<LocalDate>(LocalDate.of(1998,2,21));
+        this.group = new SimpleStringProperty(group);
+        this.yearEnrolled = new SimpleIntegerProperty(yearEnrolled);
+        this.yearCourse = new SimpleIntegerProperty(yearCourse);
+        this.subjectOOP = new SimpleIntegerProperty(OOP);
+        this.subjectAlgo = new SimpleIntegerProperty(Algo);
+        this.subjectProb = new SimpleIntegerProperty(Prob);
     }
+
     public String getFirstName(){
         return firstName.get();
     }
@@ -47,6 +53,7 @@ public class Person {
     public StringProperty firstNameProperty(){
         return firstName;
     }
+
     public String getLastName(){
         return lastName.get();
     }
@@ -56,40 +63,73 @@ public class Person {
     public StringProperty lastNameProperty(){
         return lastName;
     }
-    public String getStreet(){
-        return street.get();
+
+    public String getGroup(){
+        return group.get();
     }
-    public void setStreet(String street){
-        this.street.set(street);
+    public void setGroup(String group){
+        this.group.set(group);
     }
-    public StringProperty streetProperty(){
-        return street;
+    public StringProperty groupProperty(){
+        return group;
     }
-    public int getPostalCode(){
-        return postalCode.get();
+
+    public int getYearEnrolled(){
+        return yearEnrolled.get();
     }
-    public void setPostalCode(int postalCode){
-        this.postalCode.set(postalCode);
+    public void setYearEnrolled(int yearEnrolled){
+        this.yearEnrolled.set(yearEnrolled);
     }
-    public IntegerProperty postalCode(){
-        return postalCode;
+    public IntegerProperty yearEnrolledProperty(){
+        return yearEnrolled;
     }
-    public String getCity(){
-        return street.get();
+
+    public int getYearCourse(){
+        return yearCourse.get();
     }
-    public void setCity(String city){
-        this.city.set(city);
+    public void setYearCourse(int yearCourse){
+        this.yearCourse.set(yearCourse);
     }
-    public StringProperty city(){
-        return city;
+    public IntegerProperty yearCourseProperty(){
+        return yearCourse;
     }
-    public LocalDate getBirthday(){
-        return birthday.get();
+
+    public int getSubjectOOP(){
+        return subjectOOP.get();
     }
-    public void getBirthday(LocalDate birthday){
-        this.birthday.set(birthday);
+    public void setSubjectOOP(int subjectOOP){
+        this.subjectOOP.set(subjectOOP);
     }
-    public ObjectProperty<LocalDate> birthdayProperty(){
-        return birthday;
+    public IntegerProperty subjectOOPProperty(){
+        return subjectOOP;
     }
+
+    public int getSubjectAlgo(){
+        return subjectAlgo.get();
+    }
+    public void setSubjectAlgo(int subjectAlgo){
+        this.subjectAlgo.set(subjectAlgo);
+    }
+    public IntegerProperty subjectAlgoProperty(){
+        return subjectAlgo;
+    }
+
+    public int getSubjectProb(){
+        return subjectProb.get();
+    }
+    public void setSubjectProb(int subjectProb){
+        this.subjectProb.set(subjectProb);
+    }
+    public IntegerProperty subjectProbProperty(){
+        return subjectProb;
+    }
+//    public LocalDate getBirthday(){
+//        return birthday.get();
+//    }
+//    public void getBirthday(LocalDate birthday){
+//        this.birthday.set(birthday);
+//    }
+//    public ObjectProperty<LocalDate> birthdayProperty(){
+//        return birthday;
+//    }
 }

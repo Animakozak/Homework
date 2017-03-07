@@ -7,68 +7,64 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.PersonOverviewController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.PersonOverviewController">
   <children>
-    <AnchorPane layoutX="0.0" layoutY="50.0" prefHeight="300.0" prefWidth="600.0">
-      <children>
-        <SplitPane dividerPositions="0.2976588628762542" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-          <items>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-              <children>
-                <TableView fx:id="personTable" editable="false" prefHeight="298.0" prefWidth="175.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="30.0">
-                  <columnResizePolicy>
-                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
-                  </columnResizePolicy>
-                  <columns>
-                    <TableColumn fx:id="firstNameColumn" prefWidth="75.0" text="First Name" />
-                    <TableColumn fx:id="lastNameColumn" prefWidth="75.0" text="Last Name" />
-                  </columns>
-                </TableView>
-              </children>
-            </AnchorPane>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-              <children>
-                <Label prefHeight="18.0" prefWidth="77.0" text="Person Details" AnchorPane.bottomAnchor="245.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="330.0" AnchorPane.topAnchor="35.0" />
-                <GridPane layoutX="10.0" layoutY="53.0" prefHeight="215.0" prefWidth="394.0">
-                  <children>
-                    <Label text="First Name" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-                    <Label text="First Name" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-                    <Label text="Last Name" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-                    <Label text="Street" GridPane.columnIndex="0" GridPane.rowIndex="2" />
-                    <Label text="City" GridPane.columnIndex="0" GridPane.rowIndex="3" />
-                    <Label text="Postal Code" GridPane.columnIndex="0" GridPane.rowIndex="4" />
-                    <Label text="Birthday" GridPane.columnIndex="0" GridPane.rowIndex="5" />
-                    <Label fx:id="firstNameLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-                    <Label fx:id="lastNameLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                    <Label fx:id="streetLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                    <Label fx:id="cityLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                    <Label fx:id="postalCodeLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                    <Label fx:id="birthdayLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                  </children>
-                  <columnConstraints>
-                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  </columnConstraints>
-                  <rowConstraints>
-                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  </rowConstraints>
-                </GridPane>
-                <Button layoutX="235.0" layoutY="264.0" mnemonicParsing="false" text="New" />
-                <Button layoutX="287.0" layoutY="264.0" mnemonicParsing="false" text="Edit" />
-                <Button layoutX="337.0" layoutY="264.0" mnemonicParsing="false" text="Delete" />
-              </children>
-              <padding>
-                <Insets />
-              </padding>
-            </AnchorPane>
-          </items>
-        </SplitPane>
-      </children>
+    <AnchorPane layoutX="0.0" layoutY="50.0" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="510.0" prefWidth="740.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                  <AnchorPane layoutX="170.0" layoutY="29.0" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                           <children>
+                      <TableView fx:id="personTable" editable="false" prefHeight="160.0" prefWidth="658.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <columnResizePolicy>
+                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                        </columnResizePolicy>
+                        <columns>
+                                    <TableColumn fx:id="groupColumn" prefWidth="47.0" text="Group" />
+                          <TableColumn fx:id="firstNameColumn" prefWidth="68.0" text="First Name" />
+                          <TableColumn fx:id="lastNameColumn" prefWidth="136.0" text="Last Name" />
+                                    <TableColumn fx:id="yearEnrolledColumn" prefWidth="22.0" text="Enrolled in" />
+                                    <TableColumn fx:id="yearCourseColumn" prefWidth="75.0" text="Year" />
+                                    <TableColumn fx:id="subjectOOPColumn" prefWidth="75.0" text="OOP" />
+                                    <TableColumn fx:id="subjectAlgoColumn" prefWidth="75.0" text="Algorithmisation" />
+                                    <TableColumn fx:id="subjectProbColumn" prefWidth="75.0" text="Probability Theory" />
+                        </columns>
+                      </TableView>
+                           </children>
+                  </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="251.0" prefWidth="738.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                           <children>
+                              <TableView fx:id="personTableNew" editable="false" prefHeight="211.0" prefWidth="698.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                                 <columns>
+                                    <TableColumn fx:id="groupColumnNew" prefWidth="47.0" text="Group" />
+                                    <TableColumn fx:id="firstNameColumnNew" prefWidth="68.0" text="First Name" />
+                                    <TableColumn fx:id="lastNameColumnNew" prefWidth="136.0" text="Last Name" />
+                                    <TableColumn fx:id="yearEnrolledColumnNew" prefWidth="22.0" text="Enrolled in" />
+                                    <TableColumn fx:id="yearCourseColumnNew" prefWidth="75.0" text="Year" />
+                                    <TableColumn fx:id="subjectOOPColumnNew" prefWidth="75.0" text="OOP" />
+                                    <TableColumn fx:id="subjectAlgoColumnNew" prefWidth="75.0" text="Algorithmisation" />
+                                    <TableColumn fx:id="subjectProbColumnNew" prefWidth="75.0" text="Probability Theory" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
     </AnchorPane>
+<Button layoutX="719.0" layoutY="574.0" mnemonicParsing="false" text="Delete" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="50.0" />
+<Button layoutX="677.0" layoutY="574.0" mnemonicParsing="false" text="Edit" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="105.0" />
+<Button layoutX="629.0" layoutY="574.0" mnemonicParsing="false" text="New" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="150.0" />
   </children>
 </AnchorPane>
