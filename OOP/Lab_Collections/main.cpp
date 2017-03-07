@@ -113,31 +113,31 @@ istream& operator>>(istream& is, Book& book){
 }
 
 ifstream& operator>> (ifstream& is, Book& book){
-    ifstream f ("C:/Users/user/Documents/GitHub/Homework/OOP/Lab_Collections/library.csv");
-    if (!f) throw 0;
+    // ifstream f ("C:/Users/user/Documents/GitHub/Homework/OOP/Lab_Collections/library.csv");
+    if (!is) throw 0;
     if (cur_line >= lines) {
-        f.close();
+        is.close();
         throw 0.1;
     }
 
     string temp, temp1;
-    f.seekg(pos);
+    is.seekg(pos);
     prev_pos = pos;
     if (cur_line == lines-1) {
-        getline(f,  temp1);
-        next_pos = f.end;
+        getline(is,  temp1);
+        next_pos = is.end;
     }
     else {
-        getline(f, temp1, '\n');
-        next_pos = f.tellg();
+        getline(is, temp1, '\n');
+        next_pos = is.tellg();
     }
     pos = prev_pos;
-    f.seekg(pos);
+    is.seekg(pos);
 
-    getline (f, temp, ',');
+    getline (is, temp, ',');
     book.Name = temp;
 
-    getline (f, temp, ',' );
+    getline (is, temp, ',' );
     book.Author = temp;
     for(string::iterator it=book.Author.begin();it!=book.Author.end();++it){
       if(isdigit(*it)){
@@ -145,10 +145,10 @@ ifstream& operator>> (ifstream& is, Book& book){
       }
     }
 
-    getline (f, temp, ',' );
+    getline (is, temp, ',' );
     book.Publisher = temp;
 
-    getline (f, temp, ',' );
+    getline (is, temp, ',' );
     for(string::iterator it=temp.begin();it!=temp.end();++it){
         if(isalpha(*it)){
             throw (short int) 1;
@@ -156,12 +156,12 @@ ifstream& operator>> (ifstream& is, Book& book){
     }
     book.releaseYear = atoi(temp.c_str());
 
-    getline (f, temp, '\n');
+    getline (is, temp, '\n');
     book.pages = atoi(temp.c_str());
 
-    pos = f.tellg();
+    pos = is.tellg();
     cur_line++;
-    f.close();
+    is.close();
 
     if (book.releaseYear < 1000 || book.pages < 0) throw 'a';
     return is;
@@ -186,7 +186,7 @@ int main() {
     set <Book> Library;
     list <string> lerrors_log;
     list <string> ferrors_log;
-    ifstream file;
+    ifstream file ("C:/Users/user/Documents/GitHub/Homework/OOP/Lab_Collections/library.csv");
     Book input;
     for (int i=0;i<lines;++i){
         try {
@@ -243,7 +243,6 @@ int main() {
 
     cout<<endl<<"Books published in even years get new values: (using \"for_each\")"<<endl;
     for_each(LibraryMod.begin(), LibraryMod.end(), isOdd);
-
 
     return 0;
 }

@@ -4,9 +4,9 @@
   <wxString Value="C:\Users\user\Documents\GitHub\Homework\Homework.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="C:\Users\user\Documents\GitHub\Homework\OOP\Lab_Collections\main.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="152" Name="CurrentLine"/>
+      <wxString Value="C:\Users\user\Documents\GitHub\Homework\OOP\Session_2017\main.cpp" Name="FileName"/>
+      <int Value="33" Name="FirstVisibleLine"/>
+      <int Value="37" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

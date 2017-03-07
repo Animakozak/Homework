@@ -27,7 +27,9 @@
   <Project Name="Module_2016" Path="OOP/Module_2016/Module_2016.project" Active="No"/>
   <Project Name="Lab_map_c" Path="Lab_map_c/Lab_map_c.project"/>
   <Project Name="Maps" Path="OOP/Lab_Maps_c++/Maps.project" Active="No"/>
-  <Project Name="Lab_Collections" Path="OOP/Lab_Collections/Lab_Collections.project" Active="Yes"/>
+  <Project Name="Lab_Collections" Path="OOP/Lab_Collections/Lab_Collections.project" Active="No"/>
+  <Project Name="Collections2" Path="OOP/OverloadFileIO/Collections2.project" Active="No"/>
+  <Project Name="Session_2017" Path="OOP/Session_2017/Session_2017.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -60,6 +62,8 @@
       <Project Name="Lab_map_c" ConfigName="Debug"/>
       <Project Name="Maps" ConfigName="Debug"/>
       <Project Name="Lab_Collections" ConfigName="Debug"/>
+      <Project Name="Collections2" ConfigName="Debug"/>
+      <Project Name="Session_2017" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -92,6 +96,8 @@
       <Project Name="Lab_map_c" ConfigName="Release"/>
       <Project Name="Maps" ConfigName="Release"/>
       <Project Name="Lab_Collections" ConfigName="Release"/>
+      <Project Name="Collections2" ConfigName="Release"/>
+      <Project Name="Session_2017" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
