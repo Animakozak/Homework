@@ -98,7 +98,7 @@ public class Main extends Application {
 
     public void getAgraders(ObservableList<Person> personData){
         for (Person temp:personData) {
-            if((temp.getSubjectOOP()+temp.getSubjectAlgo()+temp.getSubjectProb())/3.0>=4.25) personDataNew.add(temp);
+            if((temp.getSubjectOOP()+temp.getSubjectAlgo()+temp.getSubjectProb())/3.0>=5) personDataNew.add(temp);
         }
     }
 

@@ -75,6 +75,7 @@ public class PersonOverviewController {
         subjectAlgoColumn.setCellValueFactory(cellData -> cellData.getValue().subjectAlgoProperty().asObject());
         subjectProbColumn.setCellValueFactory(cellData -> cellData.getValue().subjectProbProperty().asObject());
 
+        //Initialize new person table with modified data
         firstNameColumnNew.setCellValueFactory(cellData -> cellData.getValue().firstNameProperty());
         lastNameColumnNew.setCellValueFactory(cellData -> cellData.getValue().lastNameProperty());
         groupColumnNew.setCellValueFactory(cellData -> cellData.getValue().groupProperty());
