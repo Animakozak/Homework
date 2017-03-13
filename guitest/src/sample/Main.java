@@ -92,6 +92,12 @@ public class Main extends Application {
         }
     }
 
+    /*
+     * Todo showPersonEditDialog(person Person)
+     * Create Main loader
+     * create controller class
+     */
+
     /* Finds A-graders and adds them to the list
      * @proc
      */

@@ -5,6 +5,7 @@ package sample.view;
  */
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -48,6 +49,24 @@ public class PersonOverviewController {
     private TableColumn<Person,Integer> subjectAlgoColumnNew;
     @FXML
     private TableColumn<Person,Integer> subjectProbColumnNew;
+    /**
+     * Called when the user clicks on the delete button.
+     */
+    @FXML
+    private void handleDeletePerson() {
+        int selectedIndex = personTable.getSelectionModel().getSelectedIndex();
+        if(selectedIndex>=0) personTable.getItems().remove(selectedIndex);
+        else{
+            //Nothing is selected to delete
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.initOwner(mainApp.getPrimaryStage());
+            alert.setTitle("No Selection");
+            alert.setHeaderText("No person selected");
+            alert.setContentText("Please select a person in a table");
+
+            alert.showAndWait();
+        }
+    }
 
     // Reference to the main application.
     private Main mainApp;
