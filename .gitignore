@@ -27,6 +27,9 @@
 *.out
 *.app
 
+#Intellij Files
+workspace.xml
+
 # =========================
 # Operating System Files
 # =========================

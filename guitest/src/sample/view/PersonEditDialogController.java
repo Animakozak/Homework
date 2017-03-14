@@ -81,5 +81,41 @@ public class PersonEditDialogController {
         return okClicked;
     }
 
-    //TODO handleOK()
+    @FXML
+    private void handleOK(){
+        if(isInputValid()){
+            person.setFirstName(firstNameField.getText());
+            person.setLastName(lastNameField.getText());
+            person.setGroup(groupField.getText());
+            person.setYearCourse(Integer.parseInt(yearCourseField.getText()));
+            person.setYearEnrolled(Integer.parseInt(yearEnrolledField.getText()));
+            person.setSubjectOOP(Integer.parseInt(subjectOOPField.getText()));
+            person.setSubjectAlgo(Integer.parseInt(subjectAlgoField.getText()));
+            person.setSubjectProb(Integer.parseInt(subjectProbField.getText()));
+        }
+    }
+    /*
+     * Called on Cancel
+     */
+    @FXML
+    private void handleCancel(){
+        dialogStage.close();
+    }
+    /*
+     * Validates the user input in text fields
+     *
+     * @return true if valid
+     */
+    private boolean isInputValid(){
+        String errorMessage = "";
+
+        if(firstNameField.getText()==null || firstNameField.getText().length()==0){errorMessage+="No valid first name";}
+        if(firstNameField.getText()==null || firstNameField.getText().length()==0){}
+        if(firstNameField.getText()==null || firstNameField.getText().length()==0){}
+        if(firstNameField.getText()==null || firstNameField.getText().length()==0){}
+        if(firstNameField.getText()==null || firstNameField.getText().length()==0){}
+        if(firstNameField.getText()==null || firstNameField.getText().length()==0){}
+        if(firstNameField.getText()==null || firstNameField.getText().length()==0){}
+        if(firstNameField.getText()==null || firstNameField.getText().length()==0){}
+    }
 }
