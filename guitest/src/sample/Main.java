@@ -9,8 +9,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import sample.model.Person;
+import sample.view.PersonEditDialogController;
 import sample.view.PersonOverviewController;
 
 import java.io.IOException;
@@ -23,7 +25,6 @@ public class Main extends Application {
     private BorderPane rootLayout;
 
     private ObservableList<Person> personData = FXCollections.observableArrayList();
-    private ObservableList<Person> personDataNew = FXCollections.observableArrayList();
 
     //Constructor
 
@@ -39,7 +40,7 @@ public class Main extends Application {
         personData.add(new Person("Margo","Doroshenko","CS22",2015,2,5,4,3));
 
         //A-graders data
-        getAgraders(personData);
+//        getAgraders(personData);
     }
     @Override
     public void start(Stage primaryStage){
@@ -93,20 +94,44 @@ public class Main extends Application {
     }
 
     /*
-     * Todo showPersonEditDialog(person Person)
-     * Create Main loader
-     * create controller class
+     * Loads Edit Dialog Window
+     *
+     * @param person to be edited
+     * @return true - if clicked OK, false - otherwise
      */
+    public boolean showPersonEditDialog(Person person){
+        try {
+            //Load fxml and create new stage for the dialog pop-up
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("view/PersonEditDialog.fxml"));
+            AnchorPane page = (AnchorPane) loader.load();
 
-    /* Finds A-graders and adds them to the list
-     * @proc
-     */
+            //Dialog Stage
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Edit Person");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
 
-    public void getAgraders(ObservableList<Person> personData){
-        for (Person temp:personData) {
-            if((temp.getSubjectOOP()+temp.getSubjectAlgo()+temp.getSubjectProb())/3.0>=5) personDataNew.add(temp);
+            //Set the person into the controller
+            PersonEditDialogController controller = loader.getController();
+            controller.setDialogStage(dialogStage);
+            controller.setPerson(person);
+
+            //Show the dialog and wait until the user closes it
+            dialogStage.showAndWait();
+
+            return controller.isOkClicked();
+        }
+        catch (IOException e){
+            return false;
         }
     }
+
+
+
+
 
     /* Returns the main Stage
      * @return
@@ -127,10 +152,6 @@ public class Main extends Application {
     /* Returns the data as an observable list of new persons
      * @return
      */
-
-    public ObservableList<Person> getPersonDataNew(){
-        return personDataNew;
-    }
 
     public static void main(String[] args) {
         launch(args);
